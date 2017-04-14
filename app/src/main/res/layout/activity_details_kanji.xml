@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aprendamosjapones.aprendedamosjapones.View.DetailsKanjiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            
+            <ImageView
+                android:id="@+id/kanji1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/kanji" />
+            
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/kanji_significado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Significado(s):"
+                    android:textSize="12pt"
+                    android:theme="@style/EditTextBlack"/>
+
+                <TextView
+                    android:id="@+id/kanji_onyomi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Onyomi:"
+                    android:textSize="12pt"
+                    android:paddingTop="15dp"
+                    android:theme="@style/EditTextBlack"/>
+
+                <TextView
+                    android:id="@+id/kanji_kunyomi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kunyomi:"
+                    android:textSize="12pt"
+                    android:paddingTop="15dp"
+                    android:theme="@style/EditTextBlack" />
+
+                <TextView
+                    android:id="@+id/kanji_escritutura"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Escritura: "
+                    android:textSize="12pt"
+                    android:paddingTop="15dp"
+                    android:theme="@style/EditTextBlack"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

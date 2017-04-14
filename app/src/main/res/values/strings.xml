@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AprendedamosJapones</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
+    <string name="hint_username">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_login">Inicia sesion</string>
+    <string name="DontHaveAccount">¿No tienes cuenta?,</string>
+    <string name="CreateAnAccountHere">Crea una aqui.</string>
+    <string name="userEmailRegistry">Correo:</string>
+    <string name="userNameRegistry">Nombre:</string>
+    <string name="userNicknameRegistry">Usuario:</string>
+    <string name="userPasswordRegistry">Contraseña:</string>
+    <string name="userConfirmPasswordRegistry">Confirmar contraseña:</string>
+    <string name="userRegistryAccept">Registrarse</string>
+    <string name="toolbar_tittle_create_acount">Crear cuenta</string>
+    <string name="cardview_level1">NIvel 1</string>
+    <string name="tab_dictionary">Diccionarios</string>
+    <string name="tab_userhome">Menu</string>
+    <string name="tab_userprofile">Perfil</string>
+    <string name="title_activity_details">Detalles</string>
+    <string name="imageDesc">Tamaño Original</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

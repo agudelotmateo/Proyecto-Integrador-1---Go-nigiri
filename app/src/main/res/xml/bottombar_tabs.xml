@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+
+        tittle="@string/tab_dictionary"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/dictionary"
+        />
+
+    <tab
+
+        tittle="@string/tab_userhome"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/home"
+        />
+
+    <tab
+
+        tittle="@string/tab_userprofile"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/user"
+        />
+</tabs>

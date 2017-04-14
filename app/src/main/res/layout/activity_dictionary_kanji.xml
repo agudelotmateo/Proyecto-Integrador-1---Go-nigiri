@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.DictionaryKanjiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:paddingBottom="30dp"
+        android:paddingLeft="0dp">
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Kanji"
+            android:textSize="30dp"
+            android:paddingLeft="158dp"
+            />
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:columnWidth="180dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:stretchMode="columnWidth">
+
+    </GridView>
+
+</RelativeLayout>
