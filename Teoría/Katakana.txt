@@ -1,0 +1,7 @@
+﻿Katakana:
+
+El katakana, al igual que el hiragana, es un sistema oficial de escritura del japonés, que representa fonemas del idioma. Los fonemas son los mismos del hiragana, por lo que, como supondrás, también son 46 caracteres básicos. La diferencia es que este silabario se usa para escribir palabras de origen extranjero a Japón y para escribir onomatopeyas.
+
+Vocales alargadas (después de enseñar vocales):
+Por suerte, representar las vocales alargadas en katakana es mucho más fácil que en hiragana. Independiente de la vocal a alargar, lo único que hay que hacer es añadir ‘ー’ después del caracter.
+

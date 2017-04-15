@@ -1,0 +1,12 @@
+﻿Hiragana:
+
+El hiragana es uno de los sistemas oficiales de escritura del japonés. Es como el alfabeto para nosotros en el sentido de que nos define la fonética o sonidos del lenguaje, la diferencia es que más que un alfabeto es un silabario.
+
+El silabario está compuesto por 46 caracteres básicos y es usado para palabras nativas de Japón y elementos gramaticales.
+
+Vocales alargadas (después de enseñar vocales):
+
+- La â: Para escribirla se añade あdespués de un hiragana que al final de la pronunciación tenga la a.
+- La ii: Para escribirla se añade いdespués de un hiragana que al final de la pronunciación tenga la i.
+- La û: Para escribirla se añade うdespués de un hiragana que al final de la pronunciación tenga la u.
+- La ei: Para escribirla se añade いdespués de un hiragana que al final de la pronunciación tenga la e. Excepto ええ (sí), ねえ (decir), おねえさん (hermana mayor).
