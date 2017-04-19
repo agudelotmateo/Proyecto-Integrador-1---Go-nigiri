@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aprendamosjapones.aprendedamosjapones.View.CreateAcountActivity;
+import com.aprendamosjapones.aprendedamosjapones.View.DictionaryKanjiActivity;
+import com.aprendamosjapones.aprendedamosjapones.View.MainMenuActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -17,6 +19,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void goCreateAccount(View view){
         Intent intent = new Intent(this, CreateAcountActivity.class);
+        startActivity(intent);
+    }
+
+    public void goMainMenu(View view){
+        Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
     }
 

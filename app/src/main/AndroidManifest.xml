@@ -20,6 +20,9 @@
             android:name=".View.CreateAcountActivity"
             android:parentActivityName=".LoginActivity" />
         <activity
+            android:name=".View.MainMenuActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
             android:name=".View.DictionaryKanjiActivity"
             android:label="@string/app_name"></activity>
         <activity

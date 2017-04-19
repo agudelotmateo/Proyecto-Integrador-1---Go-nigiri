@@ -17,7 +17,8 @@ public class ImageAdapter extends BaseAdapter {
     // Array de identificadores
     private Integer[] mThumbIds = {
             //imagenes
-            R.drawable.dictionary
+            R.drawable.kanji1, R.drawable.kanji2,
+            R.drawable.kanji3, R.drawable.kanji4
     };
 
     public ImageAdapter(Context c) {
