@@ -1,8 +1,11 @@
-//Lista de los significados de los kanji
+//Lista de los significados, onyomi y kunyomi de los kanji
 //Adelanto para facilitar la escritura del arreglo para las interfaces
 //se escriben de acuerdo al orden en el que deben ir en el diccionario
-//Un kanji puede tener más de un significado
+//Un kanji puede tener más de un significado, onyomi y kunyomi
+//Un kanji puede no tener kunyomi
+//Orden: {{significados}, {kunyomi}, {onyomi}}
 
+{
 {{Día, Sol}, {ひ, び}, {ニチ, ニジツ}},
 {{Uno}, {ひと(つ)}, {イチ, イツ}},
 {{País}, {くに}, {コク}},
@@ -25,7 +28,7 @@
 {{Vida, Nacer}, {う(まねる), い(きる)}, {セイ}},
 {{Cinco}, {いつ(つ)}, {ゴ}},
 {{Entre}, {あいだ, ま}, {カン}},
-{{Encima, Arriba}, {うえ, お(がる)}, {ジョウ}},
+{{Encima, Arriba}, {お(がる)}, {ジョウ}},
 {{Oriente/Este}, {ひがし}, {トウ}},
 {{Cuatro}, {よっ(つ), よん, よ}, {シ}},
 {{Ahora}, {いま}, {コン}},
@@ -45,7 +48,7 @@
 {{Pequeño}, {ちい(さい)}, {ショウ}},
 {{Siete}, {なな, なな(つ)}, {シチ}},
 {{Montaña}, {やま}, {サン}},
-{Cuento, Charla},
+{{Charla}, {はな(す), はなし}, {ワ}},
 {{Mujer}, {おんな}, {ジョ}},
 {{Norte}, {きた}, {ホク}},
 {{Mediodía}, {}, {ゴ}},
