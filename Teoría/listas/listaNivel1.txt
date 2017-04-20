@@ -1,0 +1,6 @@
+//En esta lista se definen los títulos de las diferentes secciones que deben ir en el primer nivel
+//Se realiza para facilitar el desarrollo de la interfaz
+
+{¿Qué es el rômaji?, ¿Qué es el hiragana?, Las vocales y la ん, la fila か,
+la fila さ, la fila た, la fila な, la fila は, la fila ま, la fila や, la fila ら, la fila わ, la fila が, la fila ざ, la fila だ, la fila ば, la fila ぱ, la fila きゃ, la fila ぎゃ, la fila しゃ, la fila じゃ, la fila ちゃ, la fila にゃ, la fila ひゃ, la fila びゃ, la fila ぴゃ, la fila みゃ, la fila りゃ
+}

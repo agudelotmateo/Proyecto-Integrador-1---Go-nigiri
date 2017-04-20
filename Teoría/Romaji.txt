@@ -8,25 +8,25 @@ Existen diferentes tipos de rōmaji, pero nosotros sólo utilizaremos.
 
 Preguntar a la profesora Kaori cuál utilizar y por qué, o si no hace falta definir ya que es sólo para hiraganas y katakanas.
 
-Las vocales:
+Las vocales (Al inicio de la sección de vocales):
 
 El japonés tiene 5 vocales, y por suerte para nosotros son equivalentes a las que nosotros utilizamos, la única diferencia es el orden en el que se presentan: a, i, u, e, o. Y su pronunciación no cambia para un hablante de la lengua hispana. Eso sí, ten en cuenta que la 'u' se pronuncia más suave, relaja los labios cuando la pronuncies en vez de cerrarlos formando una o, como normalmente hacemos.
 
 Hay momentos en los que la 'u' y la 'i' no se pronuncian. Esto se suele dar cuando se encuentran entre las consonantes: 'p', 't', 'k', 'ch', 'f', 'h', 's', 'sh'. O también cuando se encuentran al final de la palabra y son precedidas por alguna de estas consonantes.
 
-Vocales alargadas:
+Vocales alargadas (Junto con explicación de vocales alargadas de hiragana):
 
 En el japonés es común encontrar vocales alargadas, esto es vocales que se pronuncian el doble del tiempo normal, por ejemplo en español. Para escribirlas la 'a', 'u' y 'o' llevarán un guión sobre ellas y la 'i' al igual que la 'e' van seguidas por una 'i' ('ii' o 'ei' respectivamente) ¿Te suena a algo? La palabra rōmaji no se pronuncia "romayi" sino "roomayi".
 
 Es importante que recuerdes que existen vocales alargadas y que las aprendas a pronunciar bien. Porque puedes encontrarte con palabras con diferente significado pero que al pronunciarlas, su diferencia radica en si usan o no vocales alargadas. Por ejemplo "ojisan" significa tío, mientras que "ojiisan" significa abuelo.
 
-La 'y'
+La 'y' (Al inicio de la sección de la fila や)
 Al igual que en el español la 'y' puede funcionar como una consonante o como una vocal dependiendo de la situación. Ésta puede estar seguida por 'a', 'o' o 'u', caso en el que cumple el papel como consonante. O también puede combinarse con 'k', 'p', 'h', 'g', 'r', 'b', 'n' o 'm', caso en el que actua como vocal y se pronuncia igual que en la palabra "hoy".
 
-La 'w'
-Actualmente la 'w' sólo se ve acompañada por una 'a', a excepción de la palabra "wo".
+La 'w' (Al inicio de la sección de la fila わ)
+Actualmente la 'w' sólo se ve acompañada por una 'a', a excepción de la palabra "wo", la cual funciona como una partícula. Las partículas son elementos esenciales en la gramática del idioma pero, lastimosamente, no vamos a adentrarnos en este tema.
 
-Las consonantes
+Las consonantes (Acomodar al inicio de la respectiva lección)
 
 Como te darás cuenta la mayoría de las consonantes se pronuncian como en el español, aunque hay unas cuantas excepciones:
      - La 'g': Se pronuncia igual que en el español sólo que cuando está acompañada por una 'i' o una 'e' suena como si tuviera la u intermedia. Es decir en rōmaji "ge" se pronuncia como "gue" en español.

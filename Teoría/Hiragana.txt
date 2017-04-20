@@ -13,5 +13,9 @@ Vocales alargadas (después de enseñar vocales, antes de la evaluación de voca
 
 Doble consonante (colocar después de enseñar “tsu”, antes de evaluación de ‘tsu’):
 
-En japonés es posible encontrarse palabras con doble consonante (una misma consonante repetida dos veces seguidas), por ejemplo puedes ver que la palabra “gakkou” (que significa colegio) tiene doble k. Por suerte representar esto con hiraganas no es complicado, sólo tenemos que usar un  つ (‘tsu’) más pequeño antes de la consonante a alargar. De esta manera, “gakkou” sería がっこう. Tal vez sea difícil diferenciarlo al principio, pero la clave para aprender es la práctica y ésta no va a ser la excepción. 
+En japonés es posible encontrarse palabras con doble consonante (una misma consonante repetida dos veces seguidas), por ejemplo puedes ver que la palabra “gakkou” (que significa colegio) tiene doble k. Por suerte representar esto con hiraganas no es complicado, sólo tenemos que usar un  つ (‘tsu’) más pequeño antes de la consonante a alargar. De esta manera, “gakkou” sería がっこう. Tal vez sea difícil diferenciarlo al principio, pero la clave para aprender es la práctica y ésta no va a ser la excepción.
+
+Tenten y maru (colocar al inicio de la sección de la fila が):
+
+Ya conoces los 46 hiraganas básicos, pero estos no representan todas las sílabas del idioma. Algunos de los hiragana que aprendimos pueden llevar una comilla doble '"' o un círculo pequeño '°' en la parte superior derecha, los cuales modifican la consonante, dándole un sonido diferente. A la comilla la llamamos "tenten" y al círculo lo llamamos "maru". 
 
