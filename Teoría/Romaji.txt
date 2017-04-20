@@ -4,10 +4,6 @@ La palabra rōmaji es un término japonés que significa "caractéres romanos" y
 
 El uso del rōmaji puede facilitar nuestra tarea de aprender el idioma dado que tratamos un alfabeto más familiar a nosotros, y por este motivo en las primeras lecciones, aquellas para aprender hiragana y katakana, lo veremos constantemente para enseñarte cómo leer y pronunciar las palabras, sin embargo, más allá de esto no lo vamos a utilizar. Aprender japonés con sólo rōmaji no es recomendable, aunque se puede encontrar en el idioma no es el sistema de escritura más utilizado, por lo que es importante adaptarse a los alfabetos propios de la lengua.
 
-Existen diferentes tipos de rōmaji, pero nosotros sólo utilizaremos.
-
-Preguntar a la profesora Kaori cuál utilizar y por qué, o si no hace falta definir ya que es sólo para hiraganas y katakanas.
-
 Las vocales (Al inicio de la sección de vocales):
 
 El japonés tiene 5 vocales, y por suerte para nosotros son equivalentes a las que nosotros utilizamos, la única diferencia es el orden en el que se presentan: a, i, u, e, o. Y su pronunciación no cambia para un hablante de la lengua hispana. Eso sí, ten en cuenta que la 'u' se pronuncia más suave, relaja los labios cuando la pronuncies en vez de cerrarlos formando una o, como normalmente hacemos.
@@ -16,7 +12,9 @@ Hay momentos en los que la 'u' y la 'i' no se pronuncian. Esto se suele dar cuan
 
 Vocales alargadas (Junto con explicación de vocales alargadas de hiragana):
 
-En el japonés es común encontrar vocales alargadas, esto es vocales que se pronuncian el doble del tiempo normal, por ejemplo en español. Para escribirlas la 'a', 'u' y 'o' llevarán un guión sobre ellas y la 'i' al igual que la 'e' van seguidas por una 'i' ('ii' o 'ei' respectivamente) ¿Te suena a algo? La palabra rōmaji no se pronuncia "romayi" sino "roomayi".
+En el japonés es común encontrar vocales alargadas, esto es vocales que se pronuncian el doble del tiempo normal, por ejemplo en español. Para escribirlas la 'a', 'u' y 'o' pueden llevar un guión (ā) o un gorrito (â) sobre ellas, o sencillamente estar escritas dos veces seguidas (aa). Para nuestra facilidad vamos a utilizar esta última convención en la aplicación. Por su parte, la 'i' al igual que la 'e' van seguidas por una 'i' ('ii' o 'ei' respectivamente), excepto en algunos pocos casos donde la 'e' se escribe dos veces seguidas, estos casos los tratamos un poquito más cuando comencemos con el aprendizaje de los hiragana.
+
+¿Te suena a algo? La palabra rōmaji no se pronuncia "romayi" sino "roomayi".
 
 Es importante que recuerdes que existen vocales alargadas y que las aprendas a pronunciar bien. Porque puedes encontrarte con palabras con diferente significado pero que al pronunciarlas, su diferencia radica en si usan o no vocales alargadas. Por ejemplo "ojisan" significa tío, mientras que "ojiisan" significa abuelo.
 
