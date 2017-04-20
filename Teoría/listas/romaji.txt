@@ -1,0 +1,30 @@
+//Lista rômaji de los hiragana y katakana
+//Adelanto para facilitar la escritura del arreglo para las interfaces
+//se escriben de acuerdo al orden en el que deben ir en el diccionario
+
+{a, i, u, e, o,
+ka, ki, ku, ke, ko,
+sa, shi, su, se, so,
+ta, chi, tsu, te, to,
+na, ni, nu, ne, no,
+ha, hi, fu, he, ho,
+ma, mi, mu, me, mo,
+ya, yu, yo,
+ra, ri, ru, re, ro,
+wa, wo,
+n,
+ga, gi, gu, ge, go,
+za, ji, zu, ze, zo,
+da, di, zu, de, do,
+ba, bi, bu, be, bo,
+pa, pi, pu, pe, po,
+kya, kyu, kyo,
+gya, gyu, gyo,
+sha, shu, sho,
+ja, ju, jo,
+cha, chu, cho,
+nya, nyu, nyo,
+bya, byu, byo,
+pya, pyu, pyo,
+mya, myu, myo,
+rya, ryu, ryo}
