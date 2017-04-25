@@ -75,8 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/hint_login"
-                    android:theme="@style/RaisedButtonDark"
-                    android:onClick="goKanjiDictionary"/>
+                    android:theme="@style/RaisedButtonDark" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"

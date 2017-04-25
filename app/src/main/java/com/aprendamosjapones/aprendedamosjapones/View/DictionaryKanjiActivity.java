@@ -21,7 +21,7 @@ public class DictionaryKanjiActivity extends Activity {
         Seteando el adaptador al GridView
          */
         GridView gridview = (GridView) findViewById(R.id.gridview);
-        gridview.setAdapter(new ImageAdapter(this));
+        gridview.setAdapter(new ImageAdapterKanji(this));
 
         /*
         Creando una nueva escucha para los elementos del Grid
