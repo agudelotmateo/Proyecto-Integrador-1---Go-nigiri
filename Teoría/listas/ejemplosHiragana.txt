@@ -1,0 +1,32 @@
+//Lista de los ejemplos para los hiragana, estos mismos con otros más serán usados en la evaluación de los niveles
+//Adelanto para facilitar la escritura del arreglo para las interfaces
+//se escriben de acuerdo al orden en el que deben ir en el diccionario
+//Se escribe primero la palabra en hirgana, segundo el romaji y tercero el significado
+//Las que están vacías no tienen palabra hasta el momento
+
+{{あし, ashi, pie}, {いす, isu, silla}, {うし, ushi, vaca}, {えき, eki, estación}, {おとうさん, otousan, papá},
+{かわ, kawa, río}, {きいろ, kiiro, amarillo}, {くま, kuma, oso}, {けいかん, keikan, policía}, {ここ, koko, aquí},
+{さかな, sakana, pez}, {しお, shio, sal}, {すいか, suika, sandía}, {せんせい, sensei, profesor}, {そこ, soko, allá},
+{たべる, taberu, comer}, {ちず, chizu, mapa}, {つくえ, tsukue, escritorio}, {て, te, mano}, {とお, too, diez},
+{なな, nana, siete}, {にいさん, niisan, hermano mayor}, {いぬ, inu, perro}, {ねこ, neko, gato}, {のうか, nouka, granjero},
+{はな, hana, flor}, {ひこうき, hikouki, avión}, {ふね, fune, barco}, {へい, hei, muro}, {ほし, hoshi, estrella},
+{まど, mado, ventana}, {みみ, mimi, oreja}, {むっつ, muttsu, seis}, {め, me, ojo}, {もも, momo, durazno},
+{やま, yama, montaña}, {ゆき, yuki, nieve}, {よっつ, yottsu, cuatro},
+{からて, karate, karate}, {くすり, kusuri, medicina}, {よる, yoru, noche}, {れいきし, reikishi, historia}, {くろい, kuroi, negro},
+{わし, washi, águila}, {を, wo, (partícula)},
+{がっこう, gakkou, colegio}, {みぎ, migi, derecha}, {かぐ, kagu, mueble}, {ひげ, hige, barba}, {ごはん, gohan, comida},
+{ざっし, zasshi, revista}, {にんじん, ninjin, zanahoria}, {ねずみ, nezumi, ratón}, {かぜ, kaze, viento}, {かぞく, kazoku, familia},
+{だいどころ, daidokoro, cocina}, {ちぢむ, chidimu, reducir}, {}, {うで, ude, brazo}, {みどり, midori, verde},
+{かばん, kaban, bolso}, {ゆび, yubi, dedo}, {ぶた, buta, cerdo}, {べんごし, bengoshi, abogado}, {ぼく, boku, yo},
+{しっぱい, shinppai, error}, {ぴったり, pittari, cercano}, {きっぷ, kippu, tiquete}, {ほっぺた, hoppeta, mejilla}, {ぽかん, pokan, distraído},
+{おきゃくさん, okyakusan, invitado}, {きゅうり, kyuuri, pepino}, {きょうかい, kyoukai, iglesia},
+{}, {にんぎょう, ningyou, muñeca}, {ぎゅうにく, gyuuniku, carne de res},
+{じゃがいも, jagaimo, papa}, {じゅうにがつ, juunigatsu, diciembre}, {にのう, ninjou, humanidad},
+{ちゃいろ, chairo, color café}, {ちゅうしゃ, chuusha, inyección}, {ちょっかく, chokkaku, perpendicular},
+{}, {ぎゅうにゅう, gyuunyuu, leche}, {},
+{ひゃっかてん, hyakkaten, tienda}, {}, {ひょう, hyou, voto},
+{さんびゃく, sanbyaku, trescientos}, {}, {びょういん, byouin, hospital},
+{ろっぴゃく, roppyaku, seiscientos}, {}, {はっぴょう, happyou, anuncio},
+{みゃく, myaku, pulso}, {}, {みょうじ, myouji, apellido},
+{}, {りゅう, ryuu, dragón}, {りょこう, ryokou, viaje}
+}
