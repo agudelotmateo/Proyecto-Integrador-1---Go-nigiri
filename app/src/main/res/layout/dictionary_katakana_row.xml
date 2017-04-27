@@ -23,7 +23,8 @@
 		android:layout_marginTop="2dp"
 		android:layout_centerHorizontal="true"
 		android:textSize="18sp"
-		android:ellipsize="marquee"></TextView>
+		android:ellipsize="marquee">
+	</TextView>
 	
 	
 </RelativeLayout>
