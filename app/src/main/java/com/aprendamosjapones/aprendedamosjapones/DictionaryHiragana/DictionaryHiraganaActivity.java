@@ -28,7 +28,7 @@ public class DictionaryHiraganaActivity extends Activity {
         mAdapter = new DictionaryHiraganaAdapter(this,listCountry, listFlag);
         
         // Set custom adapter to gridview
-        gridView = (GridView) findViewById(R.id.gridView1);
+        gridView = (GridView) findViewById(R.id.gridView2);
         gridView.setAdapter(mAdapter);
         
     }
@@ -136,5 +136,4 @@ public class DictionaryHiraganaActivity extends Activity {
         listFlag.add(R.drawable.hiragana45wo);
         listFlag.add(R.drawable.hiragana46n);
     }
-   
 }

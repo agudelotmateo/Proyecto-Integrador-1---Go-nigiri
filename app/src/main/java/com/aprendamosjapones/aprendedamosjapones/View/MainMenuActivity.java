@@ -19,7 +19,7 @@ import com.aprendamosjapones.aprendedamosjapones.R;
  * Created by wilfer on 19/04/17.
  */
 
-public class MainMenuActivity1 extends AppCompatActivity {
+public class MainMenuActivity extends AppCompatActivity {
 
     Button goActivityHiraganaLevel;
     Button goActivityKatakanaDictionary;
@@ -58,7 +58,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityHiraganaLevel = new Intent(MainMenuActivity1.this, MenuLevelHiragana.class);
+                Intent goActivityHiraganaLevel = new Intent(MainMenuActivity.this, MenuLevelHiragana.class);
                 startActivity(goActivityHiraganaLevel);
             }
         });
@@ -67,7 +67,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent getGoActivityLevelKatakana = new Intent(MainMenuActivity1.this, MenuLevelKatakana.class);
+                Intent getGoActivityLevelKatakana = new Intent(MainMenuActivity.this, MenuLevelKatakana.class);
                 startActivity(getGoActivityLevelKatakana);
             }
         });
@@ -76,7 +76,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityLevelKanji = new Intent(MainMenuActivity1.this, MenuLevelKanji.class);
+                Intent goActivityLevelKanji = new Intent(MainMenuActivity.this, MenuLevelKanji.class);
                 startActivity(goActivityLevelKanji);
             }
         });
@@ -85,7 +85,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityMemory = new Intent(MainMenuActivity1.this, MenuMemoryActivity.class);
+                Intent goActivityMemory = new Intent(MainMenuActivity.this, MenuMemoryActivity.class);
                 startActivity(goActivityMemory);
             }
         });
@@ -94,7 +94,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityHiraganaDictionary = new Intent(MainMenuActivity1.this, DictionaryHiraganaActivity.class);
+                Intent goActivityHiraganaDictionary = new Intent(MainMenuActivity.this, DictionaryHiraganaActivity.class);
                 startActivity(goActivityHiraganaDictionary);
             }
         });
@@ -103,7 +103,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View view2) {
 
-                Intent goActivityKatakanaDictionary = new Intent(MainMenuActivity1.this, DictionaryKatakanaActivity.class);
+                Intent goActivityKatakanaDictionary = new Intent(MainMenuActivity.this, DictionaryKatakanaActivity.class);
                 startActivity(goActivityKatakanaDictionary);
             }
         });
@@ -112,7 +112,7 @@ public class MainMenuActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityKanjiDictionary = new Intent(MainMenuActivity1.this, DictionaryKanjiActivity.class);
+                Intent goActivityKanjiDictionary = new Intent(MainMenuActivity.this, DictionaryKanjiActivity.class);
                 startActivity(goActivityKanjiDictionary);
             }
         });

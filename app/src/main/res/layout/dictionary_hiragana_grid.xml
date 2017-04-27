@@ -4,12 +4,22 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     
-    <GridView 
-    	android:layout_height="wrap_content" 
-    	android:id="@+id/gridView1" 
-    	android:layout_width="match_parent" 
+    <GridView
+    	android:layout_height="wrap_content"
+    	android:id="@+id/gridView1"
+    	android:layout_width="wrap_content"
     	android:numColumns="5"
     	android:horizontalSpacing="10dp"
     	android:verticalSpacing="10dp">
     </GridView>
+
+	<GridView
+		android:layout_height="wrap_content"
+		android:id="@+id/gridView2"
+		android:layout_width="wrap_content"
+		android:numColumns="3"
+		android:horizontalSpacing="10dp"
+		android:verticalSpacing="10dp">
+	</GridView>
+
 </LinearLayout>
