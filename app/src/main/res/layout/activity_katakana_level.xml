@@ -67,14 +67,6 @@
             android:elevation="4dp"
             android:padding="16dp">
 
-            <ImageView
-                android:id="@+id/cardview_image1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="18dp"
-               />
-
             <TextView
                 android:id="@+id/cardview_list_title1"
                 android:layout_width="wrap_content"
@@ -104,14 +96,6 @@
             android:elevation="4dp"
             android:padding="16dp">
 
-            <ImageView
-                android:id="@+id/cardview_image2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="18dp"
-               />
-
             <TextView
                 android:id="@+id/cardview_list_title2"
                 android:layout_width="wrap_content"
@@ -119,8 +103,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/cardview_image2"
                 android:paddingBottom="5dp"
-                android:text="la fila カ"
-                android:textSize="24sp" >
+                android:text="Fila カ"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true">
 
             </TextView>
 
@@ -149,7 +134,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="la fila サ"
+                android:text="Fila サ"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
 
