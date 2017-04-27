@@ -72,7 +72,9 @@ public class DictionaryKatakanaActivity extends Activity {
         listCountry.add("me");
         listCountry.add("mo");
         listCountry.add("ya");
+        listCountry.add("");
         listCountry.add("yu");
+        listCountry.add("");
         listCountry.add("yo");
         listCountry.add("ra");
         listCountry.add("ri");
@@ -80,6 +82,9 @@ public class DictionaryKatakanaActivity extends Activity {
         listCountry.add("re");
         listCountry.add("ro");
         listCountry.add("wa");
+        listCountry.add("");
+        listCountry.add("");
+        listCountry.add("");
         listCountry.add("wo");
         listCountry.add("n");
 
@@ -120,7 +125,9 @@ public class DictionaryKatakanaActivity extends Activity {
         listFlag.add(R.drawable.katakana34me);
         listFlag.add(R.drawable.katakana35mo);
         listFlag.add(R.drawable.katakana36ya);
+        listFlag.add(R.drawable.blanco);
         listFlag.add(R.drawable.katakana37yu);
+        listFlag.add(R.drawable.blanco);
         listFlag.add(R.drawable.katakana38yo);
         listFlag.add(R.drawable.katakana39ra);
         listFlag.add(R.drawable.katakana40ri);
@@ -128,6 +135,9 @@ public class DictionaryKatakanaActivity extends Activity {
         listFlag.add(R.drawable.katakana42re);
         listFlag.add(R.drawable.katakana43ro);
         listFlag.add(R.drawable.katakana44wa);
+        listFlag.add(R.drawable.blanco);
+        listFlag.add(R.drawable.blanco);
+        listFlag.add(R.drawable.blanco);
         listFlag.add(R.drawable.katakana45wo);
         listFlag.add(R.drawable.katakana46n);
     }
