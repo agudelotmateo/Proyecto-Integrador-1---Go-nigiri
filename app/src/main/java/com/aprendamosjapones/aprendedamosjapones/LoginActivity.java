@@ -7,8 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.aprendamosjapones.aprendedamosjapones.View.CreateAcountActivity;
-import com.aprendamosjapones.aprendedamosjapones.View.DictionaryKanjiActivity;
-import com.aprendamosjapones.aprendedamosjapones.View.MainMenuActivity;
+import com.aprendamosjapones.aprendedamosjapones.View.MainMenuActivity1;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -26,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goMain = new Intent(LoginActivity.this, MainMenuActivity.class);
+                Intent goMain = new Intent(LoginActivity.this, MainMenuActivity1.class);
                 startActivity(goMain);
             }
         });

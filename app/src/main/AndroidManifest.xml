@@ -16,31 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".View.CreateAcountActivity"
-            android:parentActivityName=".LoginActivity" />
-        <activity
-            android:name=".View.MainMenuActivity"
-            />
-        <activity
-            android:name=".View.DictionaryKanjiActivity"
-            android:label="@string/app_name"></activity>
-        <activity
-            android:name=".View.Details"
-            android:label="@string/title_activity_details"
-            android:parentActivityName=".View.DictionaryKanjiActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.DictionaryKanjiActivity" />
-        </activity>
+        <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
+        <activity android:name=".View.MainMenuActivity1"></activity>
         <activity android:name=".Games.MenuMemoryActivity"></activity>
         <activity android:name=".Games.MemoryActivity"></activity>
-
+        <activity android:name=".View.MenuKanjiActivity"></activity>
+        <activity android:name=".DictionaryKanji.DictionaryKanjiActivity"></activity>
+        <activity android:name=".DictionaryHiragana.DictionaryHiraganaActivity"></activity>
+        <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
+        <activity android:name=".KanjiLevel.MenuLevelKanji"></activity>
+        <activity android:name=".KatakanaLevel.MenuLevelKatakana"></activity>
+        <activity android:name=".HiraganaLevel.MenuLevelHiragana"></activity>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".LoginActivity" />
-
-        <activity android:name=".View.DetailsKanjiActivity"></activity>
     </application>
 
 </manifest>
