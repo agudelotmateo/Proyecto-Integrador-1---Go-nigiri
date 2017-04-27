@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Aprendiendo katakana"
-            android:textSize="25dp"
+            android:textSize="27sp"
             android:textColor="#88af57"
             android:textStyle="bold"
             android:paddingTop="5dp"
@@ -46,7 +46,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -54,7 +53,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image"
                 android:paddingBottom="5dp"
                 android:text="¿Qué es el katakana?"
                 android:textSize="24sp"
@@ -73,7 +71,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -81,7 +78,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image1"
                 android:paddingBottom="5dp"
                 android:text="Las vocales y la n (ン)"
                 android:textSize="24sp"
@@ -100,7 +96,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -108,7 +103,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image2"
                 android:paddingBottom="5dp"
                 android:text="Fila ka (カ)"
                 android:textSize="24sp"
@@ -135,9 +129,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ta (タ)"
+                android:text="Fila sa (サ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -154,7 +147,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -162,9 +154,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila na (ナ)"
+                android:text="Fila ta (タ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -181,7 +172,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -189,9 +179,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ha (ハ)"
+                android:text="Fila na (ナ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -208,7 +197,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -216,9 +204,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ma (マ)"
+                android:text="Fila ha (ハ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -235,7 +222,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -243,9 +229,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ya (ヤ)"
+                android:text="Fila ma (マ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -262,7 +247,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -270,9 +254,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ra (ラ)"
+                android:text="Fila ya (ヤ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -289,7 +272,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -297,9 +279,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila wa (ワ)"
+                android:text="Fila ra (ラ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -316,7 +297,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -324,9 +304,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ga (ガ)"
+                android:text="Fila wa (ワ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -343,7 +322,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -351,9 +329,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila za (ザ)"
+                android:text="Fila ga (ガ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -370,7 +347,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -378,9 +354,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila da (ダ)"
+                android:text="Fila za (ザ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -397,7 +372,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -405,9 +379,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ba (バ)"
+                android:text="Fila da (ダ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -424,7 +397,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -432,9 +404,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila pa (パ)"
+                android:text="Fila ba (バ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -451,7 +422,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -459,9 +429,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila kya (キャ)"
+                android:text="Fila pa (パ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -478,7 +447,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -486,9 +454,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila gya (ギャ)"
+                android:text="Fila kya (キャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -505,7 +472,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -513,9 +479,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila sha (シャ)"
+                android:text="Fila gya (ギャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -532,7 +497,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -540,9 +504,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila ja (ジャ)"
+                android:text="Fila sha (シャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -559,7 +522,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -567,9 +529,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila cha (チャ)"
+                android:text="Fila ja (ジャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -586,7 +547,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -594,9 +554,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila nya (ニャ)"
+                android:text="Fila cha (チャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -613,7 +572,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -621,9 +579,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila hya (ヒャ)"
+                android:text="Fila nya (ニャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -640,7 +597,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -648,9 +604,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila bya (ビャ)"
+                android:text="Fila hya (ヒャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -667,7 +622,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -675,9 +629,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila pya (ピャ)"
+                android:text="Fila bya (ビャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -694,7 +647,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -702,9 +654,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Fila mya (ミャ)"
+                android:text="Fila pya (ピャ)"
                 android:textSize="24sp"
                 android:layout_centerHorizontal="true">
             </TextView>
@@ -721,7 +672,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:elevation="4dp"
             android:padding="16dp">
 
             <TextView
@@ -729,7 +679,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/cardview_image3"
+                android:paddingBottom="5dp"
+                android:text="Fila mya (ミャ)"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/android_card_view_example26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/cardview_list_title26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:paddingBottom="5dp"
                 android:text="Fila rya (リャ)"
                 android:textSize="24sp"

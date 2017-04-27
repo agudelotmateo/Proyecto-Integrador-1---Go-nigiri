@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Niveles"
-                android:textSize="25dp"
+                android:textSize="27sp"
                 android:paddingTop="35dp"
                 android:textColor="#4779cc"
                 android:textStyle="bold">
@@ -102,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juegos"
-                android:textSize="25dp"
+                android:textSize="27sp"
                 android:textColor="#4779cc"
                 android:textStyle="bold"
                 />
@@ -156,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Diccionarios"
-                android:textSize="25dp"
+                android:textSize="27sp"
                 android:textColor="#4779cc"
                 android:textStyle="bold"
                 />
