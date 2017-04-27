@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:fitsSystemWindows="true"
     android:layout_height="match_parent"
-    tools:context="com.aprendamosjapones.aprendedamosjapones.View.MainMenuActivity">
+    tools:context="com.aprendamosjapones.aprendedamosjapones.View.MainMenuActivity"
+    android:background="#ffffff">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,9 +37,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="NIveles"
-                android:textSize="20dp"
-                android:paddingTop="50dp" />
+                android:text="Niveles"
+                android:textSize="25dp"
+                android:paddingTop="35dp"
+                android:textColor="#4779cc"
+                android:textStyle="bold"
+                />
 
         </LinearLayout>
 
@@ -52,19 +57,43 @@
                 android:id="@+id/hiraganaLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hiragana"/>
+                android:text="Hiragana"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="9dp"
+                />
 
             <Button
                 android:id="@+id/kataLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Katakana"/>
+                android:text="Katakana"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="9dp"
+                />
 
             <Button
                 android:id="@+id/kanjiLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="kanji "/>
+                android:text="kanji"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="9dp"
+                />
 
 
         </LinearLayout>
@@ -81,7 +110,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juegos"
-                android:textSize="20dp"
+                android:textSize="25dp"
+                android:textColor="#4779cc"
+                android:textStyle="bold"
                 />
 
         </LinearLayout>
@@ -97,13 +128,27 @@
                 android:id="@+id/juegoPreguntados"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Preguntados"/>
+                android:text="Preguntados"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
 
             <Button
                 android:id="@+id/juegoConcentrese"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Concentrese"/>
+                android:text="Concentrese"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
 
         </LinearLayout>
 
@@ -119,7 +164,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Diccionarios"
-                android:textSize="20dp"
+                android:textSize="25dp"
+                android:textColor="#4779cc"
+                android:textStyle="bold"
                 />
 
         </LinearLayout>
@@ -135,19 +182,40 @@
                 android:id="@+id/hiraganaDiccionario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hiragana"/>
+                android:text="Hiragana"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
 
             <Button
                 android:id="@+id/katakanaDicionario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Katakana"/>
+                android:text="Katakana"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
 
             <Button
                 android:id="@+id/kanjiDiccionario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kanji " />
+                android:text="Kanji"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="#00796B"
+                android:background="@drawable/button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
 
         </LinearLayout>
 

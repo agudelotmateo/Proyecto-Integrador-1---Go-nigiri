@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="15dip" />
+            <solid android:color="#bdcffc"/>
+            <!-- <solid android:color="#83a2ed"/>  color original del logo (moradito azulado)-->
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="15dip" />
+            <solid android:color="#83a2ed"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle">
+            <corners android:radius="15dip" />
+            <solid android:color="#c9edc0"/>
+        </shape>
+    </item>
+</selector>
