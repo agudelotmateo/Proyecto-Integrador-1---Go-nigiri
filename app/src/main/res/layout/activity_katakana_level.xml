@@ -47,17 +47,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/cardview_image"
                 android:paddingBottom="5dp"
-                android:text="Viral Android"
+                android:text="¿Qué es el katakana?"
                 android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/short_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/cardview_list_title"
-                android:layout_toRightOf="@+id/cardview_image"
-                android:text="Free android tutorials and examples for beginners and expert."
-                android:textColor="#8b8b8b" />
 
         </RelativeLayout>
 
@@ -91,17 +82,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/cardview_image1"
                 android:paddingBottom="5dp"
-                android:text="Viral Android"
-                android:textSize="24sp" />
+                android:text="Las vocales y la ン"
+                android:textSize="24sp" >
 
-            <TextView
-                android:id="@+id/short_description1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/cardview_list_title1"
-                android:layout_toRightOf="@+id/cardview_image1"
-                android:text="Free android tutorials and examples for beginners and expert."
-                android:textColor="#8b8b8b" />
+            </TextView>
 
         </RelativeLayout>
 
@@ -135,17 +119,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/cardview_image2"
                 android:paddingBottom="5dp"
-                android:text="Viral Android"
-                android:textSize="24sp" />
+                android:text="la fila カ"
+                android:textSize="24sp" >
 
-            <TextView
-                android:id="@+id/short_description2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/cardview_list_title2"
-                android:layout_toRightOf="@+id/cardview_image2"
-                android:text="Free android tutorials and examples for beginners and expert."
-                android:textColor="#8b8b8b" />
+            </TextView>
 
         </RelativeLayout>
 
@@ -162,15 +139,8 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp">
-
-            <ImageView
-                android:id="@+id/cardview_image3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="18dp"
-               />
+            android:padding="16dp"
+            android:layout_gravity="center">
 
             <TextView
                 android:id="@+id/cardview_list_title3"
@@ -179,17 +149,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/cardview_image3"
                 android:paddingBottom="5dp"
-                android:text="Viral Android"
-                android:textSize="24sp" />
+                android:text="la fila サ"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true">
 
-            <TextView
-                android:id="@+id/short_description3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/cardview_list_title3"
-                android:layout_toRightOf="@+id/cardview_image3"
-                android:text="Free android tutorials and examples for beginners and expert."
-                android:textColor="#8b8b8b" />
+            </TextView>
 
         </RelativeLayout>
 
