@@ -9,8 +9,7 @@
     <ImageView 
     	android:layout_height="64dp" 
     	android:id="@+id/imageView1" 
-    	android:layout_width="64dp" 
-
+    	android:layout_width="64dp"
     	android:layout_alignParentTop="true" 
     	android:layout_centerHorizontal="true">
     </ImageView>
