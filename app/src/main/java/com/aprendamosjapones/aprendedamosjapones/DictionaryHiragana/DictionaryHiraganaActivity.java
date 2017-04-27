@@ -81,6 +81,7 @@ public class DictionaryHiraganaActivity extends Activity {
         listCountry.add("re");
         listCountry.add("ro");
         listCountry.add("wa");
+        listCountry.add("");
         listCountry.add("wo");
         listCountry.add("n");
 
@@ -131,6 +132,7 @@ public class DictionaryHiraganaActivity extends Activity {
         listFlag.add(R.drawable.hiragana42re);
         listFlag.add(R.drawable.hiragana43ro);
         listFlag.add(R.drawable.hiragana44wa);
+        listFlag.add(R.drawable.blanco);
         listFlag.add(R.drawable.hiragana45wo);
         listFlag.add(R.drawable.hiragana46n);
     }
