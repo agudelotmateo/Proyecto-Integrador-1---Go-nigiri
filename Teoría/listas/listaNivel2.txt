@@ -1,0 +1,6 @@
+//En esta lista se definen los títulos de las diferentes secciones que deben ir en el segundo nivel (katakana)
+//Se realiza para facilitar el desarrollo de la interfaz
+
+{¿Qué es el katakana?, Las vocales y la ン, la fila カ,
+la fila サ, la fila タ, la fila ナ, la fila ハ, la fila マ, la fila ヤ, la fila ラ, la fila ワ, la fila ガ, la fila ザ, la fila ダ, la fila バ, la fila パ, la fila キャ, la fila ギャ, la fila シャ, la fila ジャ, la fila チャ, la fila ニャ, la fila ヒャ, la fila ビャ, la fila ピャ, la fila ミャ, la fila リャ
+}
