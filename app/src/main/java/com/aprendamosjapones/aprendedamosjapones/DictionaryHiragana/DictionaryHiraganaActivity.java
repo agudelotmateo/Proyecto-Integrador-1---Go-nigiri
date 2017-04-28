@@ -73,6 +73,7 @@ public class DictionaryHiraganaActivity extends Activity {
         listNameHiragana5.add("ni");
         listNameHiragana5.add("nu");
         listNameHiragana5.add("ne");
+        listNameHiragana5.add("no");
         listNameHiragana5.add("ha");
         listNameHiragana5.add("hi");
         listNameHiragana5.add("fu");
@@ -84,7 +85,9 @@ public class DictionaryHiraganaActivity extends Activity {
         listNameHiragana5.add("me");
         listNameHiragana5.add("mo");
         listNameHiragana5.add("ya");
+        listNameHiragana5.add("");
         listNameHiragana5.add("yu");
+        listNameHiragana5.add("");
         listNameHiragana5.add("yo");
         listNameHiragana5.add("ra");
         listNameHiragana5.add("ri");
@@ -93,6 +96,8 @@ public class DictionaryHiraganaActivity extends Activity {
         listNameHiragana5.add("re");
         listNameHiragana5.add("ro");
         listNameHiragana5.add("wa");
+        listNameHiragana5.add("");
+        listNameHiragana5.add("");
         listNameHiragana5.add("");
         listNameHiragana5.add("wo");
         listNameHiragana5.add("n");
@@ -136,7 +141,9 @@ public class DictionaryHiraganaActivity extends Activity {
         listImagesHiragana5.add(R.drawable.hiragana34me);
         listImagesHiragana5.add(R.drawable.hiragana35mo);
         listImagesHiragana5.add(R.drawable.hiragana36ya);
+        listImagesHiragana5.add(R.drawable.blanco);
         listImagesHiragana5.add(R.drawable.hiragana37yu);
+        listImagesHiragana5.add(R.drawable.blanco);
         listImagesHiragana5.add(R.drawable.hiragana38yo);
         listImagesHiragana5.add(R.drawable.hiragana39ra);
         listImagesHiragana5.add(R.drawable.hiragana40ri);
@@ -144,6 +151,8 @@ public class DictionaryHiraganaActivity extends Activity {
         listImagesHiragana5.add(R.drawable.hiragana42re);
         listImagesHiragana5.add(R.drawable.hiragana43ro);
         listImagesHiragana5.add(R.drawable.hiragana44wa);
+        listImagesHiragana5.add(R.drawable.blanco);
+        listImagesHiragana5.add(R.drawable.blanco);
         listImagesHiragana5.add(R.drawable.blanco);
         listImagesHiragana5.add(R.drawable.hiragana45wo);
         listImagesHiragana5.add(R.drawable.hiragana46n);
