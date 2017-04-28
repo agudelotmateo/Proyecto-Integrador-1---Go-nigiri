@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
+import android.util.Log;
+import android.util.Pair;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
@@ -14,6 +16,7 @@ import android.widget.GridLayout;
 
 import com.aprendamosjapones.aprendedamosjapones.R;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -48,15 +51,17 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
 
         int total = rows * columns;
         int totalCards = total / 2;
-        String[] kanas = Kana.getRandomKanas(totalCards);
+        ArrayList<Pair<String, String> > kanas = Kana.getRandomKanas(totalCards);
         String[][] matrix = new String[rows][columns];
 
         int inv;
+        String name;
         for (int i = 0; i < totalCards; ++i) {
-            matrix[i / columns][i % columns] = alphabet + "_" + kanas[i];
+            name = kanas.get(i).second;
+            matrix[i / columns][i % columns] = alphabet + kanas.get(i).first + name;
 
             inv = total - i - 1;
-            matrix[inv / columns][inv % columns] = "match_" + kanas[i];
+            matrix[inv / columns][inv % columns] = "match_" + name;
         }
 
         shuffleMatrix(matrix);
