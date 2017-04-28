@@ -153,7 +153,16 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
 
         for (int r = 0; r < rows; ++r)
             for (int c = 0; c < columns; ++c) {
-                romaji = matrix[r][c].substring(matrix[r][c].charAt(0) == 'm' ? 6 : 9);
+                if (matrix[r][c].charAt(0) == 'm') {
+                    romaji = matrix[r][c].substring(6);
+                }
+                else {
+                    int i;
+                    for (i = 9; i < matrix[r][c].length(); ++i)
+                        if (matrix[r][c].charAt(i) < '0' || matrix[r][c].charAt(i) > '9')
+                            break;
+                    romaji = matrix[r][c].substring(i);
+                }
                 imageID = getResources().getIdentifier(matrix[r][c], "drawable", getPackageName());
                 MemoryButton button = new MemoryButton(this, r, c, width, height, imageID, romaji);
                 button.setId(generateViewId());
