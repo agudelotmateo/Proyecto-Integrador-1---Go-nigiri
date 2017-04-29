@@ -1,713 +1,732 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context="com.aprendamosjapones.aprendedamosjapones.KatakanaLevel.MenuLevelKatakana">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/logoMain"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/onigiri_verde">
-        </ImageView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Aprendiendo katakana"
-            android:textSize="27sp"
-            android:textColor="#88af57"
-            android:textStyle="bold"
-            android:paddingTop="5dp"
-            android:paddingBottom="10dp">
-        </TextView>
-    </LinearLayout>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/cardview_list_title"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="¿Qué es el katakana?"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <ImageView
+                    android:id="@+id/logoMain"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/onigiri_verde">
+                </ImageView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/cardview_list_title1"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Las vocales y la n (ン)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Aprendiendo katakana"
+                    android:textSize="27sp"
+                    android:textColor="#88af57"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp">
+                </TextView>
+            </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/cardview_list_title2"
-                android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cardview_list_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="¿Qué es el katakana?"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ka (カ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:elevation="4dp"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Las vocales y la n (ン)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title3"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila sa (サ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ka (カ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title4"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ta (タ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila sa (サ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title5"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila na (ナ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ta (タ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title6"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ha (ハ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila na (ナ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title7"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example6"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ma (マ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ha (ハ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title8"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example7"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ya (ヤ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ma (マ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title9"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example8"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ra (ラ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ya (ヤ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title10"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example9"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila wa (ワ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ra (ラ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title11"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example10"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ga (ガ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila wa (ワ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title12"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example11"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila za (ザ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ga (ガ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title13"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example12"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila da (ダ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila za (ザ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title14"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example13"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ba (バ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example15"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila da (ダ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title15"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example14"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila pa (パ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ba (バ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title16"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example15"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila kya (キャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example17"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila pa (パ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title17"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example16"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila gya (ギャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example18"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila kya (キャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title18"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example17"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila sha (シャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example19"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila gya (ギャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title19"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example18"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila ja (ジャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila sha (シャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title20"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example19"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila cha (チャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila ja (ジャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title21"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example20"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila nya (ニャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example22"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila cha (チャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title22"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example21"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila hya (ヒャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example23"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila nya (ニャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title23"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example22"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila bya (ビャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example24"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila hya (ヒャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title24"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example23"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila pya (ピャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila bya (ビャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title25"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example24"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila mya (ミャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/android_card_view_example26"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="16dp">
+                    <TextView
+                        android:id="@+id/cardview_list_title24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila pya (ピャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/cardview_list_title26"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example25"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingBottom="5dp"
-                android:text="Fila rya (リャ)"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true">
-            </TextView>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cardview_list_title25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila mya (ミャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/android_card_view_example26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cardview_list_title26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingBottom="5dp"
+                        android:text="Fila rya (リャ)"
+                        android:textSize="24sp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
