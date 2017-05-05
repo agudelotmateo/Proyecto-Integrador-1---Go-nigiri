@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.Games;
+package com.aprendamosjapones.aprendedamosjapones.Games.memory;
 
 import android.util.Pair;
 
@@ -120,6 +120,8 @@ class Kana {
             "ryu",
             "ryo"
     };
+
+    private Kana() {}
 
     /**
      * Generates a list of n unique kanas.
