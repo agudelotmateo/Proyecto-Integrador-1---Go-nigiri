@@ -14,27 +14,27 @@ import java.util.ArrayList;
 
 public class DictionaryKatakanaAdapter extends BaseAdapter
 {
-	private ArrayList<String> listCountry;
-	private ArrayList<Integer> listFlag;
+	private ArrayList<String> listNameKanji;
+	private ArrayList<Integer> listImageKanji;
 	private Activity activity;
 	
-	public DictionaryKatakanaAdapter(Activity activity, ArrayList<String> listCountry, ArrayList<Integer> listFlag) {
+	public DictionaryKatakanaAdapter(Activity activity, ArrayList<String> listNameKanji, ArrayList<Integer> listImageKanji) {
 		super();
-		this.listCountry = listCountry;
-		this.listFlag = listFlag;
+		this.listNameKanji = listNameKanji;
+		this.listImageKanji = listImageKanji;
 		this.activity = activity;
 	}
 	
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return listCountry.size();
+		return listNameKanji.size();
 	}
 
 	@Override
 	public String getItem(int position) {
 		// TODO Auto-generated method stub
-		return listCountry.get(position);
+		return listNameKanji.get(position);
 	}
 
 	@Override
@@ -70,8 +70,8 @@ public class DictionaryKatakanaAdapter extends BaseAdapter
 			view = (ViewHolder) convertView.getTag();
 		}
 		
-		view.txtViewTitle.setText(listCountry.get(position));
-		view.imgViewFlag.setImageResource(listFlag.get(position));
+		view.txtViewTitle.setText(listNameKanji.get(position));
+		view.imgViewFlag.setImageResource(listImageKanji.get(position));
 		
 		return convertView;
 	}

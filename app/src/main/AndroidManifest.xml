@@ -26,10 +26,40 @@
         <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
         <activity android:name=".KanjiLevel.MenuLevelKanji"></activity>
         <activity android:name=".KatakanaLevel.MenuLevelKatakana"></activity>
-        <activity android:name=".HiraganaLevel.MenuLevelHiragana"></activity>
+        <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
+        <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
+        <activity android:name=".KanjiLevels.KanjiLevelsActivity"></activity>
+        <activity
+            android:name=".HiraganaLevels.HiraganaDetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".HiraganaLevels.HiraganaLevelsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaDetailActivity">
+            </meta-data>
+        </activity>
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity" />
+            android:value=".LoginActivity">
+        </meta-data>
+        <activity
+            android:name=".KatakanaLevels.KatakanaDetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".KatakanaLevels.KatakanaLevelsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity">
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".KanjiLevels.KanjiDetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".KanjiLevels.KanjiLevelsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiDetailActivity" >
+            </meta-data>
+        </activity>
     </application>
-
 </manifest>

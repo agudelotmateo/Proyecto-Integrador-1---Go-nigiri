@@ -14,27 +14,27 @@ import java.util.ArrayList;
 
 public class DictionaryHiraganaAdapter extends BaseAdapter
 {
-	private ArrayList<String> listCountry;
-	private ArrayList<Integer> listFlag;
+	private ArrayList<String> listNameHiragana;
+	private ArrayList<Integer> listImagesHiragana;
 	private Activity activity;
 	
-	public DictionaryHiraganaAdapter(Activity activity, ArrayList<String> listCountry, ArrayList<Integer> listFlag) {
+	public DictionaryHiraganaAdapter(Activity activity, ArrayList<String> listNameHiragana, ArrayList<Integer> listImagesHiragana) {
 		super();
-		this.listCountry = listCountry;
-		this.listFlag = listFlag;
+		this.listNameHiragana = listNameHiragana;
+		this.listImagesHiragana = listImagesHiragana;
 		this.activity = activity;
 	}
 	
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return listCountry.size();
+		return listNameHiragana.size();
 	}
 
 	@Override
 	public String getItem(int position) {
 		// TODO Auto-generated method stub
-		return listCountry.get(position);
+		return listNameHiragana.get(position);
 	}
 
 	@Override
@@ -45,8 +45,8 @@ public class DictionaryHiraganaAdapter extends BaseAdapter
 
 	public static class ViewHolder
 	{
-		public ImageView imgViewFlag;
-		public TextView txtViewTitle;
+		public ImageView imgView;
+		public TextView txtView;
 	}
 	
 	@Override
@@ -60,8 +60,8 @@ public class DictionaryHiraganaAdapter extends BaseAdapter
 			view = new ViewHolder();
 			convertView = inflator.inflate(R.layout.dictionary_hiragana_row, null);
 			
-			view.txtViewTitle = (TextView) convertView.findViewById(R.id.textView1);
-			view.imgViewFlag = (ImageView) convertView.findViewById(R.id.imageView1);
+			view.txtView = (TextView) convertView.findViewById(R.id.textView1);
+			view.imgView = (ImageView) convertView.findViewById(R.id.imageView1);
 			
 			convertView.setTag(view);
 		}
@@ -70,8 +70,8 @@ public class DictionaryHiraganaAdapter extends BaseAdapter
 			view = (ViewHolder) convertView.getTag();
 		}
 		
-		view.txtViewTitle.setText(listCountry.get(position));
-		view.imgViewFlag.setImageResource(listFlag.get(position));
+		view.txtView.setText(listNameHiragana.get(position));
+		view.imgView.setImageResource(listImagesHiragana.get(position));
 		
 		return convertView;
 	}

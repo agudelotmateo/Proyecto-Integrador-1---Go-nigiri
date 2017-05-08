@@ -1,9 +1,9 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin1">16dp</dimen>
     <dimen name="editTextSize_login">22sp</dimen>
     <dimen name="padding_horizontal_login">32dp</dimen>
     <dimen name="editTextSize_DontHaveAccount">16sp</dimen>
-    <dimen name="activity_horizontal_margin">22sp</dimen>
+    <dimen name="activity_horizontal_margin1">22sp</dimen>
     <dimen name="activity_create_account_margin">10sp</dimen>
     <dimen name="height_cardview">150dp</dimen>
     <dimen name="cornerradius_cardview">10dp</dimen>
@@ -12,5 +12,15 @@
     <dimen name="cardview_textsize">25sp</dimen>
     <dimen name="cardview_textsize_Information">15sp</dimen>
     <dimen name="bottombar_height">55dp</dimen>
+    <dimen name="activity_vertical_margin1">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="size_fab">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="card_margin">16dp</dimen>
+
+
 </resources>

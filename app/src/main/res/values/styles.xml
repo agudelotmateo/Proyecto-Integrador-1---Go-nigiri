@@ -36,6 +36,11 @@
     <item name="colorControlNormal">@color/editTextColorBlack</item>
     <item name="colorControlActivated">@color/editTextColorBlack</item>
 
-</style>
+    </style>
+
+    <style name="CursosPoint" parent="CursosPoint.Base"/>
+    <style name="CursosPoint.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
 
 </resources>

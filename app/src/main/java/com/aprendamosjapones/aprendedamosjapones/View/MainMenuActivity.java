@@ -10,9 +10,11 @@ import com.aprendamosjapones.aprendedamosjapones.DictionaryHiragana.DictionaryHi
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKanji.DictionaryKanjiActivity;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionaryKatakanaActivity;
 import com.aprendamosjapones.aprendedamosjapones.Games.MenuMemoryActivity;
-import com.aprendamosjapones.aprendedamosjapones.HiraganaLevel.MenuLevelHiragana;
+import com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KanjiLevel.MenuLevelKanji;
+import com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KatakanaLevel.MenuLevelKatakana;
+import com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.R;
 
 /**
@@ -58,7 +60,7 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityHiraganaLevel = new Intent(MainMenuActivity.this, MenuLevelHiragana.class);
+                Intent goActivityHiraganaLevel = new Intent(MainMenuActivity.this, HiraganaLevelsActivity.class);
                 startActivity(goActivityHiraganaLevel);
             }
         });
@@ -67,8 +69,8 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent getGoActivityLevelKatakana = new Intent(MainMenuActivity.this, MenuLevelKatakana.class);
-                startActivity(getGoActivityLevelKatakana);
+                Intent goActivityLevelKatakana = new Intent(MainMenuActivity.this, KatakanaLevelsActivity.class);
+                startActivity(goActivityLevelKatakana);
             }
         });
 
@@ -76,7 +78,7 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityLevelKanji = new Intent(MainMenuActivity.this, MenuLevelKanji.class);
+                Intent goActivityLevelKanji = new Intent(MainMenuActivity.this, KanjiLevelsActivity.class);
                 startActivity(goActivityLevelKanji);
             }
         });
