@@ -8,7 +8,9 @@
     android:minHeight="?android:attr/listPreferredItemHeight"
     card_view:cardCornerRadius="4dp"
     card_view:cardElevation="4dp"
-    card_view:cardUseCompatPadding="true">
+    card_view:cardUseCompatPadding="true"
+    card_view:cardBackgroundColor="#c9edc0">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,9 +25,14 @@
             android:layout_toRightOf="@+id/image"
             android:text="Nombre"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@android:color/black"
+            android:textColor="#00796B"
+            android:textStyle="bold"
             android:textSize="17sp"
             android:layout_marginTop="45dp"/>
+        <!--android:textColor="@android:color/black"
+
+        card_view:cardBackgroundColor="#ffddd3"
+        android:textColor="#c14945"-->
 
         <ImageView
             android:id="@+id/image"
