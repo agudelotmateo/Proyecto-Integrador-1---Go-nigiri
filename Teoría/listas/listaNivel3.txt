@@ -1,0 +1,4 @@
+Qué es el kanji
+Qué es el onyomi, el kunyomi y el okurigana
+
+//falta definir secciones para enseñanza de los kanji en específico
