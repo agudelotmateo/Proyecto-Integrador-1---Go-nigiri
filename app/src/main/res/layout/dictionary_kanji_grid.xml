@@ -29,7 +29,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:text="Kanji"
-			android:textSize="25dp"
+			android:textSize="25sp"
 			android:textColor="#88af57"
 			android:textStyle="bold"
 			android:paddingTop="5dp">

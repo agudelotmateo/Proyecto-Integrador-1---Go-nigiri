@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="317dp"
+        android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -20,16 +21,17 @@
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin">
 
-
             <TextView
                 android:id="@+id/detail_tittle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_gravity="center"
-                android:paddingBottom="20dp"/>
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/detail_description"
@@ -37,7 +39,9 @@
                 android:layout_height="wrap_content"
                 android:text="Descripción"
                 android:layout_gravity="center"
-                android:textSize="15dp"/>
+                android:gravity="center_horizontal"
+                android:textSize="17sp" />
+
 
         </LinearLayout>
 
@@ -48,7 +52,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="180dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:paddingBottom="20dp">
 
@@ -64,8 +68,9 @@
             android:id="@+id/detail_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:transitionName="shared_image" />
-
+            android:transitionName="shared_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
 
     </android.support.design.widget.AppBarLayout>
 
