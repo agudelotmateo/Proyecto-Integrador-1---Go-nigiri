@@ -1,0 +1,11 @@
+Como te podrás imaginar el concéntrese es un juego de concentración, debes estar atento y recordar dónde está cada carta para poder ser eficáz.
+
+Tú comienzas con un grupo de cartas boca abajo de modo que no sabes que hay detrás de ellas, pero tu las puedes voltear, sólo tienes que presionar sobre la carta que quieras. Tú puedes voltear dos cartas al mismo tiempo, sí éstas dos son pareja permanecerán boca arriba hasta finalizar la partida, pero si no lo son se voltearán automáticamente después de un corto periodo de tiempo.
+
+Una pareja son dos cartas que están relacionadas, por ejemplo: un kanji y su significado, un katakana y su pronunciación, y otras más.
+
+El objetivo es encontrar todas las parejas, cuando lo hagas habrás ganado.
+
+Recuerda que tú puedes escoger si quieres jugar con hiraganas, katakanas o kanjis. También puedes escoger el número de parejas, dentro de unas opciones que te damos nosotros.
+
+¡Estás listo para jugar!
