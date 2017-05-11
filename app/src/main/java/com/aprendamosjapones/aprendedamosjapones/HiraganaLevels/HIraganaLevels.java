@@ -22,7 +22,7 @@ public class HIraganaLevels {
                             " más allá de esto no lo vamos a utilizar. Aprender japonés con sólo rōmaji no es" +
                             " recomendable, aunque se puede encontrar en el idioma no es el sistema de escritura " +
                             "más utilizado, por lo que es importante adaptarse a los alfabetos propios" +
-                            " de la lengua.\n", "","","", R.drawable.romaji),
+                            " de la lengua.\n", "Silaba","pronunciacion","ejemplo", R.drawable.romaji),
             new HiraganaLevel("¿Qué es el hiragana?",
                     "El hiragana es uno de los sistemas oficiales de escritura del japonés. Es como el alfabeto " +
                             "para nosotros en el sentido de que nos define la fonética o sonidos del lenguaje, " +

@@ -44,7 +44,7 @@ class LevelKanjiAdapter extends RecyclerView.Adapter<LevelKanjiAdapter.CourseVie
         // Item procesado actualmente
         KanjiLevel currentItem = items.get(i);
 
-        viewHolder.name.setText(currentItem.getName());
+        viewHolder.name.setText(currentItem.getTitle());
 
         // Cargar imagen
         Glide.with(context)

@@ -1,52 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Games.MenuMemoryActivity">
+    tools:context=".Games.MenuMemoryActivity"
+    android:background="@color/editTextColorWhite">
 
-    <TextView
-        android:id="@+id/text_hiragana"
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:text="@string/hiragana" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary" />
 
-    <Button
-        android:id="@+id/button_hiragana_1"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_1" />
+        android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/button_hiragana_2"
-        android:layout_width="300dp"
+        <ImageView
+            android:id="@+id/logoMain"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/onigiri_morado"
+            android:layout_marginTop="10dp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_2" />
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Instrucciones"
+            android:textSize="25sp"
+            android:textColor="@color/editTextColorPurple"
+            android:textStyle="bold"
+            android:paddingTop="5dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_hiragana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:text="@string/hiragana" />
+
+        <Button
+            android:id="@+id/button_hiragana_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_1" />
+
+        <Button
+            android:id="@+id/button_hiragana_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_2" />
 
 
-    <TextView
-        android:id="@+id/text_katakana"
+        <TextView
+            android:id="@+id/text_katakana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:text="@string/katakana" />
+
+        <Button
+            android:id="@+id/button_katakana_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_1" />
+
+        <Button
+            android:id="@+id/button_katakana_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_2" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:text="@string/katakana" />
+        android:gravity="center"
+        android:layout_marginTop="30dp">
 
-    <Button
-        android:id="@+id/button_katakana_1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_1" />
+        <Button
+            android:id="@+id/instructionsMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instrucciones" />
 
-    <Button
-        android:id="@+id/button_katakana_2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_2" />
+    </LinearLayout>
 
 </LinearLayout>

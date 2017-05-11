@@ -20,15 +20,13 @@
         <activity android:name=".View.MainMenuActivity"></activity>
         <activity android:name=".Games.MenuMemoryActivity"></activity>
         <activity android:name=".Games.MemoryActivity"></activity>
-        <activity android:name=".View.MenuKanjiActivity"></activity>
         <activity android:name=".DictionaryKanji.DictionaryKanjiActivity"></activity>
         <activity android:name=".DictionaryHiragana.DictionaryHiraganaActivity"></activity>
         <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
-        <activity android:name=".KanjiLevel.MenuLevelKanji"></activity>
-        <activity android:name=".KatakanaLevel.MenuLevelKatakana"></activity>
         <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
         <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
         <activity android:name=".KanjiLevels.KanjiLevelsActivity"></activity>
+        <activity android:name=".View.IntructionMemoryGame"></activity>
         <activity
             android:name=".HiraganaLevels.HiraganaDetailActivity"
             android:label="@string/title_activity_detail"

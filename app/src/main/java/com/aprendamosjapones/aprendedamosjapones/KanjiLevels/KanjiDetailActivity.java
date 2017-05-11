@@ -83,13 +83,19 @@ public class KanjiDetailActivity extends AppCompatActivity {
     private void setupViews(int position) {
         TextView name = (TextView) findViewById(R.id.detail_tittle);
         TextView description = (TextView) findViewById(R.id.detail_description);
+        TextView meaning = (TextView) findViewById(R.id.meaning);
+        TextView onyomi = (TextView) findViewById(R.id.onyomi);
+        TextView kunyomi = (TextView) findViewById(R.id.kunyomi);
         ImageView image = (ImageView) findViewById(R.id.detail_image);
 
         // Obtiene el curso ha detallar basado en la posición
         KanjiLevel detailLevel = KanjiLevels.getCourseByPosition(position);
 
-        name.setText(detailLevel.getName());
+        name.setText(detailLevel.getTitle());
         description.setText(detailLevel.getDescription());
+        meaning.setText(detailLevel.getMeaning());
+        onyomi.setText(detailLevel.getOnjomi());
+        kunyomi.setText(detailLevel.getKunjomi());
         Glide.with(this).load(detailLevel.getIdImage()).into(image);
     }
 

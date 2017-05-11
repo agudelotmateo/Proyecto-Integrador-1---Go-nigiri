@@ -12,7 +12,6 @@ import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionaryKa
 import com.aprendamosjapones.aprendedamosjapones.Games.MenuMemoryActivity;
 import com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiLevelsActivity;
-import com.aprendamosjapones.aprendedamosjapones.KatakanaLevel.MenuLevelKatakana;
 import com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.R;
 

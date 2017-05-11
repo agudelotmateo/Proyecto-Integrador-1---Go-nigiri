@@ -3,6 +3,8 @@
     <color name="colorPrimary">#009688</color>
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#607D8B</color>
-    <color name="editTextColorWhite">#FFFFFF</color>
+    <color name="editTextColorWhite">#ffffff</color>
     <color name="editTextColorBlack">#000000</color>
+    <color name="editTextColorOrange">#f27c68</color>
+    <color name="editTextColorPurple">#ac6ccc</color>
 </resources>

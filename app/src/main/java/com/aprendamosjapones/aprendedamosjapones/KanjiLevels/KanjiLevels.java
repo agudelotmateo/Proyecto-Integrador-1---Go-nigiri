@@ -23,7 +23,8 @@ public class KanjiLevels {
                             " los más básicos y los que necesitas conocer para presentar" +
                             " el nivel 5 del examen de certificación de japonés: JLPT. Ten" +
                             " en cuenta que son 5 niveles, donde el quinto es el más básico" +
-                            " de todos.", R.drawable.kanji),
+                            " de todos.", "", "", "", R.drawable.kanji),
+            new KanjiLevel("Teoria", "", "Significado(s): Día, Sol", "Onyomi: ニチ, ニジツ", "Kunyomi: ひ, び", R.drawable.kanji1dia)
     };
 
     public static List<KanjiLevel> getCourses() {
