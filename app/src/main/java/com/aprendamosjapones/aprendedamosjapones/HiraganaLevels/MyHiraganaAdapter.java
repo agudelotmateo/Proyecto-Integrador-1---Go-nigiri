@@ -44,7 +44,7 @@ class LevelHiraganaAdapter extends RecyclerView.Adapter<LevelHiraganaAdapter.Cou
         // Item procesado actualmente
         HiraganaLevel currentItem = items.get(i);
 
-        viewHolder.name.setText(currentItem.getName());
+        viewHolder.name.setText(currentItem.getTitle());
 
         // Cargar imagen
         Glide.with(context)
