@@ -1,4 +1,24 @@
+//Lista de los títulos de las diferentes secciones del nivel 3 correspondiente a la enseñanza del kanji
+// lo que está en llaves se omite, es una referencia a los kanjis enseñados en dicha sección
+
 Qué es el kanji
 Qué es el onyomi, el kunyomi y el okurigana
 
-//falta definir secciones para enseñanza de los kanji en específico
+Los número {kanji2uno, kanji8dos, kanji13tres, kanji25cuatro, kanji21cinco, kanji36seis, kanji41siete, kanji35ocho, kanji28nueve, kanji7diez, kanji47cien, kanji52mil, kanji67diezmil}
+
+Personas {kanji4persona, kanji33niño, kanji44mujer, kanji55hombre, kanji71mama, kanji75amigo, kanji78papá}
+
+Naturaleza {kanji42montaña, kanji51rio, kanji53agua, kanji60suelo, kanji61arbol, kanji70cielo, kanji72fuego, kanji79lluvia}
+
+Tiempo {kanji1dia, kanji5año, kanji14tiempo, kanji17mes, kanji26ahora, kanji46mediodia, kanji49antes}
+
+Acciones {kanji12salir, kanji15ir, kanji16ver, kanji29entrar, kanji30estudiar, kanji38venir, kanji48escribir, kanji62escuchar, kanji63comer, kanji74leer, kanji77descansar}
+
+Direcciones {kanji10dentro, kanji18atras, kanji19frente, kanji22entre, kanji23encima, kanji24oriente, kanji34afuera, kanji37debajo, kanji45norte, kanji56occidente, kanji66sur, kanji73derecha, kanji76izquierda}
+
+Adjetivos {kanji6grande, kanji11largo, kanji31alto, kanji40pequeño}
+
+Cosas {kanji9libro, kanji27oro, kanji32circulo, kanji39espiritu, kanji57electricidad, , kanji58colegio, kanji59palabra, kanji64carro}
+
+Otros {kanji3pais, kanji20vida, kanji43charla, kanji50nombre, kanji54mitad, kanji65que, kanji68cada, kanji69blanco}
+
