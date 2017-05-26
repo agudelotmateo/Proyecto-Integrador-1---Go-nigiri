@@ -25,6 +25,13 @@ public class MenuMemoryActivity extends AppCompatActivity {
 
     Button goInstructions;
 
+    /*
+    10 -> 4x5
+    15 -> 5x6
+    20 -> 5x8
+    25 -> 5x10
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

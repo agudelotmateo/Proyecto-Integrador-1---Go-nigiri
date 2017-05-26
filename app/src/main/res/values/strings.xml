@@ -3,9 +3,9 @@
     <string name="title_activity_reference">ReferenceActivity</string>
     <string name="hint_username">Nombre de usuario</string>
     <string name="hint_password">Contraseña</string>
-    <string name="hint_login">Inicia sesion</string>
+    <string name="hint_login">Iniciar sesion</string>
     <string name="DontHaveAccount">¿No tienes cuenta?,</string>
-    <string name="CreateAnAccountHere">Crea una aqui.</string>
+    <string name="CreateAnAccountHere">Crea una aquí.</string>
     <string name="userEmailRegistry">Correo:</string>
     <string name="userNameRegistry">Nombre:</string>
     <string name="userNicknameRegistry">Usuario:</string>
@@ -13,7 +13,7 @@
     <string name="userConfirmPasswordRegistry">Confirmar contraseña:</string>
     <string name="userRegistryAccept">Registrarse</string>
     <string name="toolbar_tittle_create_acount">Crear cuenta</string>
-    <string name="cardview_level1">NIvel 1</string>
+    <string name="cardview_level1">Nivel 1</string>
     <string name="tab_dictionary">Diccionarios</string>
     <string name="tab_userhome">Menu</string>
     <string name="tab_userprofile">Perfil</string>
@@ -23,17 +23,17 @@
     <string name="katakana">Katakana</string>
     <string name="button_1">5x4</string>
     <string name="button_2">8x7</string>
-    <string name="instructions_memory">Como te podrás imaginar el concéntrese es un juego de concentración,
-        debes estar atento y recordar dónde está cada carta para poder ser eficáz. \n\n
-        Tú comienzas con un grupo de cartas boca abajo de modo que no sabes que hay detrás de ellas,
-        pero tu las puedes voltear, sólo tienes que presionar sobre la carta que quieras. Tú puedes
-        voltear dos cartas al mismo tiempo, sí éstas dos son pareja permanecerán boca arriba hasta
+    <string name="instructions_memory">Como podrás imaginar, el concéntrese es un juego de concentración;
+        debes estar atento y recordar dónde está cada carta para poder ser eficaz. \n\n
+        Comienzas con un grupo de cartas boca abajo de modo que no sabes que hay detrás de ellas,
+        pero las puedes voltear; para esto solo tienes que presionar sobre la carta que quieras. Puedes
+        voltear dos cartas al mismo tiempo, y sí éstas dos son pareja permanecerán boca arriba hasta
         finalizar la partida, pero si no lo son se voltearán automáticamente después de un corto periodo de tiempo.
         Una pareja son dos cartas que están relacionadas, por ejemplo: un kanji y su significado,
         un katakana y su pronunciación, y otras más.\n\n
-        El objetivo es encontrar todas las parejas, cuando lo hagas habrás ganado.\n\n
-        Recuerda que tú puedes escoger si quieres jugar con hiraganas, katakanas o kanjis.
-        También puedes escoger el número de parejas, dentro de unas opciones que te damos nosotros.\n\n
+        El objetivo es encontrar todas las parejas; cuando lo hagas habrás ganado.\n\n
+        Recuerda que puedes escoger si quieres jugar con hiraganas, katakanas o kanjis.
+        También puedes escoger el número de parejas.\n\n
         ¡Estás listo para jugar!
 </string>
 

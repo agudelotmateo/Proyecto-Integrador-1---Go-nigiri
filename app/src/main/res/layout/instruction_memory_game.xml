@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Instruncciones"
+            android:text="Instrucciones"
             android:textSize="25sp"
             android:textColor="@color/editTextColorOrange"
             android:textStyle="bold"

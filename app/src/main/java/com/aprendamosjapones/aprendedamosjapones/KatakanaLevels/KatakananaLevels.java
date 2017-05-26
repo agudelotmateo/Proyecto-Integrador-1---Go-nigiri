@@ -15,9 +15,9 @@ public class KatakananaLevels {
                             " este silabario se usa para escribir palabras de origen extranjero a Japón y" +
                             " para escribir onomatopeyas. De hecho, notarás que algunas palabras en japonés" +
                             " suenan muy similar o igual a como suenan en otro idioma, por ejemplo “pan” en" +
-                            " español se escribe “pan” en rômaji, y como sabes se pronuncia igual. Esto se" +
-                            " debe a que las palabras que se toman de otro idioma se ajustan ligeramente para " +
-                            "que suenen prácticamente igual pero usando los símbolos del katakana.\n", R.drawable.katakana),
+                            " español se escribe “pan” en rōmaji, y se pronuncia igual. Esto se" +
+                            " debe a que las palabras que se toman de otro idioma se ajustan ligeramente para" +
+                            " que suenen prácticamente igual pero usando los símbolos del katakana.\n", R.drawable.katakana),
     };
 
     public static List<KatakanaLevel> getCourses() {
