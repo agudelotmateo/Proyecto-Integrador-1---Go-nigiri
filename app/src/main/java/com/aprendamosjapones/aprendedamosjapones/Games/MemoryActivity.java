@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.Pair;
 import android.view.Display;
 import android.view.View;
@@ -45,8 +44,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int width = Math.min(260, (displayMetrics.widthPixels - 100) / columns);
-        int height = Math.min(120, (displayMetrics.heightPixels - 100 -
+        int width = Math.min(260, (displayMetrics.widthPixels) / columns);
+        int height = Math.min(120, (displayMetrics.heightPixels -
                 getNavigationBarHeight(this)) / rows);
 
         int total = rows * columns;

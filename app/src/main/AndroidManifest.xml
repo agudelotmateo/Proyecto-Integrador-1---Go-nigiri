@@ -19,7 +19,11 @@
         <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
         <activity android:name=".View.MainMenuActivity"></activity>
         <activity android:name=".Games.MenuMemoryActivity"></activity>
-        <activity android:name=".Games.MemoryActivity"></activity>
+        <activity
+            android:name=".Games.MemoryActivity"
+            android:screenOrientation="userLandscape"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            </activity>
         <activity android:name=".DictionaryKanji.DictionaryKanjiActivity"></activity>
         <activity android:name=".DictionaryHiragana.DictionaryHiraganaActivity"></activity>
         <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
