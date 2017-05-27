@@ -25,7 +25,7 @@
             android:name=".Games.memory.MemoryActivity"
             android:screenOrientation="userLandscape"
             android:configChanges="orientation|keyboardHidden|screenSize">
-            </activity>
+        </activity>
         <activity android:name=".DictionaryKanji.DictionaryKanjiActivity"></activity>
         <activity android:name=".DictionaryHiragana.DictionaryHiraganaActivity"></activity>
         <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
