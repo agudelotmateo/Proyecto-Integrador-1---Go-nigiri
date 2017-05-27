@@ -29,6 +29,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
     private static final AtomicInteger sNextGeneratedId = new AtomicInteger(1);
     private MemoryButton firstButton, secondButton;
     private boolean busy;
+    private long time;
 
     public static int rows, columns;
     public static String alphabet;
@@ -48,6 +49,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         int height = Math.min(120, (displayMetrics.heightPixels -
                 getNavigationBarHeight(this)) / rows);
         busy = false;
+        time = System.currentTimeMillis();
 
         String[][] matrix = Kana.getRandom(rows, columns, alphabet,
                                            alphabet.equals("kanji") ? "sigkanji" : "match_");
@@ -106,10 +108,34 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                 .setPositiveButton("Sí, salir", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        finish();
+                        showTimeSpent();
                     }
                 })
                 .setNegativeButton("No, quedarse", null)
+                .show();
+    }
+
+    private void showTimeSpent() {
+        time = System.currentTimeMillis()-time;
+        long second = (time / 1000) % 60;
+        long minute = (time / (1000 * 60)) % 60;
+        long hour = (time / (1000 * 60 * 60)) % 24;
+        String formattedTime;
+        if (minute == 0)
+            formattedTime = String.format("%ds", second);
+        else if (hour == 0)
+            formattedTime = String.format("%02d:%02d", minute, second);
+        else
+            formattedTime = String.format("%02d:%02d:%02d", hour, minute, second);
+        new AlertDialog.Builder(this)
+                .setTitle("Tiempo")
+                .setMessage(formattedTime)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                })
                 .show();
     }
 
