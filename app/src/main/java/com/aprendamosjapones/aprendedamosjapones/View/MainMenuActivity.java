@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryHiragana.DictionaryHiraganaActivity;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKanji.DictionaryKanjiActivity;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionaryKatakanaActivity;
-import com.aprendamosjapones.aprendedamosjapones.Games.MenuMemoryActivity;
+import com.aprendamosjapones.aprendedamosjapones.Games.memory.MenuMemoryActivity;
 import com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity;

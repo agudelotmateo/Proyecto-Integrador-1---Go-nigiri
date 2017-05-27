@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.Games;
+package com.aprendamosjapones.aprendedamosjapones.Games.memory;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,10 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 
-import com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.R;
 import com.aprendamosjapones.aprendedamosjapones.View.IntructionMemoryGame;
-import com.aprendamosjapones.aprendedamosjapones.View.MainMenuActivity;
 
 // Al terminar el juego, vuelva al menu de inicio.
 // Pendiente: rotar reinicia el juego

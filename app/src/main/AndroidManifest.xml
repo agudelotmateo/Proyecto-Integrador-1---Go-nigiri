@@ -20,9 +20,9 @@
         </activity>
         <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
         <activity android:name=".View.MainMenuActivity"></activity>
-        <activity android:name=".Games.MenuMemoryActivity"></activity>
+        <activity android:name=".Games.memory.MenuMemoryActivity"></activity>
         <activity
-            android:name=".Games.MemoryActivity"
+            android:name=".Games.memory.MemoryActivity"
             android:screenOrientation="userLandscape"
             android:configChanges="orientation|keyboardHidden|screenSize">
             </activity>

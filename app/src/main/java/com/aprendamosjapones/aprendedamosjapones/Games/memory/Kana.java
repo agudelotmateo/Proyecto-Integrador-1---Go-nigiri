@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.Games;
+package com.aprendamosjapones.aprendedamosjapones.Games.memory;
 
 import android.util.Pair;
 

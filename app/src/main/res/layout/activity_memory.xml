@@ -6,6 +6,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    tools:context=".Games.MemoryActivity">
+    tools:context=".Games.memory.MemoryActivity">
 
 </GridLayout>
