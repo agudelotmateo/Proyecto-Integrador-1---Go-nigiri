@@ -42,6 +42,7 @@ public class MemoryButton extends AppCompatImageButton {
         tempParams.height = height;
         setLayoutParams(tempParams);
 
+        setBackgroundColor(Color.WHITE);
         setImageDrawable(back);
     }
 

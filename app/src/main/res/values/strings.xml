@@ -19,10 +19,6 @@
     <string name="tab_userprofile">Perfil</string>
     <string name="title_activity_details">Detalles</string>
     <string name="imageDesc">Tamaño Original</string>
-    <string name="hiragana">Hiragana</string>
-    <string name="katakana">Katakana</string>
-    <string name="button_1">5x4</string>
-    <string name="button_2">8x7</string>
     <string name="instructions_memory">Como podrás imaginar, el concéntrese es un juego de concentración;
         debes estar atento y recordar dónde está cada carta para poder ser eficaz. \n\n
         Comienzas con un grupo de cartas boca abajo de modo que no sabes que hay detrás de ellas,

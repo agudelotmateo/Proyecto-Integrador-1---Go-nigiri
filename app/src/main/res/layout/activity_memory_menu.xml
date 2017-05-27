@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Games.MenuMemoryActivity"
-    android:background="@color/editTextColorWhite">
+    android:background="@color/editTextColorWhite"
+    android:weightSum="1">
 
     <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -31,83 +32,135 @@
         </ImageView>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingBottom="20dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Instrucciones"
-            android:textSize="25sp"
-            android:textColor="@color/editTextColorPurple"
-            android:textStyle="bold"
-            android:paddingTop="5dp">
-        </TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/text_hiragana"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center_horizontal"
-            android:text="@string/hiragana" />
-
-        <Button
-            android:id="@+id/button_hiragana_1"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/button_1" />
-
-        <Button
-            android:id="@+id/button_hiragana_2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/button_2" />
-
-
-        <TextView
-            android:id="@+id/text_katakana"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center_horizontal"
-            android:text="@string/katakana" />
-
-        <Button
-            android:id="@+id/button_katakana_1"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/button_1" />
-
-        <Button
-            android:id="@+id/button_katakana_2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/button_2" />
-    </LinearLayout>
+        android:paddingTop="5dp"
+        android:text="Concéntrese"
+        android:textColor="@color/editTextColorPurple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:gravity="center">
 
-        <Button
-            android:id="@+id/instructionsMemory"
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/instructionsMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrucciones"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.57"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Nivel:"
+            android:layout_weight="0.34" />
+
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Instrucciones" />
+            android:orientation="horizontal"
+            android:layout_weight="0.29"
+            android:layout_gravity="center"
+            android:checkedButton="@+id/radioButtonHiragana">
+
+            <RadioButton
+                android:id="@+id/radioButtonHiragana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hiragana    " />
+
+            <RadioButton
+                android:id="@+id/radioButtonKatakana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Katakana    " />
+
+            <RadioButton
+                android:id="@+id/radioButtonKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kanji    " />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textParejas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:text="Número de parejas:"
+            android:layout_weight="0.28" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButton10">
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10      " />
+
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15      " />
+
+            <RadioButton
+                android:id="@+id/radioButton20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20      " />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.25"></LinearLayout>
+
+        <Button
+            android:id="@+id/buttonJugarConcentrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A Jugar!" />
 
     </LinearLayout>
 

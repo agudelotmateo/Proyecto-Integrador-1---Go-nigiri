@@ -12,7 +12,6 @@ import java.util.Random;
  * @author Mateo Agudelo Toro
  */
 class Kana {
-    private static final int size = 104;
 
     private static final String[] kanas = {
             "a",
@@ -121,27 +120,118 @@ class Kana {
             "ryo"
     };
 
-    /**
-     * Generates a list of n unique kanas.
-     * Worst time complexity: O(infinity) :)
-     *
-     * @param n amount of kanas to fetch.
-     * @return the name of n different kanas.
-     */
-    static ArrayList<Pair<String, String> > getRandomKanas(int n) {
-        Random random = new Random();
-        HashSet<Integer> exclude = new HashSet<>(n);
-        ArrayList<Pair<String, String> > ans = new ArrayList<>(n);
-        int temp;
+    private static final String[] kanjis = {
+            "dia",
+            "uno",
+            "pais",
+            "persona",
+            "ano",
+            "grande",
+            "diez",
+            "dos",
+            "libro",
+            "dentro",
+            "largo",
+            "salir",
+            "tres",
+            "tiempo",
+            "ir",
+            "ver",
+            "mes",
+            "atras",
+            "frente",
+            "vida",
+            "cinco",
+            "entre",
+            "encima",
+            "oriente",
+            "cuatro",
+            "ahora",
+            "oro",
+            "nueve",
+            "entrar",
+            "estudiar",
+            "alto",
+            "circulo",
+            "nino",
+            "afuera",
+            "ocho",
+            "seis",
+            "debajo",
+            "venir",
+            "espiritu",
+            "pequeno",
+            "siete",
+            "montana",
+            "charla",
+            "mujer",
+            "norte",
+            "mediodia",
+            "cien",
+            "escribir",
+            "antes",
+            "nombre",
+            "rio",
+            "mil",
+            "agua",
+            "mitad",
+            "hombre",
+            "occidente",
+            "electricidad",
+            "colegio",
+            "palabra",
+            "suelo",
+            "arbol",
+            "escuchar",
+            "comer",
+            "carro",
+            "que",
+            "sur",
+            "diezmil",
+            "cada",
+            "blanco",
+            "cielo",
+            "mama",
+            "fuego",
+            "derecha",
+            "leer",
+            "amigo",
+            "izquierda",
+            "descansar",
+            "papa",
+            "lluvia"
+    };
 
-        for (int i = 0; i < n; ++i) {
+    static String[][] getRandom(int rows, int columns, String alphabet, String match) {
+        Random random = new Random();
+        int total = rows * columns;
+        int totalCards = total / 2;
+        HashSet<Integer> exclude = new HashSet<>(totalCards);
+        ArrayList<Pair<String, String>> pairs = new ArrayList<>(totalCards);
+        boolean kanjiMode = alphabet.equals("kanji");
+        String[] list = kanjiMode ? kanjis : kanas;
+        int size = list.length, temp;
+        for (int i = 0; i < totalCards; ++i) {
             temp = random.nextInt(size);
             while (exclude.contains(temp))
                 temp = random.nextInt(size);
-            ans.add(new Pair<>(Integer.toString(temp+1), kanas[temp]));
+            pairs.add(new Pair<>(Integer.toString(temp + 1), list[temp]));
             exclude.add(temp);
         }
+        String[][] matrix = new String[rows][columns];
+        int inv;
+        String name;
+        for (int i = 0; i < totalCards; ++i) {
+            name = pairs.get(i).second;
+            matrix[i / columns][i % columns] = alphabet + pairs.get(i).first + name;
 
-        return ans;
+            inv = total - i - 1;
+            if (kanjiMode)
+                matrix[inv / columns][inv % columns] = match + pairs.get(i).first + name;
+            else
+                matrix[inv / columns][inv % columns] = match + name;
+        }
+        return matrix;
     }
+
 }

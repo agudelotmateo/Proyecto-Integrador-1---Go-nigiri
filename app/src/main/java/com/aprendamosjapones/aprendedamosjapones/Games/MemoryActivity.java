@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
-import android.util.Pair;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
@@ -15,7 +14,6 @@ import android.widget.GridLayout;
 
 import com.aprendamosjapones.aprendedamosjapones.R;
 
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -47,26 +45,12 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         int width = Math.min(260, (displayMetrics.widthPixels) / columns);
         int height = Math.min(120, (displayMetrics.heightPixels -
                 getNavigationBarHeight(this)) / rows);
-
-        int total = rows * columns;
-        int totalCards = total / 2;
-        ArrayList<Pair<String, String> > kanas = Kana.getRandomKanas(totalCards);
-        String[][] matrix = new String[rows][columns];
-
-        int inv;
-        String name;
-        for (int i = 0; i < totalCards; ++i) {
-            name = kanas.get(i).second;
-            matrix[i / columns][i % columns] = alphabet + kanas.get(i).first + name;
-
-            inv = total - i - 1;
-            matrix[inv / columns][inv % columns] = "match_" + name;
-        }
-
-        shuffleMatrix(matrix);
-        fillFromMatrix(gridLayout, matrix, width, height);
-
         busy = false;
+
+        String[][] matrix = Kana.getRandom(rows, columns, alphabet,
+                                           alphabet.equals("kanji") ? "sigkanji" : "match_");
+        shuffleMatrix(matrix);
+        fillFromMatrixKana(gridLayout, matrix, width, height);
     }
 
     @Override
@@ -146,7 +130,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
      * @param matrix matrix containing the name of the drawable resources.
      * @param height desired height of the image in the layout.
      */
-    private void fillFromMatrix(GridLayout gridLayout, String[][] matrix, int width, int height) {
+    private void fillFromMatrixKana(GridLayout gridLayout, String[][] matrix, int width, int height) {
         int imageID;
         String romaji;
 
