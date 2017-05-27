@@ -1,10 +1,12 @@
 package com.aprendamosjapones.aprendedamosjapones.Games.memory;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -94,6 +96,21 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                 }
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Salir")
+                .setMessage("¿Realmente desea salir del juego?")
+                .setPositiveButton("Sí, salir", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No, quedarse", null)
+                .show();
     }
 
     /**
