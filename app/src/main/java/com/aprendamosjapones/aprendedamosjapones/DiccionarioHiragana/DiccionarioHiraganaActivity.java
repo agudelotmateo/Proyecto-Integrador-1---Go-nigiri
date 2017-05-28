@@ -11,7 +11,7 @@ import com.aprendamosjapones.aprendedamosjapones.R;
  * Created by wilfer on 24/05/17.
  */
 
-public class DiccionarioHiragana extends AppCompatActivity {
+public class DiccionarioHiraganaActivity extends AppCompatActivity {
 
     ImageView goHiragana1;
     ImageView goHiragana2;
@@ -45,7 +45,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana1 = new Intent(DiccionarioHiragana.this, Hiragana1.class);
+                Intent goHiragana1 = new Intent(DiccionarioHiraganaActivity.this, Hiragana1.class);
                 startActivity(goHiragana1);
 
             }
@@ -57,7 +57,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana2 = new Intent(DiccionarioHiragana.this, Hiragana2.class);
+                Intent goHiragana2 = new Intent(DiccionarioHiraganaActivity.this, Hiragana2.class);
                 startActivity(goHiragana2);
 
             }
@@ -69,7 +69,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana3 = new Intent(DiccionarioHiragana.this, Hiragana3.class);
+                Intent goHiragana3 = new Intent(DiccionarioHiraganaActivity.this, Hiragana3.class);
                 startActivity(goHiragana3);
 
             }
@@ -81,7 +81,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana4 = new Intent(DiccionarioHiragana.this, Hiragana4.class);
+                Intent goHiragana4 = new Intent(DiccionarioHiraganaActivity.this, Hiragana4.class);
                 startActivity(goHiragana4);
 
             }
@@ -93,7 +93,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana5 = new Intent(DiccionarioHiragana.this, HIragana5.class);
+                Intent goHiragana5 = new Intent(DiccionarioHiraganaActivity.this, HIragana5.class);
                 startActivity(goHiragana5);
 
             }
@@ -105,7 +105,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana6 = new Intent(DiccionarioHiragana.this, Hiragana6.class);
+                Intent goHiragana6 = new Intent(DiccionarioHiraganaActivity.this, Hiragana6.class);
                 startActivity(goHiragana6);
 
             }
@@ -116,7 +116,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana7 = new Intent(DiccionarioHiragana.this, Hiragana7.class);
+                Intent goHiragana7 = new Intent(DiccionarioHiraganaActivity.this, Hiragana7.class);
                 startActivity(goHiragana7);
 
             }
@@ -127,7 +127,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana8 = new Intent(DiccionarioHiragana.this, Hiragana8.class);
+                Intent goHiragana8 = new Intent(DiccionarioHiraganaActivity.this, Hiragana8.class);
                 startActivity(goHiragana8);
 
             }
@@ -138,7 +138,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana9 = new Intent(DiccionarioHiragana.this, Hiragana9.class);
+                Intent goHiragana9 = new Intent(DiccionarioHiraganaActivity.this, Hiragana9.class);
                 startActivity(goHiragana9);
 
             }
@@ -149,7 +149,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana10 = new Intent(DiccionarioHiragana.this, Hiragana10.class);
+                Intent goHiragana10 = new Intent(DiccionarioHiraganaActivity.this, Hiragana10.class);
                 startActivity(goHiragana10);
 
             }
@@ -160,7 +160,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana11 = new Intent(DiccionarioHiragana.this, Hiragana11.class);
+                Intent goHiragana11 = new Intent(DiccionarioHiraganaActivity.this, Hiragana11.class);
                 startActivity(goHiragana11);
 
             }
@@ -171,7 +171,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana12 = new Intent(DiccionarioHiragana.this, Hiragana12.class);
+                Intent goHiragana12 = new Intent(DiccionarioHiraganaActivity.this, Hiragana12.class);
                 startActivity(goHiragana12);
 
             }
@@ -182,7 +182,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana13 = new Intent(DiccionarioHiragana.this, Hiragana14.class);
+                Intent goHiragana13 = new Intent(DiccionarioHiraganaActivity.this, Hiragana14.class);
                 startActivity(goHiragana13);
 
             }
@@ -193,7 +193,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana14 = new Intent(DiccionarioHiragana.this, Hiragana14.class);
+                Intent goHiragana14 = new Intent(DiccionarioHiraganaActivity.this, Hiragana14.class);
                 startActivity(goHiragana14);
 
             }
@@ -204,7 +204,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana15 = new Intent(DiccionarioHiragana.this, Hiragana15.class);
+                Intent goHiragana15 = new Intent(DiccionarioHiraganaActivity.this, Hiragana15.class);
                 startActivity(goHiragana15);
 
             }
@@ -219,7 +219,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana16 = new Intent(DiccionarioHiragana.this, Hiragana16.class);
+                Intent goHiragana16 = new Intent(DiccionarioHiraganaActivity.this, Hiragana16.class);
                 startActivity(goHiragana16);
 
             }
@@ -230,7 +230,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana17 = new Intent(DiccionarioHiragana.this, Hiragana17.class);
+                Intent goHiragana17 = new Intent(DiccionarioHiraganaActivity.this, Hiragana17.class);
                 startActivity(goHiragana17);
 
             }
@@ -241,7 +241,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana18 = new Intent(DiccionarioHiragana.this, Hiragana18.class);
+                Intent goHiragana18 = new Intent(DiccionarioHiraganaActivity.this, Hiragana18.class);
                 startActivity(goHiragana18);
 
             }
@@ -252,7 +252,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana19 = new Intent(DiccionarioHiragana.this, Hiragana19.class);
+                Intent goHiragana19 = new Intent(DiccionarioHiraganaActivity.this, Hiragana19.class);
                 startActivity(goHiragana19);
 
             }
@@ -263,7 +263,7 @@ public class DiccionarioHiragana extends AppCompatActivity {
         goHiragana20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goHiragana20 = new Intent(DiccionarioHiragana.this, Hiragana20.class);
+                Intent goHiragana20 = new Intent(DiccionarioHiraganaActivity.this, Hiragana20.class);
                 startActivity(goHiragana20);
 
             }

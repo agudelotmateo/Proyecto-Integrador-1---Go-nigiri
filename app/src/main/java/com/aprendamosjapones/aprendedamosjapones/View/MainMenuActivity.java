@@ -6,8 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.aprendamosjapones.aprendedamosjapones.DiccionarioHiragana.DiccionarioHiragana;
-import com.aprendamosjapones.aprendedamosjapones.DictionaryHiragana.DictionaryHiraganaActivity;
+import com.aprendamosjapones.aprendedamosjapones.DiccionarioHiragana.DiccionarioHiraganaActivity;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKanji.DictionaryKanjiActivity;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionaryKatakanaActivity;
 import com.aprendamosjapones.aprendedamosjapones.Games.memory.MenuMemoryActivity;
@@ -95,7 +94,7 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityHiraganaDictionary = new Intent(MainMenuActivity.this, DiccionarioHiragana.class);
+                Intent goActivityHiraganaDictionary = new Intent(MainMenuActivity.this, DiccionarioHiraganaActivity.class);
                 startActivity(goActivityHiraganaDictionary);
             }
         });

@@ -77,7 +77,7 @@
         <pl.droidsonroids.gif.GifImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/hiragana1a"
+            android:src="@drawable/hiragana1"
             android:layout_gravity="center"
             android:paddingTop="@dimen/writtingPaddingtop">
         </pl.droidsonroids.gif.GifImageView>
