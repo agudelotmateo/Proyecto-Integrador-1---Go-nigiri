@@ -30,8 +30,9 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
     private MemoryButton firstButton, secondButton;
     private boolean busy;
     private long time;
+    private int matchCounter;
 
-    public static int rows, columns;
+    public static int rows, columns, matches;
     public static String alphabet;
 
     @Override
@@ -49,6 +50,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         int height = Math.min(120, (displayMetrics.heightPixels -
                 getNavigationBarHeight(this)) / rows);
         busy = false;
+        matchCounter = 0;
         time = System.currentTimeMillis();
 
         String[][] matrix = Kana.getRandom(rows, columns, alphabet,
@@ -77,6 +79,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                     firstButton.setEnabled(false);
 
                     firstButton = null;
+                    if (++matchCounter == matches)
+                        showTimeSpent("¡Ganaste!");
                 } else {
                     button.flip();
                     secondButton = button;
@@ -108,14 +112,14 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                 .setPositiveButton("Sí, salir", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        showTimeSpent();
+                        showTimeSpent("Juego concelado");
                     }
                 })
                 .setNegativeButton("No, quedarse", null)
                 .show();
     }
 
-    private void showTimeSpent() {
+    private void showTimeSpent(String title) {
         time = System.currentTimeMillis()-time;
         long second = (time / 1000) % 60;
         long minute = (time / (1000 * 60)) % 60;
@@ -128,8 +132,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         else
             formattedTime = String.format("%02d:%02d:%02d", hour, minute, second);
         new AlertDialog.Builder(this)
-                .setTitle("Tiempo")
-                .setMessage(formattedTime)
+                .setTitle(title)
+                .setMessage("Tiempo de juego: " + formattedTime)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

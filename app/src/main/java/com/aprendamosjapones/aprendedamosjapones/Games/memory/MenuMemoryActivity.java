@@ -40,31 +40,29 @@ public class MenuMemoryActivity extends AppCompatActivity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String alphabet;
                 if (((RadioButton) findViewById(R.id.radioButtonHiragana)).isChecked())
-                    alphabet = "hiragana";
+                    MemoryActivity.alphabet = "hiragana";
                 else if (((RadioButton) findViewById(R.id.radioButtonKatakana)).isChecked())
-                    alphabet = "katakana";
-                else // kanji is checked
-                    alphabet = "kanji"; // pending
+                    MemoryActivity.alphabet = "katakana";
+                else
+                    MemoryActivity.alphabet = "kanji";
 
-                int rows, cols;
                 if (((RadioButton) findViewById(R.id.radioButton10)).isChecked()) {
-                    rows = 4;
-                    cols = 5;
+                    MemoryActivity.rows = 4;
+                    MemoryActivity.columns = 5;
+                    MemoryActivity.matches = 10;
                 }
                 else if (((RadioButton) findViewById(R.id.radioButton15)).isChecked()) {
-                    rows = 5;
-                    cols = 6;
+                    MemoryActivity.rows = 5;
+                    MemoryActivity.columns = 6;
+                    MemoryActivity.matches = 15;
                 }
                 else {
-                    rows = 5;
-                    cols = 8;
+                    MemoryActivity.rows = 5;
+                    MemoryActivity.columns = 8;
+                    MemoryActivity.matches = 20;
                 }
 
-                MemoryActivity.rows = rows;
-                MemoryActivity.columns = cols;
-                MemoryActivity.alphabet = alphabet;
                 startActivity(new Intent(MenuMemoryActivity.this, MemoryActivity.class));
             }
         });
