@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/editTextColorWhite">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -18,17 +19,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana1a"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana1a">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/hiragana1a"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    android:text="a"
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -37,17 +33,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana2i"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana2i">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana2i"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -56,17 +47,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana3u"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana3u">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana3u"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -75,17 +61,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana4e"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana4e">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana4e"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -94,20 +75,16 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana5o"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana5o">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana5o"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,17 +95,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana6ka"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana6ka">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana6ka"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -137,17 +109,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana7ki"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana7ki">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana7ki"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -156,17 +123,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana8ku"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana8ku">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana8ku"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -175,17 +137,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana9ke"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana9ke">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana9ke"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -194,17 +151,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana10ko"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana10ko">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana10ko"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -218,17 +170,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana11sa"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana11sa">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana11sa"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -237,17 +184,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana12shi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana12shi">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana12shi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -256,17 +198,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana13su"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana13su">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana13su"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -275,17 +212,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana14se"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana14se">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana14se"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -294,120 +226,97 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana15so"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana15so">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana15so"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/hiragana16ta"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
-                    android:src="@drawable/hiragana16ta">
-                </ImageView>
+                    style="@style/simpleKanaImageDictionary"
+                    android:src="@drawable/hiragana16ta"></ImageView>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/hiragana16ta"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
-                </TextView>
+                    style="@style/kanaTextDictionary"
+                    android:text="@string/hiragana16ta"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/hiragana17chi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
-                    android:src="@drawable/hiragana17chi">
-                </ImageView>
+                    style="@style/simpleKanaImageDictionary"
+                    android:src="@drawable/hiragana17chi"></ImageView>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/hiragana17chi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
-                </TextView>
+                    style="@style/kanaTextDictionary"
+                    android:text="@string/hiragana17chi"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/hiragana18tsu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
-                    android:src="@drawable/hiragana18tsu">
-                </ImageView>
+                    style="@style/simpleKanaImageDictionary"
+                    android:src="@drawable/hiragana18tsu"></ImageView>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/hiragana18tsu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
-                </TextView>
+                    style="@style/kanaTextDictionary"
+                    android:text="@string/hiragana18tsu"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/hiragana19te"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
-                    android:src="@drawable/hiragana19te">
-                </ImageView>
+                    style="@style/simpleKanaImageDictionary"
+                    android:src="@drawable/hiragana19te"></ImageView>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/hiragana19te"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
-                </TextView>
+                    style="@style/kanaTextDictionary"
+                    android:text="@string/hiragana19te"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/hiragana20to"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
-                    android:src="@drawable/hiragana20to">
-                </ImageView>
+                    style="@style/simpleKanaImageDictionary"
+                    android:src="@drawable/hiragana20to"></ImageView>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/hiragana20to"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
-                </TextView>
+                    style="@style/kanaTextDictionary"
+                    android:text="@string/hiragana20to"></TextView>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -418,17 +327,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana21na"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana21na">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana21na"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -437,17 +341,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana22ni"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana22ni">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana22ni"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -457,17 +356,12 @@
 
                 <ImageView
                     android:id="@+id/hiragana23nu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana23nu"></ImageView>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana23nu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -476,17 +370,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana24ne"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana24ne">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana24ne"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -495,17 +384,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana25no"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana25no">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana25no"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -519,17 +403,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana26ha"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana26ha">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana26ha"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -538,17 +417,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana27hi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana27hi">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana27hi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -557,17 +431,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana28fu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana28fu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana28fu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -576,17 +445,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana29he"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana29he">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana29he"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -595,17 +459,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana30ho"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana30ho">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana30ho"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -619,18 +478,14 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana31ma"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana31ma">
                 </ImageView>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana31ma"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop" />
+                    style="@style/kanaTextDictionary">
+                </TextView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -638,17 +493,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana32mi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana32mi">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana32mi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -657,17 +507,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana33mu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana33mu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana33mu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -676,17 +521,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana34me"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana34me">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana34me"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -695,17 +535,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana35mo"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana35mo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana35mo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -719,17 +554,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana36ya"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana36ya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana36ya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -737,8 +567,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/blanco">
                 </ImageView>
             </LinearLayout>
@@ -748,17 +577,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana37yu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana37yu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana37yu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -766,8 +590,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/blanco">
                 </ImageView>
             </LinearLayout>
@@ -777,17 +600,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana38yo"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana38yo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana38yo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -801,17 +619,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana39ra"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana39ra">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana39ra"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -820,17 +633,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana40ri"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana40ri">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana40ri"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -839,17 +647,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana41ru"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana41ru">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana41ru"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -858,17 +661,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana42re"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana42re">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana42re"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -877,17 +675,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana43ro"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana43ro">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana43ro"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -901,17 +694,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana44wa"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana44wa">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana44wa"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -919,8 +707,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/blanco">
                 </ImageView>
             </LinearLayout>
@@ -939,8 +726,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/blanco">
                 </ImageView>
             </LinearLayout>
@@ -950,17 +736,31 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana45wo"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana45wo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana45wo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/hiragana46n"
+                    style="@style/simpleKanaImageDictionary"
+                    android:src="@drawable/hiragana46n">
+                </ImageView>
+
+                <TextView
+                    android:text="@string/hiragana46n"
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -991,17 +791,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana47ga"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana47ga">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana47ga"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1010,17 +805,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana48gi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana48gi">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana48gi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1029,17 +819,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana49gu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana49gu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana49gu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1048,17 +833,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana50ge"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana50ge">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana50ge"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1067,17 +847,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana51go"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana51go">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana51go"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1091,17 +866,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana52za"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana52za">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana52za"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1110,17 +880,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana53ji"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana53ji">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana53ji"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1129,17 +894,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana54zu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana54zu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana54zu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1148,17 +908,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana55ze"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana55ze">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana55ze"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1167,17 +922,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana56zo"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana56zo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana56zo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1191,17 +941,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana57da"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana57da">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana57da"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1210,17 +955,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana58di"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana58di">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana58di"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1229,17 +969,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana59du"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana59du">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana59du"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1248,17 +983,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana60de"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana60de">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana60de"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1267,17 +997,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana61do"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana61do">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana61do"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1291,17 +1016,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana62ba"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana62ba">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana62ba"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1310,17 +1030,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana63bi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana63bi">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana63bi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1329,17 +1044,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana64bu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana64bu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana64bu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1348,17 +1058,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana65be"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana65be">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana65be"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1367,18 +1072,14 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana66bo"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana66bo">
                 </ImageView>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana66bo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop" />
+                    style="@style/kanaTextDictionary">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -1391,17 +1092,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana67pa"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana67pa">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana67pa"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1410,17 +1106,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana68pi"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana68pi">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana68pi"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1429,17 +1120,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana69pu"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana69pu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana69pu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1448,17 +1134,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana70pe"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana70pe">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana70pe"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1467,17 +1148,13 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana71po"
-                    android:layout_width="@dimen/dictionarySize"
-                    android:layout_height="@dimen/dictionarySize"
+                    style="@style/simpleKanaImageDictionary"
                     android:src="@drawable/hiragana71po">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana71po"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop" />
+                    style="@style/kanaTextDictionary">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -1505,19 +1182,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/hiragana72kya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana72kya">
-                </ImageView>
+                    style="@style/doubleKanaImageDictionary"
+                    android:src="@drawable/hiragana72kya"></ImageView>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana72kya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1526,17 +1199,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana73kyu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana73kyu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana73kyu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1545,17 +1213,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana74kyo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana74kyo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana74kyo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1569,17 +1232,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana75gya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana75gya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana75gya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1588,17 +1246,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana76gyu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana76gyu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana76gyu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1607,17 +1260,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana77gyo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana77gyo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana77gyo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1631,17 +1279,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana78sha"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana78sha">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana78sha"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1650,17 +1293,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana79shu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana79shu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana79shu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1669,17 +1307,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana80sho"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana80sho">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana80sho"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1693,17 +1326,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana81ja"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana81ja">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana81ja"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1712,17 +1340,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana82ju"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana82ju">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana82ju"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1731,17 +1354,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana83jo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana83jo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana83jo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1755,17 +1373,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana84cha"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana84cha">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana84cha"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1774,17 +1387,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana85chu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana85chu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana85chu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1793,17 +1401,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana86cho"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana86cho">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana86cho"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1817,17 +1420,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana87nya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana87nya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana87nya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1836,17 +1434,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana88nyu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana88nyu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana88nyu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1855,17 +1448,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana89nyo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana89nyo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana89nyo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1879,17 +1467,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana90hya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana90hya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana90hya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1898,17 +1481,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana91hyu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana91hyu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana88nyu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1917,17 +1495,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana92hyo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana92hyo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana92hyo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -1941,17 +1514,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana93bya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana93bya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana93bya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1960,17 +1528,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana94byu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana94byu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana94byu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -1979,17 +1542,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana95byo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana95byo">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana95byo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -2003,17 +1561,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana96pya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana96pya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana96pya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -2022,17 +1575,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana97pyu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana97pyu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana97pyu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -2045,14 +1593,10 @@
                     android:layout_height="@dimen/dictionarySizeBig"
                     android:src="@drawable/hiragana98pyo">
                 </ImageView>
-
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana98pyo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop" />
+                    style="@style/kanaTextDictionary">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
 
@@ -2066,17 +1610,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana100mya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana99mya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana100mya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -2085,17 +1624,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana101myu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana100myu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana101myu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -2104,18 +1638,13 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana102myo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana101myo">
                 </ImageView>
-
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana102myo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop" />
+                    style="@style/kanaTextDictionary">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
 
@@ -2129,17 +1658,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana103rya"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana102rya">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana103rya"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -2148,17 +1672,12 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana104ryu"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana103ryu">
                 </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana104ryu"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop">
+                    style="@style/kanaTextDictionary">
                 </TextView>
             </LinearLayout>
             <LinearLayout
@@ -2167,20 +1686,14 @@
                 android:orientation="vertical">
                 <ImageView
                     android:id="@+id/hiragana105ryo"
-                    android:layout_width="@dimen/dictionarySizeBig"
-                    android:layout_height="@dimen/dictionarySizeBig"
+                    style="@style/doubleKanaImageDictionary"
                     android:src="@drawable/hiragana104ryo">
                 </ImageView>
-
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:text="@string/hiragana105ryo"
-                    android:textSize="@dimen/dictionaryTextSize"
-                    android:layout_marginTop="@dimen/dictionaryMarginTop" />
+                    style="@style/kanaTextDictionary">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
