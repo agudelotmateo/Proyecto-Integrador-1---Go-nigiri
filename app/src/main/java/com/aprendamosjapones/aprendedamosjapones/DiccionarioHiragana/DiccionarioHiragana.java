@@ -6,8 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.proyecto.diccionarioprueba.R;
-
+import com.aprendamosjapones.aprendedamosjapones.R;
 /**
  * Created by wilfer on 24/05/17.
  */

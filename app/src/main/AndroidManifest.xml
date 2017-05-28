@@ -65,5 +65,27 @@
                 android:value="com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiDetailActivity" >
             </meta-data>
         </activity>
+
+        <activity android:name=".DiccionarioHiragana.DiccionarioHiragana"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana1"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana2"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana3"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana4"></activity>
+        <activity android:name=".DiccionarioHiragana.HIragana5"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana6"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana7"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana8"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana9"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana10"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana11"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana12"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana13"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana14"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana15"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana16"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana17"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana18"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana19"></activity>
+        <activity android:name=".DiccionarioHiragana.Hiragana20"></activity>
     </application>
 </manifest>

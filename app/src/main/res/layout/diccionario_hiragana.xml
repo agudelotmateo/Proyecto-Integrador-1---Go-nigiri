@@ -2043,7 +2043,7 @@
                     android:id="@+id/hiragana99pyo"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana99pyo">
+                    android:src="@drawable/hiragana98pyo">
                 </ImageView>
 
                 <TextView
@@ -2068,7 +2068,7 @@
                     android:id="@+id/hiragana100mya"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana100mya">
+                    android:src="@drawable/hiragana99mya">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -2087,7 +2087,7 @@
                     android:id="@+id/hiragana101myu"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana101myu">
+                    android:src="@drawable/hiragana100myu">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -2106,7 +2106,7 @@
                     android:id="@+id/hiragana102myo"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana102myo">
+                    android:src="@drawable/hiragana101myo">
                 </ImageView>
 
                 <TextView
@@ -2131,7 +2131,7 @@
                     android:id="@+id/hiragana103rya"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana103rya">
+                    android:src="@drawable/hiragana102rya">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -2150,7 +2150,7 @@
                     android:id="@+id/hiragana104ryu"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana104ryu">
+                    android:src="@drawable/hiragana103ryu">
                 </ImageView>
                 <TextView
                     android:layout_width="wrap_content"
@@ -2169,7 +2169,7 @@
                     android:id="@+id/hiragana105ryo"
                     android:layout_width="@dimen/dictionarySizeBig"
                     android:layout_height="@dimen/dictionarySizeBig"
-                    android:src="@drawable/hiragana105ryo">
+                    android:src="@drawable/hiragana104ryo">
                 </ImageView>
 
                 <TextView
