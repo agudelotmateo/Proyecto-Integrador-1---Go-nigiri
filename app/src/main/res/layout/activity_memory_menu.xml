@@ -25,23 +25,15 @@
 
         <ImageView
             android:id="@+id/logoMain"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/onigiri_morado"
-            android:layout_marginTop="10dp">
+            style="@style/gameTitleImage">
         </ImageView>
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="5dp"
         android:text="Concéntrese"
-        android:textColor="@color/editTextColorPurple"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"></TextView>
+        style="@style/gameTitleText">
+    </TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,15 +44,14 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/instructionsMemory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Instrucciones"
-        android:layout_gravity="center"/>
+        android:id="@+id/buttonJugarConcentrese"
+        style="@style/playButton"
+        android:text="@string/playButton">
+    </Button>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="13dp"
+        android:layout_height="35dp"
         android:orientation="horizontal"></LinearLayout>
 
     <LinearLayout
@@ -73,12 +64,8 @@
 
         <TextView
             android:id="@+id/textNivel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center"
-            android:text="Nivel:"
-            android:layout_weight="0.34" />
+            style="@style/gameOptionTitle"
+            android:text="Nivel:" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -113,12 +100,8 @@
 
         <TextView
             android:id="@+id/textParejas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center_horizontal"
-            android:text="Número de parejas:"
-            android:layout_weight="0.28" />
+            style="@style/gameOptionTitle"
+            android:text="Número de parejas:" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -155,13 +138,13 @@
             android:orientation="horizontal"
             android:layout_weight="0.25"></LinearLayout>
 
-        <Button
-            android:id="@+id/buttonJugarConcentrese"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="A Jugar!" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/instructionsMemory"
+        android:text="@string/instruction"
+        style="@style/instructionButton">
+    </Button>
 
 </LinearLayout>

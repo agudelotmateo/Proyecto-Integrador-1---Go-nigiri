@@ -31,7 +31,9 @@
         Recuerda que puedes escoger si quieres jugar con hiraganas, katakanas o kanjis.
         También puedes escoger el número de parejas.\n\n
         ¡Estás listo para jugar!
- </string>
+    </string>
+    <string name="instruction">Instrucciones</string>
+    <string name="playButton">¡A jugar!</string>
 
     <string name="title_activity_detail">Regresar</string>
     <string name="hiragana1a">a</string>
