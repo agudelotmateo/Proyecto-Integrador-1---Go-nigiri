@@ -22,5 +22,11 @@
 
     <dimen name="card_margin">16dp</dimen>
 
+    <dimen name="dictionarySize">70dp</dimen>
+    <dimen name="dictionaryTextSize">20sp</dimen>
+    <dimen name="dictionaryMarginTop">-15dp</dimen>
+    <dimen name="dictionarySizeBig">90dp</dimen>
+    <dimen name="writtingPaddingtop">10dp</dimen>
+
 
 </resources>
