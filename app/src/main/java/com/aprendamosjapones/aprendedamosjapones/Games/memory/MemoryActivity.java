@@ -68,7 +68,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
     private void addPauseButton(GridLayout gridLayout, int width, int height) {
         int frontImageID = getResources().getIdentifier("play", "drawable", getPackageName());
         int backImageID = getResources().getIdentifier("pause", "drawable", getPackageName());
-        MemoryButton button = new MemoryButton(this, 0, columns-1, width, height, frontImageID, backImageID);
+        MemoryButton button = new MemoryButton(this, 0, columns-1, width,
+                (int) (1.25 * height), frontImageID, backImageID);
         button.setId(generateViewId());
         button.setOnClickListener(this);
         gridLayout.addView(button);
@@ -230,7 +231,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         int imageID;
         String romaji;
 
-        for (int r = 1; r < rows; ++r)
+        for (int r = 0; r < rows; ++r)
             for (int c = 0; c < columns; ++c) {
                 if (matrix[r][c].charAt(0) == 'm') {
                     romaji = matrix[r][c].substring(6);
@@ -243,7 +244,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                     romaji = matrix[r][c].substring(i);
                 }
                 imageID = getResources().getIdentifier(matrix[r][c], "drawable", getPackageName());
-                MemoryButton button = new MemoryButton(this, r, c, width, height, imageID, romaji);
+                MemoryButton button = new MemoryButton(this, r+1, c, width, height, imageID, romaji);
                 button.setId(generateViewId());
                 button.setOnClickListener(this);
                 gridLayout.addView(button);
