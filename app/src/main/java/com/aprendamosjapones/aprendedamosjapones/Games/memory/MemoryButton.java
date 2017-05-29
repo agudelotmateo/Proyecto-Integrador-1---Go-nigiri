@@ -25,7 +25,7 @@ public class MemoryButton extends AppCompatImageButton {
     public MemoryButton(Context ctx, int row, int column, int width, int height, int imageID,
                         String romaji) {
         super(ctx);
-        init(ctx, row, column, width, height, imageID, R.drawable.question, romaji);
+        init(ctx, row, column, width, height, imageID, R.drawable.memory_card, romaji);
     }
 
     public MemoryButton(Context ctx, int row, int column, int width, int height, int frontImageID,
