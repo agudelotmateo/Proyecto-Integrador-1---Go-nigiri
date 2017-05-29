@@ -237,8 +237,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                     romaji = matrix[r][c].substring(6);
                 }
                 else {
-                    int i;
-                    for (i = 9; i < matrix[r][c].length(); ++i)
+                    int i = (matrix[r][c].charAt(2) == 'n') ? 6 : 9;
+                    for (; i < matrix[r][c].length(); ++i)
                         if (matrix[r][c].charAt(i) < '0' || matrix[r][c].charAt(i) > '9')
                             break;
                     romaji = matrix[r][c].substring(i);
