@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Games.memory.MenuMemoryActivity"
+    android:background="@color/editTextColorWhite"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/logoMain"
+            style="@style/gameTitleImage">
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Preguntados"
+        style="@style/gameTitleText">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonJugarConcentrese"
+        style="@style/playButton"
+        android:text="@string/playButton">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.57"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textNivel"
+            style="@style/gameOptionTitle"
+            android:text="Nivel:" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.29"
+            android:checkedButton="@+id/radioButtonHiragana"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonHiragana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hiragana    " />
+
+            <RadioButton
+                android:id="@+id/radioButtonKatakana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Katakana    " />
+
+            <RadioButton
+                android:id="@+id/radioButtonKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kanji    " />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textTiempo"
+            style="@style/gameOptionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiempo por pregunta:" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/textNumPreguntas"
+            style="@style/gameOptionTitle"
+            android:text="Número de preguntas:" />
+
+        <Spinner
+            android:id="@+id/spinnerTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/instructionsMemory"
+        android:text="@string/instruction"
+        style="@style/instructionButton">
+    </Button>
+
+</LinearLayout>
