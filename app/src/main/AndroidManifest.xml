@@ -19,8 +19,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
-        <activity android:name=".View.MainMenuActivity"></activity>
-        <activity android:name=".Games.memory.MenuMemoryActivity"></activity>
+        <activity
+            android:name=".View.MainMenuActivity"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".Games.memory.MenuMemoryActivity"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
         <activity
             android:name=".Games.memory.MemoryActivity"
             android:screenOrientation="userLandscape"
