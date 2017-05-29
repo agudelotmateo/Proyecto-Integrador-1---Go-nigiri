@@ -20,11 +20,7 @@
 
         <ImageView
             android:id="@+id/logoMain"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:paddingTop="10dp"
-            android:background="@drawable/onigiri_naranja"
-            android:layout_marginTop="10dp">
+            style="@style/instructionTitleImage">
         </ImageView>
     </LinearLayout>
 
@@ -35,18 +31,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:text="@string/instruction"
-            android:textSize="25sp"
-            android:textColor="@color/editTextColorOrange"
-            android:textStyle="bold"
-            android:paddingTop="5dp">
+            style="@style/instructionTitleText">
         </TextView>
-
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
@@ -59,7 +49,7 @@
             android:gravity="center"
             android:textSize="17dp"/>
 
-    </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

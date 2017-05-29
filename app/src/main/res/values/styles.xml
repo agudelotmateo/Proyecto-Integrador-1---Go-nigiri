@@ -155,4 +155,13 @@
         <item name="android:textColor">@color/editTextColorPurple</item>
     </style>
 
+    <!--Los siguientes estilos son para las instrucciones de los juegos-->
+    <style name="instructionTitleImage" parent="titleImage">
+        <item name="android:background">@drawable/onigiri_naranja</item>
+    </style>
+
+    <style name="instructionTitleText" parent="titleText">
+        <item name="android:textColor">@color/editTextColorOrange</item>
+    </style>
+
 </resources>
