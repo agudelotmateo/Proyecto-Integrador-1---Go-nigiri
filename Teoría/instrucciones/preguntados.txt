@@ -1,0 +1,5 @@
+El preguntados es un juego de preguntas y respuestas, a que no te lo esperabas. Te vamos a ir dando preguntas y tú las debes responder en el tiempo dado. Las preguntas son una palabra en hiragana, katakana, kanji, u otros, y la respuesta correcta es aquella que se le asocia.\n\n
+Comienzas con una pregunta y unas opciones de respuesta, tú escoges la que creas correcta y avanzas a la siguiente preguna. Si no respondes en el tiempo límite, se avanzará a la siguiente pregunta. El juego acaba cuando hayan pasado todas las preguntas. \n\n
+Al finalizar te mostraremos tus resultados para que puedas ver en qué fallaste y mejorar para la próxima vez. \n\n
+Recuerda que antes de empezar a jugar puedes decidir si quieres jugar con hiraganas, katakanas o kanjis. Además, puedes escoger el número de preguntas y el tiempo por pregunta. \n\n
+¡Estás listo para jugar!
