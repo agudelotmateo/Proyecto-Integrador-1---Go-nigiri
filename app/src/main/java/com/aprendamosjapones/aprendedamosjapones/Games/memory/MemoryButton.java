@@ -25,16 +25,27 @@ public class MemoryButton extends AppCompatImageButton {
     public MemoryButton(Context ctx, int row, int column, int width, int height, int imageID,
                         String romaji) {
         super(ctx);
+        init(ctx, row, column, width, height, imageID, R.drawable.question, romaji);
+    }
+
+    public MemoryButton(Context ctx, int row, int column, int width, int height, int frontImageID,
+                        int backImageID) {
+        super(ctx);
+        init(ctx, row, column, width, height, frontImageID, backImageID, null);
+    }
+
+    private void init(Context ctx, int row, int column, int width, int height, int frontImageID,
+                      int backImageID, String romaji) {
         this.row = row;
         this.column = column;
-        this.imageID = imageID;
+        this.imageID = frontImageID;
         this.romaji = romaji;
         this.width = width;
         this.height = height;
         this.down = true;
         this.matched = false;
         this.front = resize(ctx, imageID);
-        this.back = resize(ctx, R.drawable.question);
+        this.back = resize(ctx, backImageID);
 
         GridLayout.LayoutParams tempParams = new GridLayout.LayoutParams(GridLayout.spec(row),
                 GridLayout.spec(column));

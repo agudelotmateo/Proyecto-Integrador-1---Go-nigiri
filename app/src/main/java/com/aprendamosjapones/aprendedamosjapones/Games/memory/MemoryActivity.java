@@ -2,6 +2,7 @@ package com.aprendamosjapones.aprendedamosjapones.Games.memory;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,8 +29,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
     // Used to generate random IDs
     private static final AtomicInteger sNextGeneratedId = new AtomicInteger(1);
     private MemoryButton firstButton, secondButton;
-    private boolean busy;
-    private long time;
+    private boolean busy, paused;
+    private long time, accum;
     private int matchCounter;
 
     public static int rows, columns, matches;
@@ -41,15 +42,17 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(getResources().getIdentifier("activity_memory", "layout", getPackageName()));
 
         GridLayout gridLayout = (GridLayout) findViewById(R.id.grid_memory);
-        gridLayout.setRowCount(rows);
+        gridLayout.setRowCount(rows+1);
         gridLayout.setColumnCount(columns);
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = Math.min(260, (displayMetrics.widthPixels) / columns);
         int height = Math.min(120, (displayMetrics.heightPixels -
-                getNavigationBarHeight(this)) / rows);
+                getNavigationBarHeight(this)) / (rows+1));
         busy = false;
+        paused = false;
+        accum = 0L;
         matchCounter = 0;
         time = System.currentTimeMillis();
 
@@ -57,51 +60,95 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                                            alphabet.equals("kanji") ? "sigkanji" : "match_");
         shuffleMatrix(matrix);
         fillFromMatrixKana(gridLayout, matrix, width, height);
+
+        getWindow().getDecorView().setBackgroundColor(Color.WHITE);
+        addPauseButton(gridLayout, width, height);
+    }
+
+    private void addPauseButton(GridLayout gridLayout, int width, int height) {
+        int frontImageID = getResources().getIdentifier("play", "drawable", getPackageName());
+        int backImageID = getResources().getIdentifier("pause", "drawable", getPackageName());
+        MemoryButton button = new MemoryButton(this, 0, columns-1, width, height, frontImageID, backImageID);
+        button.setId(generateViewId());
+        button.setOnClickListener(this);
+        gridLayout.addView(button);
+    }
+
+    private void stopTime() {
+        accum += System.currentTimeMillis()-time;
+    }
+
+    private void resumeTime() {
+        time = System.currentTimeMillis()-accum;
+        accum = 0;
     }
 
     @Override
     public void onClick(View v) {
         if (!busy) {
             MemoryButton button = ((MemoryButton) v);
-            if (!button.isMatched()) {
-                if (firstButton == null) {
-                    button.flip();
-                    firstButton = button;
-                } else if (button.getImageID() == firstButton.getImageID()) {
-                    // do nothing
-                } else if (button.getRomaji().equals(firstButton.getRomaji())) {
-                    button.flip();
+            if (button.getRomaji() == null) {
+                if (paused)
+                    resumeTime();
+                else
+                    stopTime();
+                paused = !paused;
+                button.flip();
+            }
+            else {
+                if (!paused && !button.isMatched()) {
+                    if (firstButton == null) {
+                        button.flip();
+                        firstButton = button;
+                    } else if (button.getImageID() == firstButton.getImageID()) {
+                        // do nothing
+                    } else if (button.getRomaji().equals(firstButton.getRomaji())) {
+                        button.flip();
 
-                    button.setMatched(true);
-                    firstButton.setMatched(true);
+                        button.setMatched(true);
+                        firstButton.setMatched(true);
 
-                    button.setEnabled(false);
-                    firstButton.setEnabled(false);
+                        button.setEnabled(false);
+                        firstButton.setEnabled(false);
 
-                    firstButton = null;
-                    if (++matchCounter == matches)
-                        showTimeSpent("¡Ganaste!");
-                } else {
-                    button.flip();
-                    secondButton = button;
-                    busy = true;
+                        firstButton = null;
+                        if (++matchCounter == matches)
+                            showTimeSpent("¡Ganaste!");
+                    } else {
+                        button.flip();
+                        secondButton = button;
+                        busy = true;
 
-                    final Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            secondButton.flip();
-                            firstButton.flip();
+                        final Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                secondButton.flip();
+                                firstButton.flip();
 
-                            secondButton = null;
-                            firstButton = null;
+                                secondButton = null;
+                                firstButton = null;
 
-                            busy = false;
-                        }
-                    }, 800);
+                                busy = false;
+                            }
+                        }, 800);
+                    }
                 }
             }
         }
+    }
+
+    @Override
+    public void onPause() {
+        stopTime();
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        if (!paused)
+            resumeTime();
+        super.onResume();
     }
 
     @Override
@@ -120,6 +167,8 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void showTimeSpent(String title) {
+        if (paused)
+            resumeTime();
         time = System.currentTimeMillis()-time;
         long second = (time / 1000) % 60;
         long minute = (time / (1000 * 60)) % 60;
@@ -181,7 +230,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         int imageID;
         String romaji;
 
-        for (int r = 0; r < rows; ++r)
+        for (int r = 1; r < rows; ++r)
             for (int c = 0; c < columns; ++c) {
                 if (matrix[r][c].charAt(0) == 'm') {
                     romaji = matrix[r][c].substring(6);
