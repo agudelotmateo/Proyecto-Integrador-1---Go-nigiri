@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.DictionaryHIraganaNEW;
+package com.aprendamosjapones.aprendedamosjapones.DictionaryHIragana;
 
 import com.aprendamosjapones.aprendedamosjapones.R;
 

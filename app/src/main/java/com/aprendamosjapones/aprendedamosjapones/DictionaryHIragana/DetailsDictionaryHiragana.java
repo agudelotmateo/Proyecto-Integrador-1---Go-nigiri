@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.DictionaryHIraganaNEW;
+package com.aprendamosjapones.aprendedamosjapones.DictionaryHIragana;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -36,7 +35,7 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_dictionary_new);
+        setContentView(R.layout.activity_detail_dictionary);
 
         setToolbar(); // Reemplazar la action bar
 

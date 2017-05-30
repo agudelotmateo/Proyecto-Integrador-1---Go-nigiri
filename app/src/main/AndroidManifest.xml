@@ -34,8 +34,6 @@
             android:screenOrientation="userLandscape"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".DictionaryKanji.DictionaryKanjiActivity"></activity>
-        <activity android:name=".DictionaryHiragana.DictionaryHiraganaActivity"></activity>
         <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
         <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
         <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
@@ -74,8 +72,11 @@
             </meta-data>
         </activity>
 
-        <activity android:name=".DictionaryHIraganaNEW.DictionarHIraganaActivity"></activity>
-        <activity android:name=".DictionaryHIraganaNEW.DetailsDictionaryHiragana"></activity>
+        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"></activity>
+        <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana"></activity>
+
+        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
+        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
 
     </application>
 </manifest>

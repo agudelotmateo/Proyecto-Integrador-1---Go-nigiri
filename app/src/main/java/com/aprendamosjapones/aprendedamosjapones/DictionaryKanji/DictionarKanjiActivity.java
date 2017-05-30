@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.DictionaryHIraganaNEW;
+package com.aprendamosjapones.aprendedamosjapones.DictionaryKanji;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -14,7 +14,7 @@ import android.view.MenuItem;
 
 import com.aprendamosjapones.aprendedamosjapones.R;
 
-public class DictionarHIraganaActivity extends AppCompatActivity {
+public class DictionarKanjiActivity extends AppCompatActivity {
     public RecyclerView recyclerView;
     public LinearLayoutManager linearLayout;
 
@@ -22,7 +22,7 @@ public class DictionarHIraganaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dictionary_new);
+        setContentView(R.layout.activity_dictionary);
 
         setToolbar(); // Reemplazar toolbar
 
@@ -36,7 +36,7 @@ public class DictionarHIraganaActivity extends AppCompatActivity {
         linearLayout = new LinearLayoutManager(this);
         recyclerView = (RecyclerView) findViewById(R.id.reciclador);
         recyclerView.setLayoutManager(linearLayout);
-        DictionaryAdapter adapter = new DictionaryAdapter(this, ContentDictionaryHiragana.getCourses());
+        DictionaryAdapter adapter = new DictionaryAdapter(this, ContentDictionaryKanji.getCourses());
         recyclerView.setAdapter(adapter);
     }
 
@@ -45,7 +45,7 @@ public class DictionarHIraganaActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void setupWindowAnimations() {
         getWindow().setReenterTransition(new Explode());
         getWindow().setExitTransition(new Explode().setDuration(500));

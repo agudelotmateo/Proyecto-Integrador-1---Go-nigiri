@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.DictionaryHIraganaNEW;
+package com.aprendamosjapones.aprendedamosjapones.DictionaryKanji;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,10 +22,10 @@ import java.util.List;
 public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.CourseViewHolder>
         implements ItemClickListener {
     private final Context context;
-    private List<ItemsDictionaryHiragana> items;
+    private List<ItemsDictionaryKanji> items;
 
 
-    public DictionaryAdapter(Context context, List<ItemsDictionaryHiragana> items) {
+    public DictionaryAdapter(Context context, List<ItemsDictionaryKanji> items) {
         this.context = context;
         this.items = items;
     }
@@ -38,14 +38,14 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
     @Override
     public CourseViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.list_item_dictionary_new, viewGroup, false);
+                .inflate(R.layout.list_item_dictionary, viewGroup, false);
         return new CourseViewHolder(v, this);
     }
 
     @Override
     public void onBindViewHolder(CourseViewHolder viewHolder, int i) {
         // Item procesado actualmente
-        ItemsDictionaryHiragana currentItem = items.get(i);
+        ItemsDictionaryKanji currentItem = items.get(i);
 
         viewHolder.hiraganaTittle.setText(currentItem.getListen());
         // Cargar imagen
@@ -54,11 +54,12 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
                 .into(viewHolder.image);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onItemClick(View view, int position) {
         // Imagen a compartir entre transiciones
         View sharedImage = view.findViewById(R.id.image);
-        DetailsDictionaryHiragana.launch(
+        DetailsDictionaryKanji.launch(
                 (Activity) context, position, sharedImage);
     }
 
