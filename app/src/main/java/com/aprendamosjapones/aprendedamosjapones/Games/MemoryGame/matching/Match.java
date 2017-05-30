@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.Games.matching;
+package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.matching;
 
 import android.util.Pair;
 
