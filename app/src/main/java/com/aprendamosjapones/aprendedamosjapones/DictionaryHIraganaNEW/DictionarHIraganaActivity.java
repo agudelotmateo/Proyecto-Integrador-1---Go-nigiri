@@ -45,7 +45,7 @@ public class DictionarHIraganaActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void setupWindowAnimations() {
         getWindow().setReenterTransition(new Explode());
         getWindow().setExitTransition(new Explode().setDuration(500));

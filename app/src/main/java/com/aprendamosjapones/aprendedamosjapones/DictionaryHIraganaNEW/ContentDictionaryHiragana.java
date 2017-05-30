@@ -10,9 +10,21 @@ import java.util.List;
  */
 public class ContentDictionaryHiragana {
     private static ItemsDictionaryHiragana[] courses = {
-            new ItemsDictionaryHiragana("",
-                    R.raw.aud1a, "Funciona ejemplo 1", "Funciona ejemplo 3", "Funciona ejemplo 3", R.drawable.hiragana1,
-                     R.drawable.hiragana1a),
+            new ItemsDictionaryHiragana("a",
+                    R.raw.aud1a, "Funciona ejemplo 1", "Funciona ejemplo 2", "Funciona ejemplo 3", R.drawable.hiragana1,
+                    R.drawable.hiragana1a),
+             new ItemsDictionaryHiragana("i",
+                     R.raw.aud2i, "Ejemplo 2", "Ejemplo 2", "Ejemplo 3", R.drawable.i,
+                    R.drawable.hiragana2i),
+            new ItemsDictionaryHiragana("u",
+                    R.raw.aud3u, "Funciona ejemplo 1", "Funciona ejemplo 2", "Funciona ejemplo 3", R.drawable.u,
+                    R.drawable.hiragana3u),
+            new ItemsDictionaryHiragana("e",
+                    R.raw.aud4e, "Ejemplo 1", "Ejemplo 2", "Ejemplo 3", R.drawable.e,
+                    R.drawable.hiragana4e),
+            new ItemsDictionaryHiragana("o",
+                    R.raw.aud5o,"", "", "", R.drawable.o,
+                    R.drawable.hiragana5o),
     };
 
     /**

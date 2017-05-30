@@ -54,7 +54,6 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
                 .into(viewHolder.image);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onItemClick(View view, int position) {
         // Imagen a compartir entre transiciones

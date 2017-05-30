@@ -1,5 +1,6 @@
 package com.aprendamosjapones.aprendedamosjapones.DictionaryHIraganaNEW;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.TaskStackBuilder;
@@ -74,45 +75,15 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
             // EVENTOS DE TRANSICIÓN
             case 4:
                 Fade t4 = new Fade();
-                t4.addListener(
-                        new Transition.TransitionListener() {
-                            @Override
-                            public void onTransitionStart(Transition transition) {
-
-                            }
-
-                            @Override
-                            public void onTransitionEnd(Transition transition) {
-                                Snackbar.make(
-                                        findViewById(R.id.coordinator),
-                                        "Terminó la transición",
-                                        Snackbar.LENGTH_SHORT)
-                                        .show();
-                            }
-
-                            @Override
-                            public void onTransitionCancel(Transition transition) {
-
-                            }
-
-                            @Override
-                            public void onTransitionPause(Transition transition) {
-
-                            }
-
-                            @Override
-                            public void onTransitionResume(Transition transition) {
-
-                            }
-                        }
-                );
                 window.setEnterTransition(t4);
                 break;
-            // POR DEFECTO
             case 5:
                 window.setEnterTransition(null);
                 break;
-
+            case 6:
+                Explode t6 = new Explode();
+                window.setEnterTransition(t6);
+                break;
         }
     }
 
@@ -128,7 +99,7 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryHiragana detailCourse = ContentDictionaryHiragana.getCourseByPosition(position);
 
-        listen.setText("Pronunciacion: " + detailCourse.getListen());
+        listen.setText(detailCourse.getListen());
         audioListen.setBottom(detailCourse.getExample());
         example1.setText(detailCourse.getExample1());
         example2.setText(detailCourse.getExample2());
@@ -183,13 +154,13 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void launch(Activity context, int position, View sharedView) {
         Intent intent = new Intent(context, DetailsDictionaryHiragana.class);
         intent.putExtra(EXTRA_POSITION, position);
 
         // Los elementos 4, 5 y 6 usan elementos compartidos,
-        if (position >= 3) {
+        if (position >= 100) {
             ActivityOptions options0 = ActivityOptions
                     .makeSceneTransitionAnimation(context, sharedView, sharedView.getTransitionName());
             context.startActivity(intent, options0.toBundle());

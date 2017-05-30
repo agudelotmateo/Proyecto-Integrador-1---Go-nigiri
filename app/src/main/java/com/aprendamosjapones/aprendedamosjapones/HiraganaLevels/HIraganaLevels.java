@@ -39,6 +39,7 @@ public class HIraganaLevels {
                             "se encuentran entre las consonantes: 'p', 't', 'k', 'ch', 'f', 'h', 's', 'sh'; o" +
                             " también cuando se encuentran al final de la palabra y son precedidas por alguna" +
                             " de estas consonantes.\n" , "","","", R.drawable.uno),
+
     };
 
     public static List<HiraganaLevel> getCourses() {

@@ -24,7 +24,6 @@
                 android:layout_height="70dp">
 
                 <TextView
-                    android:id="@+id/listen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pronunciacion: "
@@ -132,19 +131,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center">
 
             <ImageView
                 android:id="@+id/lastImage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:transitionName="shared_image" />
+                android:transitionName="shared_image">
+            </ImageView>
 
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:id="@+id/listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre: "
+                android:textStyle="bold"
+                android:layout_gravity="center">
+            </TextView>
 
         </LinearLayout>
 
