@@ -73,5 +73,9 @@
                 android:value="com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiDetailActivity" >
             </meta-data>
         </activity>
+
+        <activity android:name=".DictionaryHIraganaNEW.DictionarHIraganaActivity"></activity>
+        <activity android:name=".DictionaryHIraganaNEW.DetailsDictionaryHiragana"></activity>
+
     </application>
 </manifest>
