@@ -24,11 +24,8 @@
                 android:layout_height="70dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pronunciacion: "
-                    android:paddingTop="16dp"
-                    android:textStyle="bold">
+                    style="@style/detailTextTitleContent"
+                    android:text="Pronunciacion: ">
                 </TextView>
 
                 <Button
@@ -36,6 +33,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
                     android:background="@drawable/button_audio">
                 </Button>
             </LinearLayout>
@@ -43,48 +41,43 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ejemplo"
-                    android:paddingTop="16dp"
-                    android:textStyle="bold"
-                    android:layout_gravity="center">
-                </TextView>
+                    style="@style/detailTextTitleContent"
+                    android:text="Ejemplo:"></TextView>
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/line"/>
+                    android:src="@drawable/line" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/example1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="texto"/>
+                        style="@style/detailTextContent"
+                        android:text="texto" />
 
                     <TextView
                         android:id="@+id/example2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="texto"/>
+                        style="@style/detailTextContent"
+                        android:text="texto" />
+
                     <TextView
                         android:id="@+id/example3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="texto"/>
+                        style="@style/detailTextContent"
+                        android:text="texto" />
 
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,10 +85,10 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/detailTextTitleContent"
                     android:text="Escritura "
-                    android:paddingTop="20dp">
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp">
 
                 </TextView>
 
@@ -143,11 +136,8 @@
 
             <TextView
                 android:id="@+id/listen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nombre: "
-                android:textStyle="bold"
-                android:layout_gravity="center">
+                style="@style/detailTextTitleName"
+                android:text="Nombre: ">
             </TextView>
 
         </LinearLayout>

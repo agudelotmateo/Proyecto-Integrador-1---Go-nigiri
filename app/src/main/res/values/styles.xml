@@ -110,12 +110,20 @@
         <item name="android:layout_width">70dp</item>
     </style>
 
-    <style name="detailTextTitle">
+     <style name="detailTextTitle">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="detailTextTitleName" parent="detailTextTitle">
+        <item name="android:textColor">@color/editTextColorWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="detailTextTitleContent" parent="detailTextTitle">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:layout_marginRight">5dp</item>
     </style>
@@ -123,7 +131,7 @@
     <style name="detailTextContent">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <!--Los siguientes estilos son para los juegos-->
