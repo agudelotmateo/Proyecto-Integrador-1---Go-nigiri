@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,11 +16,13 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/hiragana4e">
+                android:id="@+id/imageHiragana"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hiragana1a">
             </ImageView>
             <ImageView
+                android:id="@+id/imageHiragana1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/a">
@@ -34,6 +37,7 @@
             android:paddingLeft="10dp">
 
             <TextView
+                android:id="@+id/pronunciationTittle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pronunciation"
@@ -41,7 +45,7 @@
                 android:layout_gravity="center"/>
 
             <Button
-                android:id="@+id/audioHiragana4"
+                android:id="@+id/audioHiragana"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
@@ -56,6 +60,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/exampleTittle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/example"
@@ -71,6 +76,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/writeTittle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/writting"
@@ -79,14 +85,15 @@
             </TextView>
 
             <pl.droidsonroids.gif.GifImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/e"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hiragana1a"
                 android:layout_gravity="center"
                 android:paddingTop="@dimen/writtingPaddingtop">
             </pl.droidsonroids.gif.GifImageView>
 
             <Button
+                android:id="@+id/buttonPractice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
