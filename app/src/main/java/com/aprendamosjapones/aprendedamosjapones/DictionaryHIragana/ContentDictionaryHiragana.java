@@ -15,8 +15,8 @@ public class ContentDictionaryHiragana {
                     R.raw.aud1a, "あし", "ashi", "Pie", R.drawable.gifhira1a,
                     R.drawable.hiragana1a),
 
-             new ItemsDictionaryHiragana("i",
-                     R.raw.aud2i, "いす", "isu", "Silla", R.drawable.gifhira2i,
+            new ItemsDictionaryHiragana("i",
+                    R.raw.aud2i, "いす", "isu", "Silla", R.drawable.gifhira2i,
                     R.drawable.hiragana2i),
 
             new ItemsDictionaryHiragana("u",
