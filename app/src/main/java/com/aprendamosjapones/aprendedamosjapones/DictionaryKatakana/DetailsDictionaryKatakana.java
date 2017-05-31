@@ -117,7 +117,7 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
     }
 
     private void setupViews(int position) {
-        TextView listen = (TextView) findViewById(R.id.listen);
+
         Button audioListen = (Button) findViewById(R.id.audiolisten);
         TextView example1 = (TextView) findViewById(R.id.example1);
         TextView example2 = (TextView) findViewById(R.id.example2);
@@ -128,7 +128,6 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryKatakana detailCourse = ContentDictionaryKatakana.getCourseByPosition(position);
 
-        listen.setText("Pronunciacion: " + detailCourse.getListen());
         audioListen.setBottom(detailCourse.getExample());
         example1.setText(detailCourse.getExample1());
         example2.setText(detailCourse.getExample2());

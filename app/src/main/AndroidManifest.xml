@@ -74,11 +74,11 @@
         <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"></activity>
         <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana"></activity>
 
-        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
-        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
-
         <activity android:name=".DictionaryKatakana.DictionarKatakanaActivity"></activity>
         <activity android:name=".DictionaryKatakana.DetailsDictionaryKatakana"></activity>
+
+        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
+        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
 
         <activity android:name=".Games.AskedGame.ActivityASkedGame"></activity>
         <activity android:name=".Games.AskedGame.InstructionsAskedGame"></activity>

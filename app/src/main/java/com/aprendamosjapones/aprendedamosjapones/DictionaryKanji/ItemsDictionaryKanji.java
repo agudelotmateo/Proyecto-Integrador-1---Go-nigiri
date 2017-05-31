@@ -5,19 +5,22 @@ package com.aprendamosjapones.aprendedamosjapones.DictionaryKanji;
  */
 public class ItemsDictionaryKanji {
     private String listen;
-    private int audioListen;
-    private String example1;
-    private String example2;
-    private String example3;
+    private String meaning;
+    private String onjomi;
+    private String kunyomi;
+    private int audioOnyomi;
+    private int audioKunyomi;
     private int practice;
     private int idImage;
 
-    public ItemsDictionaryKanji(String listen, int audioListen, String example1, String example2, String example3, int practice, int idImage) {
-        this.listen = listen;
-        this.audioListen = audioListen;
-        this.example1 = example1;
-        this.example2 = example2;
-        this.example3 = example3;
+
+    public ItemsDictionaryKanji(String listen, String meaning, String onjomi, String kunyomi, int audioOnyomi, int audioKunyomi, int practice, int idImage) {
+       this.listen = listen;
+        this.meaning = meaning;
+        this.onjomi = onjomi;
+        this.kunyomi = kunyomi;
+        this.audioOnyomi = audioOnyomi;
+        this.audioKunyomi = audioKunyomi;
         this.practice = practice;
         this.idImage = idImage;
     }
@@ -26,20 +29,24 @@ public class ItemsDictionaryKanji {
         return listen;
     }
 
-    public int getExample() {
-        return audioListen;
+    public String getMeaning() {
+        return meaning;
     }
 
-    public String getExample1() {
-        return example1;
+    public String getOnjomi() {
+        return onjomi;
     }
 
-    public String getExample2() {
-        return example2;
+    public String getKunyomi() {
+        return kunyomi;
     }
 
-    public String getExample3() {
-        return example3;
+    public int getAudioOnyomi() {
+        return audioOnyomi;
+    }
+
+    public int getAudioKunyomi() {
+        return audioKunyomi;
     }
 
     public int getPractice() {
@@ -49,4 +56,5 @@ public class ItemsDictionaryKanji {
     public int getIdImage() {
         return idImage;
     }
+
 }

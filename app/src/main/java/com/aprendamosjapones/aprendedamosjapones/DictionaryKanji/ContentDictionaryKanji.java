@@ -10,9 +10,8 @@ import java.util.List;
  */
 public class ContentDictionaryKanji {
     private static ItemsDictionaryKanji[] courses = {
-            new ItemsDictionaryKanji("a",
-                    R.raw.aud1a, "Funciona ejemplo 1", "Funciona ejemplo 3", "Funciona ejemplo 3", R.drawable.a,
-                     R.drawable.kanji1dia),
+            new ItemsDictionaryKanji("Dia",
+                    "Significado", "Onjomi", "Kunjomi", R.raw.aud1a, R.raw.aud1a, R.drawable.kanji1dia, R.drawable.kanji1dia),
     };
 
     /**
