@@ -294,7 +294,8 @@ public class Words {
         map.put("kyakyukyo", kyakyukyo);
 
         i = 0;
-        Match[] gyagyugyo = new Match[6];
+        Match[] gyagyugyo = new Match[7];
+        gyagyugyo[i++] = new Match("ぎゅうにゅう", "leche", new String[]{"gyu", "u", "nyu", "u"});
         gyagyugyo[i++] = new Match("たんぎょ", "sirena", new String[]{"ta", "n", "gyo"});
         gyagyugyo[i++] = new Match("すいぎゅう", "búfalo", new String[]{"su", "i", "gyu", "u"});
         gyagyugyo[i++] = new Match("こうぎょう", "industria", new String[]{"ko", "u", "gyo", "u"});
@@ -346,8 +347,7 @@ public class Words {
         map.put("chachucho", chachucho);
 
         i = 0;
-        Match[] nyanyunyo = new Match[4];
-        nyanyunyo[i++] = new Match("ぎゅうにゅう", "leche", new String[]{"yu", "u", "nyu", "u"});
+        Match[] nyanyunyo = new Match[3];
         nyanyunyo[i++] = new Match("ゆにゅう", "importación", new String[]{"yu", "nyu", "u"});
         nyanyunyo[i++] = new Match("にゃんこ", "gatito", new String[]{"nya", "n", "ko"});
         nyanyunyo[i++] = new Match("にょう", "orina", new String[]{"nyo", "u"});
