@@ -11,10 +11,10 @@ import java.util.List;
 public class ContentDictionaryKanji {
     private static ItemsDictionaryKanji[] courses = {
             new ItemsDictionaryKanji("Día",
-                    "Día, sol", "ニチ, ニジツ", "ひ, び", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan2uno, R.drawable.kanji1dia),
+                    "Día, sol", "ニチ, ニジツ", "ひ, び", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan1dia, R.drawable.kanji1dia),
 
             new ItemsDictionaryKanji("Uno",
-                    "Uno, sol", "イチ, イツ", "ひと(つ)", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan1dia, R.drawable.kanji2uno),
+                    "Uno, sol", "イチ, イツ", "ひと(つ)", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan2uno, R.drawable.kanji2uno),
 
             new ItemsDictionaryKanji("País",
                     "País", "", "", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan3pais, R.drawable.kanji3pais),
