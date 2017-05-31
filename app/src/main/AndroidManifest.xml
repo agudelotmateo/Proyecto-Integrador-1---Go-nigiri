@@ -25,22 +25,19 @@
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
         <activity
-            android:name=".Games.memory.MenuMemoryActivity"
+            android:name=".Games.MemoryGame.memory.MenuMemoryActivity"
             android:screenOrientation="userPortrait"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
         <activity
-            android:name=".Games.memory.MemoryActivity"
+            android:name=".Games.MemoryGame.memory.MemoryActivity"
             android:screenOrientation="userLandscape"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".DictionaryKanji.DictionaryKanjiActivity"></activity>
-        <activity android:name=".DictionaryHiragana.DictionaryHiraganaActivity"></activity>
-        <activity android:name=".DictionaryKatakana.DictionaryKatakanaActivity"></activity>
         <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
         <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
         <activity android:name=".KanjiLevels.KanjiLevelsActivity"></activity>
-        <activity android:name=".View.IntructionMemoryGame"></activity>
+        <activity android:name=".Games.MemoryGame.IntructionMemoryGame"></activity>
         <activity
             android:name=".HiraganaLevels.HiraganaDetailActivity"
             android:label="@string/title_activity_detail"
@@ -74,26 +71,17 @@
             </meta-data>
         </activity>
 
-        <activity android:name=".DiccionarioHiragana.DiccionarioHiraganaActivity"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana1"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana2"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana3"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana4"></activity>
-        <activity android:name=".DiccionarioHiragana.HIragana5"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana6"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana7"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana8"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana9"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana10"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana11"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana12"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana13"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana14"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana15"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana16"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana17"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana18"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana19"></activity>
-        <activity android:name=".DiccionarioHiragana.Hiragana20"></activity>
+        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"></activity>
+        <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana"></activity>
+
+        <activity android:name=".DictionaryKatakana.DictionarKatakanaActivity"></activity>
+        <activity android:name=".DictionaryKatakana.DetailsDictionaryKatakana"></activity>
+
+        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
+        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
+
+        <activity android:name=".Games.AskedGame.ActivityASkedGame"></activity>
+        <activity android:name=".Games.AskedGame.InstructionsAskedGame"></activity>
+
     </application>
 </manifest>

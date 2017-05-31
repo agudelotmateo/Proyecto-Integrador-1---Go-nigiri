@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.aprendamosjapones.aprendedamosjapones.DiccionarioHiragana.DiccionarioHiraganaActivity;
-import com.aprendamosjapones.aprendedamosjapones.DictionaryKanji.DictionaryKanjiActivity;
-import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionaryKatakanaActivity;
-import com.aprendamosjapones.aprendedamosjapones.Games.memory.MenuMemoryActivity;
+import com.aprendamosjapones.aprendedamosjapones.DictionaryHIragana.DictionarHIraganaActivity;
+import com.aprendamosjapones.aprendedamosjapones.DictionaryKanji.DictionarKanjiActivity;
+import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionarKatakanaActivity;
+import com.aprendamosjapones.aprendedamosjapones.Games.AskedGame.ActivityASkedGame;
+import com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.memory.MenuMemoryActivity;
 import com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity;
@@ -28,11 +29,12 @@ public class MainMenuActivity extends AppCompatActivity {
     Button goActivityHiraganaDictionary;
     Button getGoActivityLevelKatakana;
     Button goActivityKanjiDictionary;
+    Button getGoActivityAskedGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu_activity1);
+        setContentView(R.layout.main_menu_activity);
 
 
         //Botones
@@ -51,6 +53,8 @@ public class MainMenuActivity extends AppCompatActivity {
         goActivityKatakanaDictionary = (Button)findViewById(R.id.katakanaDicionario);
 
         getGoActivityLevelKatakana = (Button)findViewById(R.id.kataLevel);
+
+        getGoActivityAskedGame = (Button)findViewById(R.id.juegoPreguntados);
 
 
         //Intents
@@ -94,7 +98,7 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityHiraganaDictionary = new Intent(MainMenuActivity.this, DiccionarioHiraganaActivity.class);
+                Intent goActivityHiraganaDictionary = new Intent(MainMenuActivity.this, DictionarHIraganaActivity.class);
                 startActivity(goActivityHiraganaDictionary);
             }
         });
@@ -103,7 +107,7 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view2) {
 
-                Intent goActivityKatakanaDictionary = new Intent(MainMenuActivity.this, DictionaryKatakanaActivity.class);
+                Intent goActivityKatakanaDictionary = new Intent(MainMenuActivity.this, DictionarKatakanaActivity.class);
                 startActivity(goActivityKatakanaDictionary);
             }
         });
@@ -112,8 +116,17 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goActivityKanjiDictionary = new Intent(MainMenuActivity.this, DictionaryKanjiActivity.class);
+                Intent goActivityKanjiDictionary = new Intent(MainMenuActivity.this, DictionarKanjiActivity.class);
                 startActivity(goActivityKanjiDictionary);
+            }
+        });
+
+        getGoActivityAskedGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent getGoActivityAskedGame = new Intent(MainMenuActivity.this, ActivityASkedGame.class);
+                startActivity(getGoActivityAskedGame);
             }
         });
     }
