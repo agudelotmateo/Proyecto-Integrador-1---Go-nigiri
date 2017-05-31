@@ -41,25 +41,6 @@
                 android:gravity="center"
                 android:textSize="17sp"/>
 
-            <TextView
-                android:id="@+id/meaning"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Silaba: "/>
-
-            <TextView
-                android:id="@+id/onyomi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ejemplo" />
-
-
-            <TextView
-                android:id="@+id/kunyomi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Onyomi" />
-
         </LinearLayout>
 
 
