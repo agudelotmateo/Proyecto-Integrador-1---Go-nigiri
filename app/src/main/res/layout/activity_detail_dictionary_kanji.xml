@@ -2,7 +2,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/editTextColorWhite">
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scroll"
@@ -23,7 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="30dp">
+                android:paddingBottom="30dp"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:id="@+id/meaning"
@@ -94,8 +96,7 @@
 
                 <pl.droidsonroids.gif.GifImageView
                     android:id="@+id/practice"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    style="@style/detailAnimation"
                     android:src="@drawable/a"
                     android:layout_gravity="center">
                 </pl.droidsonroids.gif.GifImageView>

@@ -135,6 +135,12 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="detailAnimation">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
     <!--Los siguientes estilos son para los juegos-->
     <style name="instructionButton" parent="button">
         <item name="android:layout_gravity">center</item>
