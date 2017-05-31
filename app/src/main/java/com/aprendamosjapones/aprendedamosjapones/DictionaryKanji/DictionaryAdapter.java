@@ -2,8 +2,6 @@ package com.aprendamosjapones.aprendedamosjapones.DictionaryKanji;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,7 +52,6 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
                 .into(viewHolder.image);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onItemClick(View view, int position) {
         // Imagen a compartir entre transiciones

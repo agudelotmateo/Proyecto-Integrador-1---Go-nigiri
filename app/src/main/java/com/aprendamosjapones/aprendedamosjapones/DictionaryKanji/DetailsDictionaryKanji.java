@@ -32,11 +32,12 @@ import com.bumptech.glide.Glide;
 public class DetailsDictionaryKanji extends AppCompatActivity {
     private static final String EXTRA_POSITION = "com.herprogramacion.cursospoint.extra.POSITION";
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_dictionary);
+        setContentView(R.layout.activity_detail_dictionary_kanji);
 
         setToolbar(); // Reemplazar la action bar
 
@@ -118,22 +119,22 @@ public class DetailsDictionaryKanji extends AppCompatActivity {
     }
 
     private void setupViews(int position) {
-        TextView listen = (TextView) findViewById(R.id.listen);
-        Button audioListen = (Button) findViewById(R.id.audiolisten);
-        TextView example1 = (TextView) findViewById(R.id.example1);
-        TextView example2 = (TextView) findViewById(R.id.example2);
-        TextView example3 = (TextView) findViewById(R.id.example3);
+        TextView meaning = (TextView) findViewById(R.id.meaning);
+        TextView onjomi = (TextView) findViewById(R.id.onjomi);
+        TextView kunjomi = (TextView) findViewById(R.id.kunjomi);
+        Button audioOnjomi = (Button) findViewById(R.id.audioOnyomi);
+        Button audioKunjomi = (Button) findViewById(R.id.audioKunyomi);
         ImageView practice = (ImageView) findViewById(R.id.practice);
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryKanji detailCourse = ContentDictionaryKanji.getCourseByPosition(position);
 
-        listen.setText("Pronunciacion: " + detailCourse.getListen());
-        audioListen.setBottom(detailCourse.getExample());
-        example1.setText(detailCourse.getExample1());
-        example2.setText(detailCourse.getExample2());
-        example3.setText(detailCourse.getExample3());
+        meaning.setText("Significado: " + detailCourse.getMeaning());
+        onjomi.setText("Onyomi: " + detailCourse.getOnjomi());
+        kunjomi.setText("Kunyomi: " + detailCourse.getKunyomi());
+        audioOnjomi.setBottom(detailCourse.getAudioOnyomi());
+        audioKunjomi.setBottom(detailCourse.getAudioKunyomi());
         practice.setImageResource(detailCourse.getPractice());
         Glide.with(this).load(detailCourse.getIdImage()).into(image);
     }
@@ -184,8 +185,7 @@ public class DetailsDictionaryKanji extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static void launch(Activity context, int position, View sharedView) {
         Intent intent = new Intent(context, DetailsDictionaryKanji.class);
         intent.putExtra(EXTRA_POSITION, position);

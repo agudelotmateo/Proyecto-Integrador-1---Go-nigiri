@@ -87,7 +87,6 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
     }
 
     private void setupViews(int position) {
-        TextView listen = (TextView) findViewById(R.id.listen);
         Button audioListen = (Button) findViewById(R.id.audiolisten);
         TextView example1 = (TextView) findViewById(R.id.example1);
         TextView example2 = (TextView) findViewById(R.id.example2);
@@ -98,7 +97,6 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryHiragana detailCourse = ContentDictionaryHiragana.getCourseByPosition(position);
 
-        listen.setText(detailCourse.getListen());
         audioListen.setBottom(detailCourse.getExample());
         example1.setText(detailCourse.getExample1());
         example2.setText(detailCourse.getExample2());
