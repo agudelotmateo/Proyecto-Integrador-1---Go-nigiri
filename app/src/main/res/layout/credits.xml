@@ -134,6 +134,14 @@
                     style="@style/creditsContent"
                     android:text="http://thejapanesepage.com/beginners/hiragana">
                 </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="https://nihongoichiban.com/2011/04/10/complete-list-of-kanji-for-jlpt-n5/">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="https://en.wiktionary.org/">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
