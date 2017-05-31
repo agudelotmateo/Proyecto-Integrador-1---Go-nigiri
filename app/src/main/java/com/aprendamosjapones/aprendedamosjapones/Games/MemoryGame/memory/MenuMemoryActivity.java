@@ -1,15 +1,14 @@
-package com.aprendamosjapones.aprendedamosjapones.Games.memory;
+package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.memory;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 
 import com.aprendamosjapones.aprendedamosjapones.R;
-import com.aprendamosjapones.aprendedamosjapones.View.IntructionMemoryGame;
+import com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.IntructionMemoryGame;
 
 // Al terminar el juego, vuelva al menu de inicio.
 // Pendiente: rotar reinicia el juego
@@ -23,11 +22,13 @@ import com.aprendamosjapones.aprendedamosjapones.View.IntructionMemoryGame;
  */
 public class MenuMemoryActivity extends AppCompatActivity {
 
+    Button goMemoryInstruction;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_menu);
-        Button goInstructions = (Button) findViewById(R.id.instructionsMemory);
+        final Button goInstructions = (Button) findViewById(R.id.instructionsMemory);
         goInstructions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +65,18 @@ public class MenuMemoryActivity extends AppCompatActivity {
                 }
 
                 startActivity(new Intent(MenuMemoryActivity.this, MemoryActivity.class));
+
+
+                goMemoryInstruction = (Button)findViewById(R.id.instructionsMemory);
+
+                goMemoryInstruction.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent goMemoryInstruction = new Intent(MenuMemoryActivity.this, IntructionMemoryGame.class);
+                        startActivity(goMemoryInstruction);
+                    }
+                });
+
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.Games.memory;
+package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.memory;
 
 import android.content.Context;
 import android.content.DialogInterface;

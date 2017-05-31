@@ -1,4 +1,4 @@
-package com.aprendamosjapones.aprendedamosjapones.View;
+package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame;
 
 import android.app.Activity;
 import android.os.Bundle;
