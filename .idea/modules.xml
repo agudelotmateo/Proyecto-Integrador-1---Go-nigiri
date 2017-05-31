@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AprendedamosJapones.iml" filepath="$PROJECT_DIR$/AprendedamosJapones.iml" />
       <module fileurl="file://$PROJECT_DIR$/GoNigiri.iml" filepath="$PROJECT_DIR$/GoNigiri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoNigiri.iml" filepath="$PROJECT_DIR$/GoNigiri.iml" />
       <module fileurl="file://$PROJECT_DIR$/GoNigiriF.iml" filepath="$PROJECT_DIR$/GoNigiriF.iml" />
       <module fileurl="file://$PROJECT_DIR$/Proyecto-Integrador-1---Go-nigiri.iml" filepath="$PROJECT_DIR$/Proyecto-Integrador-1---Go-nigiri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

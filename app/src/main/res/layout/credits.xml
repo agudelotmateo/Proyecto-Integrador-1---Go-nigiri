@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/logoMain"
+            style="@style/creditsTitleImage">
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/creditsTitleText"
+        android:text="Créditos"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/creditSubTitle"
+                    android:text="Autores">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Catalina Patiño Forero">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Wilfer Manuel Salas Gonzales">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Mateo Agudelo Toro">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/creditSubTitle"
+                    android:text="Asesor teórico">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Kaori Hatano">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/creditSubTitle"
+                    android:text="Asesores Técnicos">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="José Alejandro Carmona Ramirez">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Luis Fernando Londoño L.">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/creditSubTitle"
+                    android:text="Apoyo">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Centro de idiomas, Universidad EAFIT">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/creditSubTitle"
+                    android:text="Multimedia">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="Laura Blandón Quiroz">
+                </TextView>
+                <TextView
+                    style="@style/creditsContent"
+                    android:text="http://thejapanesepage.com/beginners/hiragana">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

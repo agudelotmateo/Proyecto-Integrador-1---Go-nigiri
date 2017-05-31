@@ -172,4 +172,29 @@
         <item name="android:textColor">@color/editTextColorOrange</item>
     </style>
 
+    <!--Los siguientes estilos son para los créditos-->
+    <style name="creditsTitleImage" parent="titleImage">
+        <item name="android:background">@drawable/onigiri1</item>
+    </style>
+
+    <style name="creditsTitleText" parent="titleText">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="creditSubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="creditsContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

@@ -34,12 +34,12 @@
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Niveles"
                 android:textSize="27sp"
                 android:paddingTop="35dp"
-                android:textColor="#4779cc"
+                android:textColor="@color/blue"
                 android:textStyle="bold">
             </TextView>
         </LinearLayout>
@@ -102,10 +102,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juegos"
+                android:textColor="@color/blue"
                 android:textSize="27sp"
-                android:textColor="#4779cc"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -157,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:text="Diccionarios"
                 android:textSize="27sp"
-                android:textColor="#4779cc"
+                android:textColor="@color/blue"
                 android:textStyle="bold"
                 />
 
