@@ -22,13 +22,13 @@ public class HIraganaLevels {
                             " más allá de esto no lo vamos a utilizar. Aprender japonés con sólo rōmaji no es" +
                             " recomendable, ya que aunque se puede encontrar en el idioma no es el sistema de escritura " +
                             "más utilizado, de manera que es importante adaptarse a los alfabetos propios" +
-                            " de la lengua.\n", "Sílaba","pronunciación","ejemplo", R.drawable.romaji),
+                            " de la lengua.\n", R.drawable.romaji),
             new HiraganaLevel("¿Qué es el hiragana?",
                     "El hiragana es uno de los sistemas oficiales de escritura del japonés. Es como el alfabeto " +
                             "para nosotros en el sentido de que nos define la fonética o sonidos del lenguaje, " +
                             "la diferencia es que más que un alfabeto es un silabario.\n\n" +
                             "El silabario está compuesto por 46 caracteres básicos y es usado para palabras " +
-                            "nativas de Japón y elementos gramaticales.\n", "","","", R.drawable.hiragana),
+                            "nativas de Japón y elementos gramaticales.\n", R.drawable.hiragana),
             new HiraganaLevel("Las vocales y la n (ん)",
                     "El japonés tiene 5 vocales, y por suerte para nosotros son idénticas a las nuestras, " +
                             "con la única diferencia del orden en que se presentan: a, i, u, e, o. " +
@@ -38,7 +38,7 @@ public class HIraganaLevels {
                             "Hay momentos en los que la 'u' y la 'i' no se pronuncian. Esto se suele dar cuando " +
                             "se encuentran entre las consonantes: 'p', 't', 'k', 'ch', 'f', 'h', 's', 'sh'; o" +
                             " también cuando se encuentran al final de la palabra y son precedidas por alguna" +
-                            " de estas consonantes.\n" , "","","", R.drawable.uno),
+                            " de estas consonantes.\n" , R.drawable.uno),
 
     };
 

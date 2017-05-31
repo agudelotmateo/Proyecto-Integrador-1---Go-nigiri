@@ -6,18 +6,12 @@ package com.aprendamosjapones.aprendedamosjapones.KanjiLevels;
 public class KanjiLevel {
     private String title;
     private String description;
-    private String meaning;
-    private String onjomi;
-    private String kunjomi;
     private int idImage;
 
 
-    public KanjiLevel(String title, String description, String onjomi, String kunjomi, String meaning, int idImage) {
+    public KanjiLevel(String title, String description, int idImage) {
         this.title = title;
         this.description = description;
-        this.onjomi = onjomi;
-        this.kunjomi = kunjomi;
-        this.meaning = meaning;
         this.idImage = idImage;
     }
 
@@ -27,18 +21,6 @@ public class KanjiLevel {
 
     public String getDescription() {
         return description;
-    }
-
-    public String getMeaning() {
-        return meaning;
-    }
-
-    public String getOnjomi() {
-        return onjomi;
-    }
-
-    public String getKunjomi() {
-        return kunjomi;
     }
 
     public int getIdImage() {
