@@ -5,6 +5,38 @@
     android:layout_height="match_parent"
     android:background="@color/editTextColorWhite">
 
+    <!-- App Bar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Toolbar -->
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/lastImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:transitionName="shared_image">
+            </ImageView>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
@@ -26,17 +58,15 @@
 
                 <TextView
                     style="@style/detailTextTitleContent"
-                    android:text="Pronunciacion: ">
-                </TextView>
+                    android:text="Pronunciacion: "></TextView>
 
                 <Button
                     android:id="@+id/audiolisten"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/button_audio">
-                </Button>
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_audio"></Button>
             </LinearLayout>
 
             <LinearLayout
@@ -82,14 +112,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     style="@style/detailTextTitleContent"
-                    android:text="Escritura "
+                    android:paddingBottom="5dp"
                     android:paddingTop="20dp"
-                    android:paddingBottom="5dp">
+                    android:text="Escritura ">
 
                 </TextView>
 
@@ -97,9 +127,8 @@
                     android:id="@+id/practice"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/a"
-                    android:layout_gravity="center">
-                </pl.droidsonroids.gif.GifImageView>
+                    android:layout_gravity="center"
+                    android:src="@drawable/a"></pl.droidsonroids.gif.GifImageView>
 
             </LinearLayout>
 
@@ -107,37 +136,6 @@
 
 
     </android.support.v4.widget.NestedScrollView>
-    <!-- App Bar -->
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <!-- Toolbar -->
-        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/lastImage"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:transitionName="shared_image">
-            </ImageView>
-
-        </LinearLayout>
-
-    </android.support.design.widget.AppBarLayout>
 
 </android.support.design.widget.CoordinatorLayout>
 
