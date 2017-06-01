@@ -29,8 +29,8 @@
             style="@style/gameTitleImage">
         </ImageView>
         <TextView
-            android:id="@+id/titlePreguntados"
-            android:text="Preguntados"
+            android:id="@+id/titleMatchit"
+            android:text="Match it!"
             style="@style/gameTitleText">
         </TextView>
     </LinearLayout>
@@ -44,7 +44,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/buttonJugarPreguntados"
+        android:id="@+id/buttonJugarMatchit"
         style="@style/playButton"
         android:text="@string/playButton">
     </Button>
@@ -63,7 +63,7 @@
         android:weightSum="1">
 
         <TextView
-            android:id="@+id/textNivelPreguntados"
+            android:id="@+id/textNivelMatchit"
             style="@style/gameOptionTitle"
             android:text="Nivel:" />
 
@@ -72,64 +72,43 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.29"
-            android:checkedButton="@+id/radioButtonHiraganaPreguntados"
+            android:checkedButton="@+id/radioButtonHiraganaMatchit"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radioButtonHiraganaPreguntados"
+                android:id="@+id/radioButtonHiraganaMatchit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Hiragana    " />
 
             <RadioButton
-                android:id="@+id/radioButtonKatakanaPreguntados"
+                android:id="@+id/radioButtonKatakanaMatchit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Katakana    " />
-
-            <RadioButton
-                android:id="@+id/radioButtonKanjiPreguntados"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Kanji    " />
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textTiempoPreguntados"
+            android:id="@+id/textFilaMatchit"
             style="@style/gameOptionTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tiempo por pregunta:" />
+            android:text="Fila:" />
 
         <Spinner
-            android:id="@+id/spinnerPreguntadosTiempo"
+            android:id="@+id/spinnerFilaMatchit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/preguntadosTiempo"
+            android:entries="@array/matchitFilas"
             android:gravity="center"
             android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/textNumPreguntas"
-            style="@style/gameOptionTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Número de preguntas:"/>
-        <Spinner
-            android:id="@+id/spinnerNumPreguntados"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/preguntadosNumPreguntas"
-            android:layout_gravity="center" />
-
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/instructionsPreguntados"
+        android:id="@+id/instructionsMatchit"
         android:text="@string/instruction"
         style="@style/instructionButton">
     </Button>

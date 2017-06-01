@@ -37,7 +37,10 @@
         <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
         <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
         <activity android:name=".KanjiLevels.KanjiLevelsActivity"></activity>
-        <activity android:name=".Games.MemoryGame.IntructionMemoryGame"></activity>
+        <activity android:name=".Games.MemoryGame.IntructionMemoryGame"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
         <activity
             android:name=".HiraganaLevels.HiraganaDetailActivity"
             android:label="@string/title_activity_detail"
@@ -84,8 +87,19 @@
             android:screenOrientation="userPortrait"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".Games.AskedGame.InstructionsAskedGame"></activity>
+        <activity android:name=".Games.AskedGame.InstructionsAskedGame"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
         <activity android:name=".MenuNavigation.NavigationDrawer"></activity>
+        <activity android:name=".Games.MemoryGame.matching.InstructionsMatchit"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name=".Games.MemoryGame.matching.MenuMatchit"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
 
     </application>
 </manifest>
