@@ -41,7 +41,7 @@
                 android:id="@+id/textView3"
                 style="@style/mainMenuTextSection"
                 android:paddingTop="30dp"
-                android:text="Niveles">
+                android:text="Teoría">
             </TextView>
         </LinearLayout>
 
