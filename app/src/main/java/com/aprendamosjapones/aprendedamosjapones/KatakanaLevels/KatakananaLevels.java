@@ -17,18 +17,18 @@ public class KatakananaLevels {
                             " suenan muy similar o igual a como suenan en otro idioma, por ejemplo “pan” en" +
                             " español se escribe “pan” en rōmaji, y se pronuncia igual. Esto se" +
                             " debe a que las palabras que se toman de otro idioma se ajustan ligeramente para" +
-                            " que suenen prácticamente igual pero usando los símbolos del katakana.\n", R.drawable.katakana),
+                            " que suenen prácticamente igual pero usando los símbolos del katakana.\n", R.drawable.teorkata1katakana),
             new KatakanaLevel("Vocales alargadas",
                     "Por suerte, representar las vocales alargadas en katakana es mucho más fácil que en " +
                             "hiragana. Independiente de la vocal a alargar, lo único que hay que hacer es añadir " +
                             "‘ー’ después del caracter.",
-                    R.drawable.katakana),
+                    R.drawable.teorkata2alargadas),
             new KatakanaLevel("Consonantes dobles",
                     "Al igual que con el hiragana, en el katakana también se pueden encontrar palabras con doble " +
                             "consonante, como en el caso de la palabra “kukkii” (que significa galleta). Pero, al " +
                             "igual que en el hiragana, se escribe con el pequeño ‘tsu’, la diferencia es que utilizamos " +
                             "el del katakana: ツ. De esta forma, “kukki” sería クッキー.",
-                    R.drawable.katakana),
+                    R.drawable.teorkata3consdobles),
             new KatakanaLevel("Sílabas extranjeras",
                     "Ya sabes que el katakana tiene las mismas sílabas del hiragana y que se usa para onomatopeyas y " +
                             "palabras extranjeras. Pero, te has preguntado cómo hacemos con palabras como “comedy” " +
@@ -45,7 +45,7 @@ public class KatakananaLevels {
                             "que pasa con “comedy” que se escribe comoコメディー, donde  デes el katakana de “ji”, el " +
                             "cual se encuentra en el mismo grupo que ‘da’, ‘de’, ‘do’ (si no te acuerdas de esto, te " +
                             "invitamos a que le des un repaso a los diccionarios y lo verifiques).",
-                    R.drawable.katakana)
+                    R.drawable.teorkata4silabasext)
     };
 
     public static List<KatakanaLevel> getCourses() {

@@ -23,7 +23,7 @@ public class KanjiLevels {
                             "los más básicos y los que necesitas conocer para presentar " +
                             "el nivel 5 del examen de certificación de japonés: JLPT. Ten " +
                             "en cuenta que son 5 niveles, donde el quinto es el más básico " +
-                            "de todos.",  R.drawable.kanji),
+                            "de todos.",  R.drawable.teorkan1kanji),
             new KanjiLevel("Onyomi, Kunyomi y Okurigana",
                     "Antes de aprender los kanjis es importante entender cómo los vamos a leer a la " +
                             "hora de pronunciarlos.\n\n" +
@@ -46,7 +46,7 @@ public class KanjiLevels {
                             "porque encontramos el kanji acompañado por el hiragana encerrado en paréntesis '()'.\n\n" +
                             "Como podrás deducir, cuando encontramos okurigana con el kanji, su lectura debe ser " +
                             "usando la pronunciación kun (kunyomi).",
-                    R.drawable.kanji)
+                    R.drawable.teorkan2onkunoku)
     };
 
     public static List<KanjiLevel> getCourses() {

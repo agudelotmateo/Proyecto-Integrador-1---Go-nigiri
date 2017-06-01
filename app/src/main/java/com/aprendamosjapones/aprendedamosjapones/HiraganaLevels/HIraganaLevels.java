@@ -23,14 +23,14 @@ public class HIraganaLevels {
                             " recomendable, ya que aunque se puede encontrar en el idioma no es el sistema de escritura " +
                             "más utilizado, de manera que es importante adaptarse a los alfabetos propios" +
                             " de la lengua.\n",
-                    R.drawable.romaji),
+                    R.drawable.teorhira1romaji),
             new HiraganaLevel("¿Qué es el hiragana?",
                     "El hiragana es uno de los sistemas oficiales de escritura del japonés. Es como el alfabeto " +
                             "para nosotros en el sentido de que nos define la fonética o sonidos del lenguaje, " +
                             "la diferencia es que más que un alfabeto es un silabario.\n\n" +
                             "El silabario está compuesto por 46 caracteres básicos y es usado para palabras " +
                             "nativas de Japón y elementos gramaticales.\n",
-                    R.drawable.hiragana),
+                    R.drawable.teorhira2hiragana),
             new HiraganaLevel("Las vocales y la n (ん)",
                     "El japonés tiene 5 vocales, y por suerte para nosotros son idénticas a las nuestras, " +
                             "con la única diferencia del orden en que se presentan: a, i, u, e, o. " +
@@ -41,7 +41,7 @@ public class HIraganaLevels {
                             "se encuentran entre las consonantes: 'p', 't', 'k', 'ch', 'f', 'h', 's', 'sh'; o" +
                             " también cuando se encuentran al final de la palabra y son precedidas por alguna" +
                             " de estas consonantes.\n" ,
-                    R.drawable.uno),
+                    R.drawable.teorhira3vocales),
             new HiraganaLevel("Vocales alargadas",
                     "En el japonés es común encontrar vocales alargadas, esto es, vocales que se pronuncian el " +
                             "doble del tiempo del normal, por ejemplo en español. Para escribirlas la 'a', 'u' " +
@@ -64,7 +64,7 @@ public class HIraganaLevels {
                             "- La ei: Se añade いdespués de un hiragana que al final de la pronunciación tenga la e. " +
                             "Excepto ええ (sí), ねえ (decir), おねえさん (hermana mayor).\n" +
                             "- La ô: Se añade お después de un hiragana que al final de la pronunciación tenga la o.",
-                    R.drawable.uno),
+                    R.drawable.teorhira4alargadas),
             new HiraganaLevel("Las consonantes",
                     "La mayoría de las consonantes se pronuncian como en el español, aunque hay unas cuantas excepciones:\n" +
                             "- La 'g': Se pronuncia igual que en el español sólo que cuando está acompañada por una 'i' o " +
@@ -76,20 +76,20 @@ public class HIraganaLevels {
                             "una 'p', 'b' o 'm' actúa como una 'm'.\n" +
                             "- La 'r': siempre se pronuncia suave como en “aro”, en ningún momento se pronuncia como en “ratón”.\n\n" +
                             "Es importante que tengamos en cuenta que en el japonés no vamos a encontrar la 'v', 'l', o 'q'.",
-                    R.drawable.uno),
+                    R.drawable.teorhira5consonantes),
             new HiraganaLevel("Consonantes dobles",
                     "En japonés es posible encontrarse palabras con doble consonante (una misma consonante repetida dos veces " +
                             "seguidas). Por ejemplo, puedes ver que la palabra “gakkou” (que significa colegio) tiene doble k. Por " +
                             "suerte representar esto con hiraganas no es complicado, sólo tenemos que usar un  つ (‘tsu’) más pequeño " +
                             "antes de la consonante a alargar. De esta manera, “gakkou” sería がっこう. Tal vez sea difícil " +
                             "diferenciarlo al principio, pero la clave para aprender es la práctica y ésta no va a ser la excepción.",
-                    R.drawable.uno),
+                    R.drawable.teorhira6consdobles),
             new HiraganaLevel("Tenten y Maru",
                     "Ya conoces los 46 hiraganas básicos, pero estos no representan todas las sílabas del idioma. Algunos de los " +
                             "hiragana que aprendimos pueden llevar una comilla doble '\"' o un círculo pequeño '°' en la parte " +
                             "superior derecha, los cuales modifican la consonante, dándole un sonido diferente. A la comilla la " +
                             "llamamos \"tenten\" y al círculo lo llamamos \"maru\".",
-                    R.drawable.uno)
+                    R.drawable.teorhira7tentenmaru)
 
     };
 
