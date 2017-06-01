@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
-            android:paddingTop="0dp">
+            android:paddingTop="10dp">
             <Button
                 android:id="@+id/juegoPreguntados"
                 style="@style/mainMenuButton"
