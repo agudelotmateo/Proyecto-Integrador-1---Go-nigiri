@@ -17,7 +17,7 @@ public class ContentDictionaryKanji {
                     "Uno, sol", "イチ, イツ", "ひと(つ)", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan2uno, R.drawable.kanji2uno),
 
             new ItemsDictionaryKanji("País",
-                    "País", "", "", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan3pais, R.drawable.kanji3pais),
+                    "País", "コク", "くに", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan3pais, R.drawable.kanji3pais),
 
             new ItemsDictionaryKanji("Persona",
                     "Persona", "ジン, ニン", "ひと", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan4persona, R.drawable.kanji4persona),
@@ -97,7 +97,7 @@ public class ContentDictionaryKanji {
             new ItemsDictionaryKanji("Entrar",
                     "Entrar, Colocar", "ニュウ", "はい(る), い(ねる)", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan29entrar, R.drawable.kanji29entrar),
 
-            new ItemsDictionaryKanji("",
+            new ItemsDictionaryKanji("Estudiar",
                     "Estudiar", "ガク", "まな(ぶ)", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan30estudiar, R.drawable.kanji30estudiar),
 
             new ItemsDictionaryKanji("Alto",

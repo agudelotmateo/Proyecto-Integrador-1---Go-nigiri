@@ -47,10 +47,9 @@
                 android:paddingTop="10dp">
 
                 <TextView
+                    android:id="@+id/textView4"
                     style="@style/detailTextTitleContent"
-                    android:text="Onyomi: "
-                    android:paddingRight="10dp">
-                </TextView>
+                    android:text="Onyomi: "></TextView>
 
                 <TextView
                     android:id="@+id/onjomi"
@@ -68,8 +67,7 @@
 
                 <TextView
                     android:text="Kunnyomi: "
-                    style="@style/detailTextTitleContent"
-                    android:paddingRight="10dp">
+                    style="@style/detailTextTitleContent">
                 </TextView>
 
                 <TextView
