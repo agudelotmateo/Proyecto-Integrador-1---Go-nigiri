@@ -19,44 +19,48 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/textView2"
                 style="@style/mainMenuTextTitle"
                 android:text="Go Nigiri"></TextView>
+
             <ImageView
                 android:id="@+id/logoMain"
                 style="@style/mainMenuImage"
-                android:background="@drawable/onigiri1">
-            </ImageView>
+                android:background="@drawable/onigiri1"></ImageView>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
+
             <TextView
                 android:id="@+id/textView3"
                 style="@style/mainMenuTextSection"
-                android:paddingTop="30dp"
-                android:text="Teoría">
-            </TextView>
+                android:paddingTop="20dp"
+                android:text="Teoría"></TextView>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/hiraganaLevel"
                 style="@style/mainMenuButton"
                 android:text="@string/hiragana"
                 android:textStyle="bold" />
+
             <Button
                 android:id="@+id/kataLevel"
                 style="@style/mainMenuButton"
                 android:text="@string/katakana" />
+
             <Button
                 android:id="@+id/kanjiLevel"
                 style="@style/mainMenuButton"
@@ -68,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:paddingTop="20dp">
 
             <TextView
                 android:id="@+id/diccionarios"
@@ -81,16 +85,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
-            android:paddingTop="10dp">
+            android:paddingTop="5dp">
+
             <Button
                 android:id="@+id/hiraganaDiccionario"
                 style="@style/mainMenuButton"
                 android:text="@string/hiragana"
                 android:textStyle="bold" />
+
             <Button
                 android:id="@+id/katakanaDicionario"
                 style="@style/mainMenuButton"
                 android:text="@string/katakana" />
+
             <Button
                 android:id="@+id/kanjiDiccionario"
                 style="@style/mainMenuButton"
@@ -102,7 +109,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:paddingTop="20dp">
+
             <TextView
                 android:id="@+id/juegos"
                 style="@style/mainMenuTextSection"
@@ -114,19 +122,29 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
-            android:paddingTop="10dp">
+            android:paddingTop="5dp">
+
             <Button
                 android:id="@+id/juegoPreguntados"
                 style="@style/mainMenuButton"
                 android:text="Preguntados" />
+
             <Button
                 android:id="@+id/juegoConcentrese"
                 style="@style/mainMenuButton"
                 android:text="Concentrese" />
+
             <Button
                 android:id="@+id/juegoMatchIt"
                 style="@style/mainMenuButton"
                 android:text="Match It" />
         </LinearLayout>
+
+        <Button
+            style="@style/button"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Créditos" />
     </LinearLayout>
 </LinearLayout>
