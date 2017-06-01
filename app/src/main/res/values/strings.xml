@@ -48,9 +48,9 @@
     <string name="instructions_matchit">
         El juego de Match it, es un juego que te permite practicar la lectura del hiragana y el katakana por pequeños grupos.\n\n
         La idea es que te vamos a dar una palabra en hiragana o katakana y tú debes escribir su traducción en rōmaji.
-        Cuando creas tener la respuesta, la podrás verificar con el botón de \"CHECK\". Si está correcta podrás avanzar
+        Cuando creas tener la respuesta, la podrás verificar con el botón de \"VERIFICAR\". Si está correcta podrás avanzar
         a la siguiente palabra, sino, bueno, toca seguir intentando.\n\n
-        Si tienes problemas con una palabra y no quieres responderla, encontrarás un botón \"SKIP\" que te permite avanzar
+        Si tienes problemas con una palabra y no quieres responderla, encontrarás un botón \"SALTAR\" que te permite avanzar
         a la siguiente automáticamente. Y no te preocupes, si vuelves a jugar el mismo nivel, tendrás otra oportunidad
         para responderla.\n\n
         Notarás que debajo de la mayoría de las palabras en hiragana o katakana hay un texto en español. Este indica el
