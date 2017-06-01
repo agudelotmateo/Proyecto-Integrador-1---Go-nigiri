@@ -48,14 +48,6 @@
                     android:text="Onyomi: "
                     android:paddingRight="10dp">
                 </TextView>
-                <Button
-                    android:id="@+id/audioOnyomi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/button_audio">
-                </Button>
 
             </LinearLayout>
             <LinearLayout
@@ -71,15 +63,6 @@
                     style="@style/detailTextTitleContent"
                     android:paddingRight="10dp">
                 </TextView>
-
-                <Button
-                    android:id="@+id/audioKunyomi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/button_audio">
-                </Button>
 
             </LinearLayout>
             <LinearLayout

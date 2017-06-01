@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.TaskStackBuilder;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -125,10 +126,17 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
         ImageView practice = (ImageView) findViewById(R.id.practice);
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
+        audioListen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.aud1a);
+                mediaPlayer.start();
+            }
+        });
+
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryKatakana detailCourse = ContentDictionaryKatakana.getCourseByPosition(position);
 
-        audioListen.setBottom(detailCourse.getExample());
         example1.setText(detailCourse.getExample1());
         example2.setText(detailCourse.getExample2());
         example3.setText(detailCourse.getExample3());
