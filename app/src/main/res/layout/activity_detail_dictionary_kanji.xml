@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="30dp"
+                android:paddingBottom="10dp"
                 android:layout_marginTop="10dp">
 
                 <TextView
@@ -34,8 +34,7 @@
 
                 <TextView
                     android:id="@+id/meaning"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    style="@style/detailTextContent">
                 </TextView>
 
             </LinearLayout>
@@ -54,9 +53,8 @@
                 </TextView>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:id="@+id/onjomi"
+                    style="@style/detailTextContent"
                     android:paddingRight="10dp">
                 </TextView>
 
@@ -76,8 +74,7 @@
 
                 <TextView
                     android:id="@+id/kunjomi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    style="@style/detailTextContent">
                 </TextView>
 
             </LinearLayout>
