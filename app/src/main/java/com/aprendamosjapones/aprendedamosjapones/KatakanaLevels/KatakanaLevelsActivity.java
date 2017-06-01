@@ -19,7 +19,7 @@ public class KatakanaLevelsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level);
+        setContentView(R.layout.activity_katakana_theory);
 
         setToolbar(); // Reemplazar toolbar
 

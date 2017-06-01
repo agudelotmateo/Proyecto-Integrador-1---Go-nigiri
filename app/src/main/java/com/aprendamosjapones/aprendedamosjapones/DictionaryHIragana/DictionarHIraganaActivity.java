@@ -20,7 +20,7 @@ public class DictionarHIraganaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dictionary);
+        setContentView(R.layout.activity_hiragana_dictionary);
 
         setToolbar(); // Reemplazar toolbar
 

@@ -122,12 +122,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
+            android:gravity="center"
             android:paddingTop="5dp">
 
-            <Button
-                android:id="@+id/juegoPreguntados"
-                style="@style/mainMenuButton"
-                android:text="Preguntados" />
 
             <Button
                 android:id="@+id/juegoConcentrese"
@@ -140,11 +137,21 @@
                 android:text="Match It" />
         </LinearLayout>
 
-        <Button
-            style="@style/button"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:text="Créditos" />
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/credits"
+                style="@style/button"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Créditos">
+            </Button>
+        </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>

@@ -19,7 +19,7 @@ public class HiraganaLevelsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level);
+        setContentView(R.layout.activity_hiragana_theory);
 
         setToolbar(); // Reemplazar toolbar
 

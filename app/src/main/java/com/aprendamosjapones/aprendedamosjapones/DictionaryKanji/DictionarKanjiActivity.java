@@ -21,7 +21,7 @@ public class DictionarKanjiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dictionary);
+        setContentView(R.layout.activity_kanji_dictionary);
 
         setToolbar(); // Reemplazar toolbar
 

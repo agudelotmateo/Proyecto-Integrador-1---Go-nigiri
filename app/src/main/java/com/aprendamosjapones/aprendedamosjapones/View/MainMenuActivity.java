@@ -30,8 +30,8 @@ public class MainMenuActivity extends AppCompatActivity {
     Button goActivityHiraganaDictionary;
     Button getGoActivityLevelKatakana;
     Button goActivityKanjiDictionary;
-    Button getGoActivityAskedGame;
     Button getGoActivityMatchitGame;
+    Button goActivityCredits;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,9 +56,9 @@ public class MainMenuActivity extends AppCompatActivity {
 
         getGoActivityLevelKatakana = (Button)findViewById(R.id.kataLevel);
 
-        getGoActivityAskedGame = (Button)findViewById(R.id.juegoPreguntados);
-
         getGoActivityMatchitGame = (Button)findViewById(R.id.juegoMatchIt);
+
+        goActivityCredits = (Button)findViewById(R.id.credits);
 
 
         //Intents
@@ -125,14 +125,6 @@ public class MainMenuActivity extends AppCompatActivity {
             }
         });
 
-        getGoActivityAskedGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent getGoActivityAskedGame = new Intent(MainMenuActivity.this, ActivityASkedGame.class);
-                startActivity(getGoActivityAskedGame);
-            }
-        });
 
         getGoActivityMatchitGame.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,6 +132,15 @@ public class MainMenuActivity extends AppCompatActivity {
 
                 Intent getGoActivityAskedGame = new Intent(MainMenuActivity.this, MenuMatchit.class);
                 startActivity(getGoActivityAskedGame);
+            }
+        });
+
+        goActivityCredits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goActivityCredits = new Intent(MainMenuActivity.this, CreditsActivity.class);
+                startActivity(goActivityCredits);
             }
         });
     }

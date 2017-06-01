@@ -128,9 +128,9 @@ public class DetailsDictionaryKanji extends AppCompatActivity {
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryKanji detailCourse = ContentDictionaryKanji.getCourseByPosition(position);
 
-        meaning.setText("Significado: " + detailCourse.getMeaning());
-        onjomi.setText("Onyomi: " + detailCourse.getOnjomi());
-        kunjomi.setText("Kunyomi: " + detailCourse.getKunyomi());
+        meaning.setText(detailCourse.getMeaning());
+        onjomi.setText(detailCourse.getOnjomi());
+        kunjomi.setText(detailCourse.getKunyomi());
         practice.setImageResource(detailCourse.getPractice());
         Glide.with(this).load(detailCourse.getIdImage()).into(image);
     }
