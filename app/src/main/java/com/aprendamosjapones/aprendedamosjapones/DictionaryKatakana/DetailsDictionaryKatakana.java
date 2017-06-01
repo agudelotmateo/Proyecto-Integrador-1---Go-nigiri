@@ -126,16 +126,16 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
         ImageView practice = (ImageView) findViewById(R.id.practice);
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
+        // Obtiene el curso ha detallar basado en la posición
+        final ItemsDictionaryKatakana detailCourse = ContentDictionaryKatakana.getCourseByPosition(position);
+
         audioListen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.aud1a);
+                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), detailCourse.getExample());
                 mediaPlayer.start();
             }
         });
-
-        // Obtiene el curso ha detallar basado en la posición
-        ItemsDictionaryKatakana detailCourse = ContentDictionaryKatakana.getCourseByPosition(position);
 
         example1.setText(detailCourse.getExample1());
         example2.setText(detailCourse.getExample2());
@@ -196,7 +196,7 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
         intent.putExtra(EXTRA_POSITION, position);
 
         // Los elementos 4, 5 y 6 usan elementos compartidos,
-        if (position >= 105) {
+        if (position >= 150) {
             ActivityOptions options0 = ActivityOptions
                     .makeSceneTransitionAnimation(context, sharedView, sharedView.getTransitionName());
             context.startActivity(intent, options0.toBundle());

@@ -28,6 +28,9 @@ public class MenuMemoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_menu);
+
+
+
         final Button goInstructions = (Button) findViewById(R.id.instructionsMemory);
         goInstructions.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +39,7 @@ public class MenuMemoryActivity extends AppCompatActivity {
                 startActivity(goInstructions);
             }
         });
+
 
         Button playButton = (Button) findViewById(R.id.buttonJugarConcentrese);
         playButton.setOnClickListener(new View.OnClickListener() {
