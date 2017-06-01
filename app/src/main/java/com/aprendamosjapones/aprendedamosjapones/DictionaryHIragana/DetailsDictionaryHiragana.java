@@ -99,15 +99,15 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         ImageView practice = (ImageView) findViewById(R.id.practice);
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
+        final ItemsDictionaryHiragana detailClass = ContentDictionaryHiragana.getCourseByPosition(position);
+
         audioListen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.aud1a);
+                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), detailClass.getExample());
                 mediaPlayer.start();
             }
         });
-
-        ItemsDictionaryHiragana detailClass = ContentDictionaryHiragana.getCourseByPosition(position);
 
         example1.setText(detailClass.getExample1());
         example2.setText(detailClass.getExample2());
