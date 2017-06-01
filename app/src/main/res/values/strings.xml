@@ -47,6 +47,9 @@
     </string>
     <string name="instruction">Instrucciones</string>
     <string name="playButton">¡A jugar!</string>
+    <string name="kanji">Kanji</string>
+    <string name="hiragana">Hiragana</string>
+    <string name="katakana">Katakana</string>
 
     <string name="title_activity_detail">Regresar</string>
     <string name="hiragana1a">a</string>
