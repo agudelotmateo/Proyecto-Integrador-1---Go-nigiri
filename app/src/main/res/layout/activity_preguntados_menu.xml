@@ -109,12 +109,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-
         <TextView
             android:id="@+id/textNumPreguntas"
             style="@style/gameOptionTitle"
             android:text="Número de preguntas:" />
-
         <Spinner
             android:id="@+id/spinnerTime"
             android:layout_width="match_parent"
