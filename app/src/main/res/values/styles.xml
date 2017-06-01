@@ -57,10 +57,11 @@
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">100dp</item>
         <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="titleText">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:textSize">25sp</item>
@@ -134,6 +135,12 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="detailAnimation">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
     <!--Los siguientes estilos son para los juegos-->
     <style name="instructionButton" parent="button">
         <item name="android:layout_gravity">center</item>
@@ -170,6 +177,15 @@
 
     <style name="instructionTitleText" parent="titleText">
         <item name="android:textColor">@color/editTextColorOrange</item>
+    </style>
+
+    <!--Los siguientes estilos son para los diccionarios-->
+    <style name="dictionaryTitleImage" parent="titleImage">
+        <item name="android:background">@drawable/onigiri_verde</item>
+    </style>
+
+    <style name="dictionaryTitleText" parent="titleText">
+        <item name="android:textColor">@color/editTextColorGreen</item>
     </style>
 
     <!--Los siguientes estilos son para los créditos-->
