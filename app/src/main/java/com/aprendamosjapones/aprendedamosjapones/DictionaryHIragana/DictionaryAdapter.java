@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,8 +18,7 @@ import java.util.List;
 /**
  * {@link android.support.v7.widget.RecyclerView.Adapter} para la lista de elementos
  */
-public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.CourseViewHolder>
-        implements ItemClickListener {
+public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.CourseViewHolder> implements ItemClickListener {
     private final Context context;
     private List<ItemsDictionaryHiragana> items;
 
@@ -65,7 +65,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
      */
     public static class CourseViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener {
-        // Views para un curso
+        // Views para un detalle
         public final TextView hiraganaTittle;
         public final ImageView image;
 

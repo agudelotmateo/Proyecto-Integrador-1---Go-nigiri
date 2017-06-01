@@ -2,6 +2,8 @@ package com.aprendamosjapones.aprendedamosjapones.DictionaryKanji;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +30,8 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
         this.items = items;
     }
 
+
+
     @Override
     public int getItemCount() {
         return items.size();
@@ -36,7 +40,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
     @Override
     public CourseViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.list_item_dictionary, viewGroup, false);
+                .inflate(R.layout.list_item_dictionary_kanji, viewGroup, false);
         return new CourseViewHolder(v, this);
     }
 
@@ -52,12 +56,15 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
                 .into(viewHolder.image);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onItemClick(View view, int position) {
         // Imagen a compartir entre transiciones
         View sharedImage = view.findViewById(R.id.image);
         DetailsDictionaryKanji.launch(
                 (Activity) context, position, sharedImage);
+
+
     }
 
     /**

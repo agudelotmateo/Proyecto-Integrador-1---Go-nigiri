@@ -95,14 +95,14 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
         // Obtiene el curso ha detallar basado en la posición
-        ItemsDictionaryHiragana detailCourse = ContentDictionaryHiragana.getCourseByPosition(position);
+        ItemsDictionaryHiragana detailClass = ContentDictionaryHiragana.getCourseByPosition(position);
 
-        audioListen.setBottom(detailCourse.getExample());
-        example1.setText(detailCourse.getExample1());
-        example2.setText(detailCourse.getExample2());
-        example3.setText(detailCourse.getExample3());
-        practice.setImageResource(detailCourse.getPractice());
-        Glide.with(this).load(detailCourse.getIdImage()).into(image);
+        audioListen.setBottom(detailClass.getExample());
+        example1.setText(detailClass.getExample1());
+        example2.setText(detailClass.getExample2());
+        example3.setText(detailClass.getExample3());
+        practice.setImageResource(detailClass.getPractice());
+        Glide.with(this).load(detailClass.getIdImage()).into(image);
     }
 
     private void setToolbar() {
@@ -157,7 +157,7 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         intent.putExtra(EXTRA_POSITION, position);
 
         // Los elementos 4, 5 y 6 usan elementos compartidos,
-        if (position >= 100) {
+        if (position >= 150) {
             ActivityOptions options0 = ActivityOptions
                     .makeSceneTransitionAnimation(context, sharedView, sharedView.getTransitionName());
             context.startActivity(intent, options0.toBundle());

@@ -200,4 +200,6 @@ public class DetailsDictionaryKanji extends AppCompatActivity {
             context.startActivity(intent, options0.toBundle());
         }
     }
+
+
 }
