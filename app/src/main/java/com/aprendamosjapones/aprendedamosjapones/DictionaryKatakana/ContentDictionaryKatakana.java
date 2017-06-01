@@ -55,7 +55,7 @@ public class ContentDictionaryKatakana {
                     R.drawable.katakana11sa),
 
             new ItemsDictionaryKatakana("shi",
-                    R.raw.aud11sa,"シーソー ", "shiisoo", "Balancín", R.drawable.gifkata12shi,
+                    R.raw.aud12shi,"シーソー ", "shiisoo", "Balancín", R.drawable.gifkata12shi,
                     R.drawable.katakana12shi),
 
             new ItemsDictionaryKatakana("su",
