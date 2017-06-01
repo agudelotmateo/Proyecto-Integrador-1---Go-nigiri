@@ -24,7 +24,7 @@ public class ActivityASkedGame extends AppCompatActivity {
         setContentView(R.layout.activity_preguntados_menu);
 
 
-        goInstructionAskedGame = (Button)findViewById(R.id.instructionsAsked);
+        goInstructionAskedGame = (Button)findViewById(R.id.instructionsPreguntados);
 
         goInstructionAskedGame.setOnClickListener(new View.OnClickListener() {
             @Override

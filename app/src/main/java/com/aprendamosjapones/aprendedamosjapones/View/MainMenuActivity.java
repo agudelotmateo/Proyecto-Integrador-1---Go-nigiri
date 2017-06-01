@@ -10,6 +10,7 @@ import com.aprendamosjapones.aprendedamosjapones.DictionaryHIragana.DictionarHIr
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKanji.DictionarKanjiActivity;
 import com.aprendamosjapones.aprendedamosjapones.DictionaryKatakana.DictionarKatakanaActivity;
 import com.aprendamosjapones.aprendedamosjapones.Games.AskedGame.ActivityASkedGame;
+import com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.matching.MenuMatchit;
 import com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.memory.MenuMemoryActivity;
 import com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaLevelsActivity;
 import com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiLevelsActivity;
@@ -30,6 +31,7 @@ public class MainMenuActivity extends AppCompatActivity {
     Button getGoActivityLevelKatakana;
     Button goActivityKanjiDictionary;
     Button getGoActivityAskedGame;
+    Button getGoActivityMatchitGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,8 @@ public class MainMenuActivity extends AppCompatActivity {
         getGoActivityLevelKatakana = (Button)findViewById(R.id.kataLevel);
 
         getGoActivityAskedGame = (Button)findViewById(R.id.juegoPreguntados);
+
+        getGoActivityMatchitGame = (Button)findViewById(R.id.juegoMatchIt);
 
 
         //Intents
@@ -126,6 +130,15 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent getGoActivityAskedGame = new Intent(MainMenuActivity.this, ActivityASkedGame.class);
+                startActivity(getGoActivityAskedGame);
+            }
+        });
+
+        getGoActivityMatchitGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent getGoActivityAskedGame = new Intent(MainMenuActivity.this, MenuMatchit.class);
                 startActivity(getGoActivityAskedGame);
             }
         });

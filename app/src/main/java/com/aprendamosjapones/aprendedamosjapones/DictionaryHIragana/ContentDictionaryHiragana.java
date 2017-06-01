@@ -56,7 +56,7 @@ public class ContentDictionaryHiragana {
                     R.drawable.hiragana11sa),
 
             new ItemsDictionaryHiragana("shi",
-                    R.raw.aud11sa,"し", "shi", "Sal", R.drawable.gifhira12shi,
+                    R.raw.aud12shi,"し", "shi", "Sal", R.drawable.gifhira12shi,
                     R.drawable.hiragana12shi),
 
             new ItemsDictionaryHiragana("su",
