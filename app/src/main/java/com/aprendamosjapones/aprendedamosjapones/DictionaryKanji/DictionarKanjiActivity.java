@@ -41,7 +41,8 @@ public class DictionarKanjiActivity extends AppCompatActivity {
 
     private void setToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);if (getSupportActionBar() != null)// Habilitar Up Button
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)

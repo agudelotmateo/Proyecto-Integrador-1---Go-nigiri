@@ -216,8 +216,8 @@
 
     <!--Los siguientes estilos son para el menú principal-->
     <style name="mainMenuImage">
-        <item name="android:layout_width">130dp</item>
-        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
         <item name="android:paddingTop">10dp</item>
     </style>
 

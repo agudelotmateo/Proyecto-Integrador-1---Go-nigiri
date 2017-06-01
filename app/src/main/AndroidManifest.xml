@@ -10,19 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".View.MainMenuActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
-        <activity
-            android:name=".View.MainMenuActivity"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
         <activity
             android:name=".Games.MemoryGame.memory.MenuMemoryActivity"
@@ -51,10 +45,6 @@
             </meta-data>
         </activity>
 
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity">
-        </meta-data>
         <activity
             android:name=".KatakanaLevels.KatakanaDetailActivity"
             android:label="@string/title_activity_detail"
@@ -74,22 +64,60 @@
             </meta-data>
         </activity>
 
-        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"></activity>
-        <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana"></activity>
-
-        <activity android:name=".DictionaryKatakana.DictionarKatakanaActivity"></activity>
-        <activity android:name=".DictionaryKatakana.DetailsDictionaryKatakana"></activity>
-
-        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
-        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
-
-        <activity android:name=".Games.AskedGame.ActivityASkedGame"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"
+            android:label="Regresar a inicio"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryHIragana.DictionarHIraganaActivity">
+            </meta-data>
         </activity>
-        <activity android:name=".Games.AskedGame.InstructionsAskedGame"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        <activity
+            android:name=".DictionaryHIragana.DetailsDictionaryHiragana"
+            android:label="Regresar a diccionarios"
+            android:parentActivityName=".DictionaryHIragana.DictionarHIraganaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryHIragana.DetailsDictionaryHiragana">
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name=".DictionaryKatakana.DictionarKatakanaActivity"
+            android:label="Regresar a inicio"
+            android:parentActivityName=".View.MainMenuActivity">>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKatakana.DictionarKatakanaActivity">
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".DictionaryKatakana.DetailsDictionaryKatakana"
+            android:label="Regresar a diccionarios"
+            android:parentActivityName=".DictionaryKatakana.DictionarKatakanaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKatakana.DetailsDictionaryKatakana">
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name=".DictionaryKanji.DictionarKanjiActivity"
+            android:label="Regresar a inicio"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKanji.DictionarKanjiActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"
+            android:label="Regresar a diccionarios"
+            android:parentActivityName=".DictionaryKatakana.DictionarKatakanaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKanji.DetailsDictionaryKanji">
+            </meta-data>
         </activity>
 
         <activity android:name=".Games.MemoryGame.matching.InstructionsMatchit"
