@@ -26,12 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView2"
-                style="@style/mainMenuTextTitle"
-                android:text="Go Nigiri"></TextView>
+            android:layout_marginTop="5dp">
 
             <ImageView
                 android:id="@+id/logoMain"
@@ -137,7 +132,7 @@
             <Button
                 android:id="@+id/juegoConcentrese"
                 style="@style/mainMenuButton"
-                android:text="Concentrese" />
+                android:text="Concéntrese" />
 
             <Button
                 android:id="@+id/juegoMatchIt"
