@@ -27,6 +27,8 @@
     <dimen name="dictionaryMarginTop">-15dp</dimen>
     <dimen name="dictionarySizeBig">90dp</dimen>
     <dimen name="writtingPaddingtop">10dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
 
 
 </resources>

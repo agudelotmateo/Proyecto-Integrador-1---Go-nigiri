@@ -156,4 +156,10 @@
     <string name="writting">Escritura</string>
     <string name="pronunciation">Pronunciacion:</string>
     <string name="buttonPractice">¡Practica los trazos!</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

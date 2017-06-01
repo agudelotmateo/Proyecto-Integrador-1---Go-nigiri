@@ -11,13 +11,13 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    
+
     <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
         <item name="colorButtonNormal">@color/colorPrimaryDark</item>
         <item name="colorControlHighlight">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
-    
+
     <style name="EditTextWhite" parent="TextAppearance.AppCompat">
         <item name="android:textColorHint">@color/editTextColorWhite</item>
         <item name="android:textSize">@dimen/editTextSize_login</item>
@@ -28,18 +28,18 @@
     </style>
 
     <style name="EditTextBlack" parent="TextAppearance.AppCompat">
-    <item name="android:textColorHint">@color/editTextColorBlack</item>
-    <item name="android:textSize">@dimen/editTextSize_login</item>
-    <item name="android:textColorPrimary">@color/editTextColorBlack</item>
-    <item name="colorAccent">@color/editTextColorBlack</item>
-    <item name="colorControlNormal">@color/editTextColorBlack</item>
-    <item name="colorControlActivated">@color/editTextColorBlack</item>
+        <item name="android:textColorHint">@color/editTextColorBlack</item>
+        <item name="android:textSize">@dimen/editTextSize_login</item>
+        <item name="android:textColorPrimary">@color/editTextColorBlack</item>
+        <item name="colorAccent">@color/editTextColorBlack</item>
+        <item name="colorControlNormal">@color/editTextColorBlack</item>
+        <item name="colorControlActivated">@color/editTextColorBlack</item>
 
     </style>
 
-    <style name="CursosPoint" parent="CursosPoint.Base"/>
-    <style name="CursosPoint.Base" parent="Theme.AppCompat.Light.NoActionBar">
-    </style>
+    <style name="CursosPoint" parent="CursosPoint.Base" />
+
+    <style name="CursosPoint.Base" parent="Theme.AppCompat.Light.NoActionBar"></style>
 
     <!--Los siguientes estilos son generales para toda la aplicación-->
     <style name="button">
@@ -111,7 +111,7 @@
         <item name="android:layout_width">70dp</item>
     </style>
 
-     <style name="detailTextTitle">
+    <style name="detailTextTitle">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_height">wrap_content</item>
