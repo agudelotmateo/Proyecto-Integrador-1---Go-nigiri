@@ -190,4 +190,32 @@
         <item>20</item>
         <item>25</item>
     </string-array>
+    <string-array name="matchitFilas">
+        <item>a y n</item>
+        <item>ka</item>
+        <item>sa</item>
+        <item>ta</item>
+        <item>na</item>
+        <item>ha</item>
+        <item>ma</item>
+        <item>ya</item>
+        <item>ra</item>
+        <item>wa</item>
+        <item>ga</item>
+        <item>za</item>
+        <item>da</item>
+        <item>ba</item>
+        <item>pa</item>
+        <item>kya</item>
+        <item>gya</item>
+        <item>sha</item>
+        <item>ja</item>
+        <item>cha</item>
+        <item>nya</item>
+        <item>hya</item>
+        <item>bya</item>
+        <item>pya</item>
+        <item>mya</item>
+        <item>rya</item>
+    </string-array>
 </resources>
