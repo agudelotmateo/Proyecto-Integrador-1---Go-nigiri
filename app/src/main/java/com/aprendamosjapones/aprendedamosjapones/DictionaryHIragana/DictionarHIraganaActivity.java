@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -13,7 +14,7 @@ import com.aprendamosjapones.aprendedamosjapones.R;
 
 public class DictionarHIraganaActivity extends AppCompatActivity {
     public RecyclerView recyclerView;
-    public LinearLayoutManager linearLayout;
+    public LinearLayoutManager gridLayout;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -30,11 +31,12 @@ public class DictionarHIraganaActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView() {
-        linearLayout = new LinearLayoutManager(this);
+        gridLayout = new GridLayoutManager(this, 5);
         recyclerView = (RecyclerView) findViewById(R.id.reciclador);
-        recyclerView.setLayoutManager(linearLayout);
+        recyclerView.setLayoutManager(gridLayout);
         DictionaryAdapter adapter = new DictionaryAdapter(this, ContentDictionaryHiragana.getCourses());
         recyclerView.setAdapter(adapter);
+
     }
 
     private void setToolbar() {

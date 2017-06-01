@@ -157,7 +157,7 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         intent.putExtra(EXTRA_POSITION, position);
 
         // Los elementos 4, 5 y 6 usan elementos compartidos,
-        if (position >= 100) {
+        if (position >= 150) {
             ActivityOptions options0 = ActivityOptions
                     .makeSceneTransitionAnimation(context, sharedView, sharedView.getTransitionName());
             context.startActivity(intent, options0.toBundle());

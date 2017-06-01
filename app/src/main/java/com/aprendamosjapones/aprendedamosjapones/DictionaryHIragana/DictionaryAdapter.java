@@ -17,8 +17,7 @@ import java.util.List;
 /**
  * {@link android.support.v7.widget.RecyclerView.Adapter} para la lista de elementos
  */
-public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.CourseViewHolder>
-        implements ItemClickListener {
+public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.CourseViewHolder> implements ItemClickListener {
     private final Context context;
     private List<ItemsDictionaryHiragana> items;
 
