@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.TaskStackBuilder;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -29,12 +30,16 @@ import com.aprendamosjapones.aprendedamosjapones.R;
 import com.bumptech.glide.Glide;
 
 public class DetailsDictionaryHiragana extends AppCompatActivity {
-    private static final String EXTRA_POSITION = "com.herprogramacion.cursospoint.extra.POSITION";
+
+    public MediaPlayer mediaPlayer = new MediaPlayer();
+
+    private static final String EXTRA_POSITION = ".extra.POSITION";
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_detail_dictionary);
 
         setToolbar(); // Reemplazar la action bar
@@ -94,10 +99,16 @@ public class DetailsDictionaryHiragana extends AppCompatActivity {
         ImageView practice = (ImageView) findViewById(R.id.practice);
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
-        // Obtiene el curso ha detallar basado en la posición
+        audioListen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.aud1a);
+                mediaPlayer.start();
+            }
+        });
+
         ItemsDictionaryHiragana detailClass = ContentDictionaryHiragana.getCourseByPosition(position);
 
-        audioListen.setBottom(detailClass.getExample());
         example1.setText(detailClass.getExample1());
         example2.setText(detailClass.getExample2());
         example3.setText(detailClass.getExample3());

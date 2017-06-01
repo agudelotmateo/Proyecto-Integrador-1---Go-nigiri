@@ -66,6 +66,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
     public static class CourseViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener {
         // Views para un detalle
+        public final Button audio;
         public final TextView hiraganaTittle;
         public final ImageView image;
 
@@ -74,6 +75,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.Co
 
         public CourseViewHolder(View v, ItemClickListener listener) {
             super(v);
+            audio = (Button) v.findViewById(R.id.audiolisten);
             hiraganaTittle = (TextView) v.findViewById(R.id.hiraganaTittle);
             image = (ImageView) v.findViewById(R.id.image);
             v.setOnClickListener(this);
