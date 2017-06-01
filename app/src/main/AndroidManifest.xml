@@ -18,66 +18,73 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".View.CreateAcountActivity"
-            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
         <activity
             android:name=".View.MainMenuActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="userPortrait"></activity>
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
         <activity
             android:name=".Games.MemoryGame.memory.MenuMemoryActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="userPortrait"></activity>
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
         <activity
             android:name=".Games.MemoryGame.memory.MemoryActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="userLandscape"></activity>
-        <activity android:name=".HiraganaLevels.HiraganaLevelsActivity" />
-        <activity android:name=".KatakanaLevels.KatakanaLevelsActivity" />
-        <activity android:name=".KanjiLevels.KanjiLevelsActivity" />
-        <activity android:name=".Games.MemoryGame.IntructionMemoryGame" />
+            android:screenOrientation="userLandscape"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
+        <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
+        <activity android:name=".KanjiLevels.KanjiLevelsActivity"></activity>
+        <activity android:name=".Games.MemoryGame.IntructionMemoryGame"></activity>
         <activity
             android:name=".HiraganaLevels.HiraganaDetailActivity"
             android:label="@string/title_activity_detail"
-            android:parentActivityName=".HiraganaLevels.HiraganaLevelsActivity">
+            android:parentActivityName=".HiraganaLevels.HiraganaLevelsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaDetailActivity"></meta-data>
+                android:value="com.aprendamosjapones.aprendedamosjapones.HiraganaLevels.HiraganaDetailActivity">
+            </meta-data>
         </activity>
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity"></meta-data>
-
+            android:value=".LoginActivity">
+        </meta-data>
         <activity
             android:name=".KatakanaLevels.KatakanaDetailActivity"
             android:label="@string/title_activity_detail"
-            android:parentActivityName=".KatakanaLevels.KatakanaLevelsActivity">
+            android:parentActivityName=".KatakanaLevels.KatakanaLevelsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity"></meta-data>
+                android:value="com.aprendamosjapones.aprendedamosjapones.KatakanaLevels.KatakanaLevelsActivity">
+            </meta-data>
         </activity>
         <activity
             android:name=".KanjiLevels.KanjiDetailActivity"
             android:label="@string/title_activity_detail"
-            android:parentActivityName=".KanjiLevels.KanjiLevelsActivity">
+            android:parentActivityName=".KanjiLevels.KanjiLevelsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiDetailActivity"></meta-data>
+                android:value="com.aprendamosjapones.aprendedamosjapones.KanjiLevels.KanjiDetailActivity" >
+            </meta-data>
         </activity>
-        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity" />
-        <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana" />
-        <activity android:name=".DictionaryKatakana.DictionarKatakanaActivity" />
-        <activity android:name=".DictionaryKatakana.DetailsDictionaryKatakana" />
-        <activity android:name=".DictionaryKanji.DictionarKanjiActivity" />
-        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji" />
-        <activity android:name=".Games.AskedGame.ActivityASkedGame" />
-        <activity android:name=".Games.AskedGame.InstructionsAskedGame" />
-        <activity
-            android:name=".MenuNavigation.NavigationDrawer"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme"></activity>
-    </application>
 
+        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"></activity>
+        <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana"></activity>
+
+        <activity android:name=".DictionaryKatakana.DictionarKatakanaActivity"></activity>
+        <activity android:name=".DictionaryKatakana.DetailsDictionaryKatakana"></activity>
+
+        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
+        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
+
+        <activity android:name=".Games.AskedGame.ActivityASkedGame"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name=".Games.AskedGame.InstructionsAskedGame"></activity>
+
+    </application>
 </manifest>

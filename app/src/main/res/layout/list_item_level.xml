@@ -29,10 +29,6 @@
             android:textStyle="bold"
             android:textSize="17sp"
             android:layout_marginTop="45dp"/>
-        <!--android:textColor="@android:color/black"
-
-        card_view:cardBackgroundColor="#ffddd3"
-        android:textColor="#c14945"-->
 
         <ImageView
             android:id="@+id/image"
@@ -40,7 +36,7 @@
             android:layout_height="120dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/hiragana"
+            android:src="@drawable/teorhira1romaji"
             android:transitionName="shared_image"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"/>

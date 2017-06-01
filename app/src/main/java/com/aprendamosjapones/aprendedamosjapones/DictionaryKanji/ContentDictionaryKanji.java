@@ -59,7 +59,7 @@ public class ContentDictionaryKanji {
                     "Ver", "ケン", "み(る)", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan16ver, R.drawable.kanji16ver),
 
             new ItemsDictionaryKanji("Mes",
-                    "Mes, Luna", "ゲツ(ガツ)", "つき", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan17mes, R.drawable.kanji17mes),
+                    "Mes, Luna", "ゲツ", "つき", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan17mes, R.drawable.kanji17mes),
 
             new ItemsDictionaryKanji("Atrás",
                     "Atrás, Después", "ゴ, コウ", "うし(ろ), あと", R.raw.aud1a, R.raw.aud1a, R.drawable.gifkan18atras, R.drawable.kanji18atras),

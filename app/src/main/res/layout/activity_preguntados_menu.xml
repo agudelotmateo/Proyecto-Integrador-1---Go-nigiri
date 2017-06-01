@@ -55,7 +55,7 @@
         android:orientation="horizontal"></LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
@@ -106,19 +106,24 @@
 
         <Spinner
             android:id="@+id/spinner2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/preguntadosTiempo"
+            android:gravity="center"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/textNumPreguntas"
             style="@style/gameOptionTitle"
-            android:text="Número de preguntas:" />
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de preguntas:"/>
         <Spinner
             android:id="@+id/spinnerTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/preguntadosNumPreguntas"
+            android:layout_gravity="center" />
 
 
     </LinearLayout>

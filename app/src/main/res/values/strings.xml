@@ -47,6 +47,9 @@
     </string>
     <string name="instruction">Instrucciones</string>
     <string name="playButton">¡A jugar!</string>
+    <string name="kanji">Kanji</string>
+    <string name="hiragana">Hiragana</string>
+    <string name="katakana">Katakana</string>
 
     <string name="title_activity_detail">Regresar</string>
     <string name="hiragana1a">a</string>
@@ -156,10 +159,17 @@
     <string name="writting">Escritura</string>
     <string name="pronunciation">Pronunciacion:</string>
     <string name="buttonPractice">¡Practica los trazos!</string>
-    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
-
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_settings">Settings</string>
+    <string-array name="preguntadosTiempo">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>infinito</item>
+    </string-array>
+    <string-array name="preguntadosNumPreguntas">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
 </resources>
