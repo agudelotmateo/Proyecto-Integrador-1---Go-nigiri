@@ -45,6 +45,24 @@
         katakanas o kanjis. Además, puedes escoger el número de preguntas y el tiempo por pregunta. \n\n
         ¡Estás listo para jugar!
     </string>
+    <string name="instructions_matchit">
+        El juego de Match it, es un juego que te permite practicar la lectura del hiragana y el katakana por pequeños grupos.\n\n
+        La idea es que te vamos a dar una palabra en hiragana o katakana y tú debes escribir su traducción en rōmaji.
+        Cuando creas tener la respuesta, la podrás verificar con el botón de \"CHECK\". Si está correcta podrás avanzar
+        a la siguiente palabra, sino, bueno, toca seguir intentando.\n\n
+        Si tienes problemas con una palabra y no quieres responderla, encontrarás un botón \"SKIP\" que te permite avanzar
+        a la siguiente automáticamente. Y no te preocupes, si vuelves a jugar el mismo nivel, tendrás otra oportunidad
+        para responderla.\n\n
+        Notarás que debajo de la mayoría de las palabras en hiragana o katakana hay un texto en español. Este indica el
+        significado real de la palabra mostrada. Si no lo tiene es porque no es una verdadera palabra del japonés.\n\n
+        Recuerda que antes de empezar puedes escoger si jugar con hiragana o katakana, y el grupo de palabras con las
+        que quieras jugar. Los grupos están divididos entre las filas normales del diccionario, por ejemplo \"la fila ka\".
+        Aunque notarás que el primer grupo abarca tanto \"la fila a\" como la letra \"n\".\n\n
+        Es importante que sepas que en cada grupo sólo te vamos a mostrar palabras que tienen hiraganas o katakanas
+        de la fila escogida o de las filas anteriores a esta. Por ejemplo, si escoges "la fila sa" te podemos mostrar
+        palabras compuestas tanto por esta fila como por \"la fila ka\" y \"la fila a y la n\".\n\n
+        ¡Estás listo para jugar!
+    </string>
     <string name="instruction">Instrucciones</string>
     <string name="playButton">¡A jugar!</string>
     <string name="kanji">Kanji</string>
