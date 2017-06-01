@@ -49,7 +49,7 @@
         <item name="android:paddingRight">5dp</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:background">@drawable/button</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -211,6 +211,36 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">18sp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <!--Los siguientes estilos son para el menú principal-->
+    <style name="mainMenuImage">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="mainMenuText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mainMenuTextSection" parent="mainMenuText">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="mainMenuTextTitle" parent="mainMenuText">
+        <item name="android:textSize">27sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="mainMenuButton" parent="button">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
     </style>
 
 </resources>

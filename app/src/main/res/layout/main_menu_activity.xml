@@ -11,21 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="1"
-        android:paddingTop="10dp">
+        android:paddingTop="10dp"
+        android:weightSum="1">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/mainMenuTextTitle"
+                android:text="Go Nigiri"></TextView>
 
             <ImageView
                 android:id="@+id/logoMain"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:paddingTop="10dp"
-                android:background="@drawable/onigiri1"/>
-
+                style="@style/mainMenuImage"
+                android:background="@drawable/onigiri1">
+            </ImageView>
         </LinearLayout>
 
         <LinearLayout
@@ -34,182 +38,96 @@
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Niveles"
-                android:textSize="27sp"
-                android:paddingTop="35dp"
-                android:textColor="@color/blue"
-                android:textStyle="bold">
+                android:id="@+id/textView3"
+                style="@style/mainMenuTextSection"
+                android:paddingTop="30dp"
+                android:text="Teoría">
             </TextView>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/hiraganaLevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hiragana"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="9dp"/>
-
+                style="@style/mainMenuButton"
+                android:text="@string/hiragana"
+                android:textStyle="bold" />
             <Button
                 android:id="@+id/kataLevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Katakana"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="9dp"/>
-
+                style="@style/mainMenuButton"
+                android:text="@string/katakana" />
             <Button
                 android:id="@+id/kanjiLevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="kanji"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="9dp"/>
+                style="@style/mainMenuButton"
+                android:text="@string/kanji" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="30dp">
-
-            <TextView
-                android:id="@+id/juegos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Juegos"
-                android:textColor="@color/blue"
-                android:textSize="27sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="10dp">
-
-            <Button
-                android:id="@+id/juegoPreguntados"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Preguntados"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                />
-
-            <Button
-                android:id="@+id/juegoConcentrese"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Concentrese"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
             android:paddingTop="30dp">
 
             <TextView
                 android:id="@+id/diccionarios"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Diccionarios"
-                android:textSize="27sp"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                />
-
+                style="@style/mainMenuTextSection"
+                android:text="Diccionarios" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+            <Button
+                android:id="@+id/hiraganaDiccionario"
+                style="@style/mainMenuButton"
+                android:text="@string/hiragana"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/katakanaDicionario"
+                style="@style/mainMenuButton"
+                android:text="@string/katakana" />
+            <Button
+                android:id="@+id/kanjiDiccionario"
+                style="@style/mainMenuButton"
+                android:text="@string/kanji" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="10dp">
+            android:orientation="vertical"
+            android:paddingTop="30dp">
 
-            <Button
-                android:id="@+id/hiraganaDiccionario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hiragana"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                />
-
-            <Button
-                android:id="@+id/katakanaDicionario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Katakana"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                />
-
-            <Button
-                android:id="@+id/kanjiDiccionario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kanji"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textColor="#00796B"
-                android:background="@drawable/button"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                />
-
+            <TextView
+                android:id="@+id/juegos"
+                style="@style/mainMenuTextSection"
+                android:text="Juegos" />
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
 
+            <Button
+                android:id="@+id/juegoPreguntados"
+                style="@style/mainMenuButton"
+                android:text="Preguntados" />
+
+            <Button
+                android:id="@+id/juegoConcentrese"
+                style="@style/mainMenuButton"
+                android:text="Concentrese" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

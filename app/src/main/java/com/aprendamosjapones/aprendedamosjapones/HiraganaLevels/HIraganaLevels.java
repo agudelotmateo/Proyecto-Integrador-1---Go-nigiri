@@ -66,7 +66,29 @@ public class HIraganaLevels {
                             "- La ô: Se añade お después de un hiragana que al final de la pronunciación tenga la o.",
                     R.drawable.uno),
             new HiraganaLevel("Las consonantes",
-                    "La mayoría de las consonantes se pronuncian como en el español, aunque hay unas cuantas excepciones:",
+                    "La mayoría de las consonantes se pronuncian como en el español, aunque hay unas cuantas excepciones:\n" +
+                            "- La 'g': Se pronuncia igual que en el español sólo que cuando está acompañada por una 'i' o " +
+                            "una 'e' suena como si tuviera la u intermedia. Es decir el rōmaji \"ge\" se pronuncia " +
+                            "como \"gue\" en español.\n" +
+                            "- La 'h': se pronuncia como en el español se pronuncia la 'j'.\n" +
+                            "- La 'j': Se pronuncia como la 'y' cuando actúa como consonante como en \"ya\".\n" +
+                            "- La 'n': se pronuncia igual que en el español, sólo que cuando se encuentra antes de " +
+                            "una 'p', 'b' o 'm' actúa como una 'm'.\n" +
+                            "- La 'r': siempre se pronuncia suave como en “aro”, en ningún momento se pronuncia como en “ratón”.\n\n" +
+                            "Es importante que tengamos en cuenta que en el japonés no vamos a encontrar la 'v', 'l', o 'q'.",
+                    R.drawable.uno),
+            new HiraganaLevel("Consonantes dobles",
+                    "En japonés es posible encontrarse palabras con doble consonante (una misma consonante repetida dos veces " +
+                            "seguidas). Por ejemplo, puedes ver que la palabra “gakkou” (que significa colegio) tiene doble k. Por " +
+                            "suerte representar esto con hiraganas no es complicado, sólo tenemos que usar un  つ (‘tsu’) más pequeño " +
+                            "antes de la consonante a alargar. De esta manera, “gakkou” sería がっこう. Tal vez sea difícil " +
+                            "diferenciarlo al principio, pero la clave para aprender es la práctica y ésta no va a ser la excepción.",
+                    R.drawable.uno),
+            new HiraganaLevel("Tenten y Maru",
+                    "Ya conoces los 46 hiraganas básicos, pero estos no representan todas las sílabas del idioma. Algunos de los " +
+                            "hiragana que aprendimos pueden llevar una comilla doble '\"' o un círculo pequeño '°' en la parte " +
+                            "superior derecha, los cuales modifican la consonante, dándole un sonido diferente. A la comilla la " +
+                            "llamamos \"tenten\" y al círculo lo llamamos \"maru\".",
                     R.drawable.uno)
 
     };
