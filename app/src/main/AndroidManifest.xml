@@ -80,7 +80,10 @@
         <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
         <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
 
-        <activity android:name=".Games.AskedGame.ActivityASkedGame"></activity>
+        <activity android:name=".Games.AskedGame.ActivityASkedGame"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
         <activity android:name=".Games.AskedGame.InstructionsAskedGame"></activity>
 
     </application>
