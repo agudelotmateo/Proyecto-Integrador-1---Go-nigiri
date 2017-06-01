@@ -3,6 +3,7 @@ package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.memory;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -29,7 +30,7 @@ public class MenuMemoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_menu);
 
-
+        setToolbar(); // Reemplazar toolbar
 
         final Button goInstructions = (Button) findViewById(R.id.instructionsMemory);
         goInstructions.setOnClickListener(new View.OnClickListener() {
@@ -83,5 +84,14 @@ public class MenuMemoryActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    private void setToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null)// Habilitar Up Button
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
