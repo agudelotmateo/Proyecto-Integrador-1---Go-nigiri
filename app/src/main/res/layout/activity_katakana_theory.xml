@@ -25,7 +25,7 @@
             style="@style/instructionTitleImage">
         </ImageView>
         <TextView
-            android:text="Teoría"
+            android:text="@string/katakana"
             style="@style/instructionTitleText">
         </TextView>
     </LinearLayout>
@@ -37,4 +37,3 @@
         android:scrollbars="vertical" />
 
 </LinearLayout>
-
