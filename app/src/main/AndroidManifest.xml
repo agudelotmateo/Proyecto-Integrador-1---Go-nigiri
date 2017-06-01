@@ -85,6 +85,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
         <activity android:name=".Games.AskedGame.InstructionsAskedGame"></activity>
+        <activity android:name=".MenuNavigation.NavigationDrawer"></activity>
 
     </application>
 </manifest>

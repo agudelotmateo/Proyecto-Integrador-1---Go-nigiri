@@ -1,36 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Niveles" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
-
-    <item android:title="Communicate">
+    <item android:title="Niveles">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/levelHiragana"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Hiragana" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/levelKanji"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Kanji" />
+            <item
+                android:id="@+id/levelKatakana"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Katakana"  />
+        </menu>
+    </item>
+
+    <item android:title="Juegos">
+        <menu>
+            <item
+                android:id="@+id/game1"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Concentrese" />
+            <item
+                android:id="@+id/game2"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Katakana teoria"  />
+        </menu>
+    </item>
+
+    <item android:title="Diccionarios">
+        <menu>
+            <item
+                android:id="@+id/dictionary1"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Hiraganas" />
+            <item
+                android:id="@+id/dictionary2"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Kanjis" />
+            <item
+                android:id="@+id/dictionary3"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Katakanas" />
         </menu>
     </item>
 
 </menu>
+
+
