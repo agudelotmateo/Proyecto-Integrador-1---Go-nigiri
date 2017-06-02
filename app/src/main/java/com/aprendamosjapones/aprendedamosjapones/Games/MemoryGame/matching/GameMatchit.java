@@ -38,7 +38,7 @@ public class GameMatchit extends AppCompatActivity {
         final EditText text = (EditText) findViewById(R.id.editTextMatchit);
         final TextView feedback = (TextView) findViewById(R.id.textFeedbackMatchit);
 
-        matches = Words.map.get(key);
+        matches = katakana ? Words.katakana.get(key) : Words.hiragana.get(key);
         i = 0;
         n = matches.length;
         match = matches[i];
@@ -73,19 +73,10 @@ public class GameMatchit extends AppCompatActivity {
 
     private void repaint(EditText text, TextView feedback) {
         String original = match.getKana();
-        if (katakana)
-            original = toKatakana(original);
         kana.setText(original.toCharArray(), 0, match.getKana().length());
         spanish.setText(match.getSpanish().toCharArray(), 0, match.getSpanish().length());
         text.setText("");
         feedback.setText("");
-    }
-
-    private String toKatakana(String s) {
-        StringBuilder sb = new StringBuilder(s.length());
-        for (int i = 0; i < s.length(); ++i)
-            sb.append((char) (s.charAt(i) + 0x60));
-        return sb.toString();
     }
 
 }

@@ -8,12 +8,12 @@ import java.util.Map;
  */
 
 public class Words {
-    public static Map<String, Match[]> map;
+    public static Map<String, Match[]> hiragana, katakana;
 
     private Words() {}
 
     public static void init() {
-        map = new HashMap<>();
+        hiragana = new HashMap<>();
         int i;
 
         i = 0;
@@ -27,7 +27,7 @@ public class Words {
         aiueon[i++] = new Match("うえ", "arriba", new String[]{"u", "e"});
         aiueon[i++] = new Match("いいえ", "no", new String[]{"i", "i", "e"});
         aiueon[i++] = new Match("ん", "n", new String[]{"n"});
-        map.put("aiueon", aiueon);
+        hiragana.put("aiueon", aiueon);
 
         i = 0;
         Match[] kakikukeko = new Match[13];
@@ -44,7 +44,7 @@ public class Words {
         kakikukeko[i++] = new Match("くうこう", "aeropuerto", new String[]{"ku", "u", "ko", "u"});
         kakikukeko[i++] = new Match("うけ", "estanque", new String[]{"u", "ke"});
         kakikukeko[i++] = new Match("ここ", "aquí", new String[]{"ko", "ko"});
-        map.put("kakikukeko", kakikukeko);
+        hiragana.put("kakikukeko", kakikukeko);
 
         i = 0;
         Match[] sashisuseso = new Match[15];
@@ -63,7 +63,7 @@ public class Words {
         sashisuseso[i++] = new Match("あさい", "superficial", new String[]{"a", "sa", "i"});
         sashisuseso[i++] = new Match("そこ", "allá", new String[]{"so", "ko"});
         sashisuseso[i++] = new Match("おかし", "dulces", new String[]{"o", "ka", "shi"});
-        map.put("sashisuseso", sashisuseso);
+        hiragana.put("sashisuseso", sashisuseso);
 
         i = 0;
         Match[] tachitsuteto = new Match[18];
@@ -85,7 +85,7 @@ public class Words {
         tachitsuteto[i++] = new Match("つき", "luna", new String[]{"tsu", "ki"});
         tachitsuteto[i++] = new Match("きって", "estampilla", new String[]{"ki", "tte"});
         tachitsuteto[i++] = new Match("とお", "diez", new String[]{"to", "o"});
-        map.put("tachitsuteto", tachitsuteto);
+        hiragana.put("tachitsuteto", tachitsuteto);
 
         i = 0;
         Match[] naninuneno = new Match[14];
@@ -103,7 +103,7 @@ public class Words {
         naninuneno[i++] = new Match("のうか", "granjero", new String[]{"no", "u", "ka"});
         naninuneno[i++] = new Match("つの", "cuerno", new String[]{"tsu", "no"});
         naninuneno[i++] = new Match("なな", "siete", new String[]{"na", "na"});
-        map.put("naninuneno", naninuneno);
+        hiragana.put("naninuneno", naninuneno);
 
         i = 0;
         Match[] hahifuheho = new Match[14];
@@ -121,7 +121,7 @@ public class Words {
         hahifuheho[i++] = new Match("ひと", "persona", new String[]{"hi", "to"});
         hahifuheho[i++] = new Match("ひ", "fuego", new String[]{"hi"});
         hahifuheho[i++] = new Match("ほし", "estrella", new String[]{"ho", "shi"});
-        map.put("hahifuheho", hahifuheho);
+        hiragana.put("hahifuheho", hahifuheho);
 
         i = 0;
         Match[] mamimumemo = new Match[20];
@@ -145,7 +145,7 @@ public class Words {
         mamimumemo[i++] = new Match("みっつ", "tres", new String[]{"mi", "ttsu"});
         mamimumemo[i++] = new Match("むっつ", "seis", new String[]{"mu", "ttsu"});
         mamimumemo[i++] = new Match("もも", "durazno", new String[]{"mo", "mo"});
-        map.put("mamimumemo", mamimumemo);
+        hiragana.put("mamimumemo", mamimumemo);
 
         i = 0;
         Match[] yayuyo = new Match[11];
@@ -160,7 +160,7 @@ public class Words {
         yayuyo[i++] = new Match("やく", "aproximadamente", new String[]{"ya", "ku"});
         yayuyo[i++] = new Match("やっと", "finalmente", new String[]{"ya", "tto"});
         yayuyo[i++] = new Match("よこ", "horizontal", new String[]{"ya", "ko"});
-        map.put("yayuyo", yayuyo);
+        hiragana.put("yayuyo", yayuyo);
 
         i = 0;
         Match[] rarirurero = new Match[15];
@@ -179,7 +179,7 @@ public class Words {
         rarirurero[i++] = new Match("くろい", "negro", new String[]{"ku", "ro", "i"});
         rarirurero[i++] = new Match("からて", "karate", new String[]{"ka", "ra", "te"});
         rarirurero[i++] = new Match("しろ", "castillo", new String[]{"shi", "ro"});
-        map.put("rarirurero", rarirurero);
+        hiragana.put("rarirurero", rarirurero);
 
         i = 0;
         Match[] wawo = new Match[9];
@@ -192,7 +192,7 @@ public class Words {
         wawo[i++] = new Match("よわい", "débil", new String[]{"yo", "wa", "i"});
         wawo[i++] = new Match("を", "(partícula)", new String[]{"wo"});
         wawo[i++] = new Match("へいわ", "paz", new String[]{"he", "i", "wa"});
-        map.put("wawo", wawo);
+        hiragana.put("wawo", wawo);
 
         i = 0;
         Match[] gagigugego = new Match[18];
@@ -214,7 +214,7 @@ public class Words {
         gagigugego[i++] = new Match("がか", "pintor", new String[]{"ga", "ka"});
         gagigugego[i++] = new Match("かぐ", "mueble", new String[]{"ka", "gu"});
         gagigugego[i++] = new Match("てがみ", "carta", new String[]{"te", "ga", "mi"});
-        map.put("gagigugego", gagigugego);
+        hiragana.put("gagigugego", gagigugego);
 
         i = 0;
         Match[] zajizuzezo = new Match[12];
@@ -230,7 +230,7 @@ public class Words {
         zajizuzezo[i++] = new Match("れいぞうこ", "nevera", new String[]{"re", "i", "zo", "u", "ko"});
         zajizuzezo[i++] = new Match("ちず", "mapa", new String[]{"chi", "zu"});
         zajizuzezo[i++] = new Match("ざっし", "revista", new String[]{"za", "sshi"});
-        map.put("zajizuzezo", zajizuzezo);
+        hiragana.put("zajizuzezo", zajizuzezo);
 
         i = 0;
         Match[] dajizudedo = new Match[11];
@@ -245,7 +245,7 @@ public class Words {
         dajizudedo[i++] = new Match("ひだり", "izquierda", new String[]{"hi", "da", "ri"});
         dajizudedo[i++] = new Match("みどり", "verde", new String[]{"mi", "do", "ri"});
         dajizudedo[i++] = new Match("つづく", "continuar", new String[]{"tsu", "zu", "ku"});
-        map.put("dajizudedo", dajizudedo);
+        hiragana.put("dajizudedo", dajizudedo);
 
         i = 0;
         Match[] babibubebo = new Match[16];
@@ -265,7 +265,7 @@ public class Words {
         babibubebo[i++] = new Match("たべる", "comer", new String[]{"ta", "be", "ru"});
         babibubebo[i++] = new Match("ぼく", "yo", new String[]{"bo", "ku"});
         babibubebo[i++] = new Match("かばん", "bolso", new String[]{"ka", "ba", "n"});
-        map.put("babibubebo", babibubebo);
+        hiragana.put("babibubebo", babibubebo);
 
         i = 0;
         Match[] papipupepo = new Match[9];
@@ -278,7 +278,7 @@ public class Words {
         papipupepo[i++] = new Match("やっぱり", "como pensé", new String[]{"ya", "ppa", "ri"});
         papipupepo[i++] = new Match("ほっぺた", "mejilla", new String[]{"ho", "ppe", "ta"});
         papipupepo[i++] = new Match("たっぷり", "lleno", new String[]{"ta", "ppu", "ri"});
-        map.put("papipupepo", papipupepo);
+        hiragana.put("papipupepo", papipupepo);
 
         i = 0;
         Match[] kyakyukyo = new Match[9];
@@ -291,7 +291,7 @@ public class Words {
         kyakyukyo[i++] = new Match("きょうと", "Kyoto (ciudad)", new String[]{"kyo", "u", "yo"});
         kyakyukyo[i++] = new Match("とうきょう", "Tokyo (ciudad)", new String[]{"to", "u", "kyo", "u"});
         kyakyukyo[i++] = new Match("べんきょう", "estudiar", new String[]{"be", "n", "kyo", "u"});
-        map.put("kyakyukyo", kyakyukyo);
+        hiragana.put("kyakyukyo", kyakyukyo);
 
         i = 0;
         Match[] gyagyugyo = new Match[7];
@@ -302,7 +302,7 @@ public class Words {
         gyagyugyo[i++] = new Match("にんぎょう", "muñeca", new String[]{"ni", "n", "gyo", "u"});
         gyagyugyo[i++] = new Match("ぎゅうにく", "carne de res", new String[]{"gyu", "u", "ni", "ku"});
         gyagyugyo[i++] = new Match("ぎゃ", null, new String[]{"gya"});
-        map.put("gyagyugyo", gyagyugyo);
+        hiragana.put("gyagyugyo", gyagyugyo);
 
         i = 0;
         Match[] shashusho = new Match[11];
@@ -317,7 +317,7 @@ public class Words {
         shashusho[i++] = new Match("じてんしゃ", "bicicleta", new String[]{"ji", "te", "n", "sha"});
         shashusho[i++] = new Match("きゅうきゅうしゃ", "ambulancia", new String[]{"kyu", "u", "kyu", "u", "sha"});
         shashusho[i++] = new Match("じしょ", "diccionario", new String[]{"ji", "sho"});
-        map.put("shashusho", shashusho);
+        hiragana.put("shashusho", shashusho);
 
         i = 0;
         Match[] jajujo = new Match[12];
@@ -333,7 +333,7 @@ public class Words {
         jajujo[i++] = new Match("たんじょうび", "cumpleaños", new String[]{"ta", "n", "jo", "u", "bi"});
         jajujo[i++] = new Match("じゅうどう", "judo", new String[]{"ju", "u", "do", "u"});
         jajujo[i++] = new Match("じゅうにがつ", "diciembre", new String[]{"ju", "u", "ni", "ga", "tsu"});
-        map.put("jajujo", jajujo);
+        hiragana.put("jajujo", jajujo);
 
         i = 0;
         Match[] chachucho = new Match[7];
@@ -344,14 +344,14 @@ public class Words {
         chachucho[i++] = new Match("おちゃ", "té", new String[]{"o", "cha"});
         chachucho[i++] = new Match("うちゅう", "universo", new String[]{"u", "chu", "u"});
         chachucho[i++] = new Match("こうちょう", "director de escuela", new String[]{"ko", "u", "cho", "u"});
-        map.put("chachucho", chachucho);
+        hiragana.put("chachucho", chachucho);
 
         i = 0;
         Match[] nyanyunyo = new Match[3];
         nyanyunyo[i++] = new Match("ゆにゅう", "importación", new String[]{"yu", "nyu", "u"});
         nyanyunyo[i++] = new Match("にゃんこ", "gatito", new String[]{"nya", "n", "ko"});
         nyanyunyo[i++] = new Match("にょう", "orina", new String[]{"nyo", "u"});
-        map.put("nyanyunyo", nyanyunyo);
+        hiragana.put("nyanyunyo", nyanyunyo);
 
         i = 0;
         Match[] hyahyuhyo = new Match[8];
@@ -363,7 +363,7 @@ public class Words {
         hyahyuhyo[i++] = new Match("ひゃっかてん", "tienda", new String[]{"hya", "kka", "te", "n"});
         hyahyuhyo[i++] = new Match("ひょっと", "por casualidad", new String[]{"kyo", "tto"});
         hyahyuhyo[i++] = new Match("ひゅ", "fusible", new String[]{"hyu"});
-        map.put("hyahyuhyo", hyahyuhyo);
+        hiragana.put("hyahyuhyo", hyahyuhyo);
 
         i = 0;
         Match[] byabyubyo = new Match[5];
@@ -372,7 +372,7 @@ public class Words {
         byabyubyo[i++] = new Match("いちびょう", "un segundo", new String[]{"i", "chi", "byo", "u"});
         byabyubyo[i++] = new Match("びょうき", "enfermedad", new String[]{"byo", "u", "ki"});
         byabyubyo[i++] = new Match("びゅ", null, new String[]{"byu"});
-        map.put("byabyubyo", byabyubyo);
+        hiragana.put("byabyubyo", byabyubyo);
 
         i = 0;
         Match[] pyapyupyo = new Match[5];
@@ -381,7 +381,7 @@ public class Words {
         pyapyupyo[i++] = new Match("はっぴゃくまん", "ocho millones", new String[]{"ha", "ppya", "ku", "ma", "n"});
         pyapyupyo[i++] = new Match("はっぴょう", "anuncio", new String[]{"ha", "ppyo", "u"});
         pyapyupyo[i++] = new Match("ぴゅ", null, new String[]{"pyu"});
-        map.put("pyapyupyo", pyapyupyo);
+        hiragana.put("pyapyupyo", pyapyupyo);
 
 
         i = 0;
@@ -390,7 +390,7 @@ public class Words {
         myamyumyo[i++] = new Match("みょうじ", "apellido", new String[]{"myo", "u", "ji"});
         myamyumyo[i++] = new Match("きみょう", "extraño", new String[]{"ki", "myo", "u"});
         myamyumyo[i++] = new Match("みゅ", null, new String[]{"myu"});
-        map.put("myamyumyo", myamyumyo);
+        hiragana.put("myamyumyo", myamyumyo);
 
         i = 0;
         Match[] ryaryuryo = new Match[7];
@@ -401,7 +401,11 @@ public class Words {
         ryaryuryo[i++] = new Match("あつりょく", "presión", new String[]{"a", "tsu", "ryo", "ku"});
         ryaryuryo[i++] = new Match("りょう", "cantidad", new String[]{"ryo", "u"});
         ryaryuryo[i++] = new Match("りゃくご", "diminutivo", new String[]{"rya", "ku", "go"});
-        map.put("ryaryuryo", ryaryuryo);
+        hiragana.put("ryaryuryo", ryaryuryo);
+
+
+
+        katakana = new HashMap<>();
     }
 
 }
