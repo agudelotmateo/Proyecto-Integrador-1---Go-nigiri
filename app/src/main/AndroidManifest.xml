@@ -162,11 +162,23 @@
 
         <activity android:name=".Games.MemoryGame.matching.InstructionsMatchit"
             android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Regresar"
+            android:parentActivityName=".Games.MemoryGame.matching.MenuMatchit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Games.MemoryGame.matching.InstructionsMatchit">
+            </meta-data>
         </activity>
         <activity android:name=".Games.MemoryGame.matching.MenuMatchit"
             android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Games.MemoryGame.matching.MenuMatchit">
+            </meta-data>
         </activity>
         <activity android:name=".Games.MemoryGame.matching.GameMatchit"
             android:screenOrientation="userPortrait"

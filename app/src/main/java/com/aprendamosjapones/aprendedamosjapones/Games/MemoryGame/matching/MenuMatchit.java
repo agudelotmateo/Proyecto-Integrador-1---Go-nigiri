@@ -3,6 +3,7 @@ package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.matching;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -22,6 +23,8 @@ public class MenuMatchit extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matchit_menu);
+
+        setToolbar(); // Reemplazar toolbar
 
         goInstructionsMatchit = (Button)findViewById(R.id.instructionsMatchit);
         goInstructionsMatchit.setOnClickListener(new View.OnClickListener() {
@@ -126,4 +129,12 @@ public class MenuMatchit extends AppCompatActivity {
             }
         });
     }
+    private void setToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null)// Habilitar Up Button
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
 }
