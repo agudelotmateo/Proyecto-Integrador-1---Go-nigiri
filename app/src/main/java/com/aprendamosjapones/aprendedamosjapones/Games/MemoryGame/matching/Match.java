@@ -16,7 +16,7 @@ public class Match {
 
     public Match(String kana, String spanish, String[] syllables) {
         this.kana = kana;
-        this.spanish = spanish;
+        this.spanish = spanish.toLowerCase();
         this.syllables = new ArrayList<>(syllables.length);
         int x = 0;
         StringBuilder sb = new StringBuilder();

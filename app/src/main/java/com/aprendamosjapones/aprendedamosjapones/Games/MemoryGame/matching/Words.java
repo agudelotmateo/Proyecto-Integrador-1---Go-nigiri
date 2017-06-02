@@ -406,6 +406,279 @@ public class Words {
 
 
         katakana = new HashMap<>();
+        i = 0;
+        Match[] aiueonK = new Match[4];
+        aiueonK[i++] = new Match("アイアン", "hierro", new String[]{"a", "i", "a", "n"});
+        aiueonK[i++] = new Match("エア", "aire", new String[]{"e", "a"});
+        aiueonK[i++] = new Match("ウ", "", new String[]{"u"});
+        aiueonK[i++] = new Match("オ", "", new String[]{"o"});
+        katakana.put("aiueon", aiueonK);
+
+        i = 0;
+        Match[] kakikukekoK = new Match[6];
+        kakikukekoK[i++] = new Match("カカオ", "Cacao", new String[]{"ka", "ka", "o"});
+        kakikukekoK[i++] = new Match("クッキー", "Galleta", new String[]{"ku", "kki", "i"});
+        kakikukekoK[i++] = new Match("ケーキ", "Torta", new String[]{"ke", "e", "ki"});
+        kakikukekoK[i++] = new Match("エコー", "Eco", new String[]{"e", "ko", "o"});
+        kakikukekoK[i++] = new Match("コイン", "Moneda", new String[]{"ko", "i", "n"});
+        kakikukekoK[i++] = new Match("クイーン", "Reina", new String[]{"ku", "i", "i", "n"});
+        katakana.put("kakikukeko", kakikukekoK);
+
+        i = 0;
+        Match[] sashisusesoK = new Match[8];
+        sashisusesoK[i++] = new Match("サッカー", "Fútbol", new String[]{"sa", "kka", "a"});
+        sashisusesoK[i++] = new Match("スキー", "Esquiar", new String[]{"su", "ki", "i"});
+        sashisusesoK[i++] = new Match("サモア", "Samoa", new String[]{"sa", "mo", "a"});
+        sashisusesoK[i++] = new Match("サーカス", "Circo", new String[]{"sa", "a", "ka", "su"});
+        sashisusesoK[i++] = new Match("ソース", "Salsa", new String[]{"so", "o", "su"});
+        sashisusesoK[i++] = new Match("アクセス", "Acceso", new String[]{"a", "ku", "se", "su"});
+        sashisusesoK[i++] = new Match("シーソー", "Balancín", new String[]{"shi", "i", "so"});
+        sashisusesoK[i++] = new Match("ウイスキー", "Wisky", new String[]{"u", "i", "su", "ki", "i"});
+        katakana.put("sashisuseso", sashisusesoK);
+
+        i = 0;
+        Match[] tachitsutetoK = new Match[8];
+        tachitsutetoK[i++] = new Match("タクシー", "Táxi", new String[]{"ta", "ku", "shi", "i"});
+        tachitsutetoK[i++] = new Match("テニス", "Tenis", new String[]{"te", "ni", "su"});
+        tachitsutetoK[i++] = new Match("スーツ", "Traje", new String[]{"su", "u", "tsu"});
+        tachitsutetoK[i++] = new Match("スケート", "Esquiar", new String[]{"su", "ke", "e", "to"});
+        tachitsutetoK[i++] = new Match("センチ", "Centímetro", new String[]{"se", "n", "chi"});
+        tachitsutetoK[i++] = new Match("インスタント", "Instante", new String[]{"i", "n", "su", "ta", "n", "to"});
+        tachitsutetoK[i++] = new Match("カーテン", "Cortina", new String[]{"ka", "a", "te", "n"});
+        tachitsutetoK[i++] = new Match("スカート", "Falda", new String[]{"su", "ka", "a", "to"});
+        katakana.put("tachitsuteto", tachitsutetoK);
+
+        i = 0;
+        Match[] naninunenoK = new Match[8];
+        naninunenoK[i++] = new Match("ナイト", "Caballero", new String[]{"na", "i", "to"});
+        naninunenoK[i++] = new Match("ネコ", "Gato", new String[]{"ne", "ko"});
+        naninunenoK[i++] = new Match("オセアニア", "Oceanía", new String[]{"o", "se", "a", "ni", "a"});
+        naninunenoK[i++] = new Match("スナック", "Snack", new String[]{"su", "na", "kku"});
+        naninunenoK[i++] = new Match("オーナー", "Dueño", new String[]{"o", "o", "na", "a"});
+        naninunenoK[i++] = new Match("ノート", "Cuaderno", new String[]{"no", "o", "to"});
+        naninunenoK[i++] = new Match("カヌー", "Canoa", new String[]{"ka", "nu", "u"});
+        naninunenoK[i++] = new Match("イノセンス", "Inocencia", new String[]{"i", "no", "se", "n", "su"});
+        katakana.put("naninuneno", naninunenoK);
+
+        i = 0;
+        Match[] hahifuhehoK = new Match[8];
+        hahifuhehoK[i++] = new Match("マスク", "Café", new String[]{"ko", "o", "hi", "i"});
+        hahifuhehoK[i++] = new Match("ハイチ", "Haiti", new String[]{"ha", "i", "chi"});
+        hahifuhehoK[i++] = new Match("ヒント", "Pista", new String[]{"hi", "n", "to"});
+        hahifuhehoK[i++] = new Match("ソフト", "Suave", new String[]{"so", "fu", "to"});
+        hahifuhehoK[i++] = new Match("ホース", "Manguera", new String[]{"ho", "o", "su"});
+        hahifuhehoK[i++] = new Match("ヘナ", "(Tipo de planta)", new String[]{"he", "na"});
+        hahifuhehoK[i++] = new Match("ファミリー", "Familia", new String[]{"fa", "mi", "ri", "i"});
+        hahifuhehoK[i++] = new Match("インフォ", "Información", new String[]{"i", "n", "fo"});
+        katakana.put("hahifuheho", hahifuhehoK);
+
+        i = 0;
+        Match[] mamimumemoK = new Match[8];
+        mamimumemoK[i++] = new Match("マスク", "Máscara", new String[]{"ma", "su", "ku"});
+        mamimumemoK[i++] = new Match("メキシコ", "México", new String[]{"me", "ki", "shi", "ko"});
+        mamimumemoK[i++] = new Match("モナコ", "Mónaco", new String[]{"mo", "na", "co"});
+        mamimumemoK[i++] = new Match("ミニマム", "Mínimo", new String[]{"mi", "ni", "ma", "mu"});
+        mamimumemoK[i++] = new Match("イエメン", "Yemen", new String[]{"i", "e", "me", "n"});
+        mamimumemoK[i++] = new Match("フォーム", "Espuma", new String[]{"fo", "o", "mu"});
+        mamimumemoK[i++] = new Match("トーナメント", "Torneo", new String[]{"to", "o", "na", "me", "n", "to"});
+        mamimumemoK[i++] = new Match("マチネ", "Máquina", new String[]{"ma", "chi", "ne"});
+        katakana.put("mamimumemo", mamimumemoK);
+
+        i = 0;
+        Match[] yayuyoK = new Match[4];
+        yayuyoK[i++] = new Match("ユニコーン", "Unicornio", new String[]{"yu", "ni", "ko", "o", "n"});
+        yayuyoK[i++] = new Match("ヨーヨー", "Yo-Yo", new String[]{"yo", "o", "yo", "o"});
+        yayuyoK[i++] = new Match("ヨット", "Yate", new String[]{"yo", "tto"});
+        yayuyoK[i++] = new Match("イヤホン", "Audífono", new String[]{"i", "ya", "ho", "n"});
+        katakana.put("yayuyoK", yayuyoK);
+
+        i = 0;
+        Match[] rarirureroK = new Match[8];
+        rarirureroK[i++] = new Match("トイレ", "Baño", new String[]{"to", "i", "re"});
+        rarirureroK[i++] = new Match("アフリカ", "África", new String[]{"a", "fu", "ri", "ka"});
+        rarirureroK[i++] = new Match("アイスクリーム", "Helado", new String[]{"a", "i", "su", "ku", "ri", "i", "mu"});
+        rarirureroK[i++] = new Match("メロン", "Melón", new String[]{"me", "ro", "n"});
+        rarirureroK[i++] = new Match("レモン", "Limón", new String[]{"re", "mo", "n"});
+        rarirureroK[i++] = new Match("セロリ", "Apio", new String[]{"se", "ro", "ri"});
+        rarirureroK[i++] = new Match("フルート", "Flauta", new String[]{"fu", "ru", "u", "to"});
+        rarirureroK[i++] = new Match("レストラン", "Restaurante", new String[]{"re", "su", "to", "ra", "n"});
+        katakana.put("rarirurero", rarirureroK);
+
+        i = 0;
+        Match[] wawoK = new Match[6];
+        wawoK[i++] = new Match("スワン", "Cisne", new String[]{"su", "wa", "n"});
+        wawoK[i++] = new Match("ワイン", "Vino", new String[]{"wa", "i", "n"});
+        wawoK[i++] = new Match("ルワンダ", "Ruanda", new String[]{"ru", "wa", "n", "da"});
+        wawoK[i++] = new Match("ワシントン", "Washington", new String[]{"wa", "shi", "n", "to", "n"});
+        wawoK[i++] = new Match("アワー", "Hora", new String[]{"a", "wa", "a"});
+        wawoK[i++] = new Match("ヲ", "", new String[]{"wo"});
+        katakana.put("wawo", wawoK);
+
+        i = 0;
+        Match[] gagigugegoK = new Match[8];
+        gagigugegoK[i++] = new Match("モーニング", "Mañana", new String[]{"mo", "o", "ni", "n", "gu"});
+        gagigugegoK[i++] = new Match("ゴルフ", "Golf", new String[]{"go", "ru", "fu"});
+        gagigugegoK[i++] = new Match("ギター", "Guitarra", new String[]{"gi", "ta", "a"});
+        gagigugegoK[i++] = new Match("トレーニング", "Entrenamiento", new String[]{"to", "re", "e", "ni", "n", "gu"});
+        gagigugegoK[i++] = new Match("ハンガリー", "Hungaria", new String[]{"ha", "n", "ga", "ri", "i"});
+        gagigugegoK[i++] = new Match("ニカラグア", "Nicaragua", new String[]{"ni", "ka", "ra", "gu", "a"});
+        gagigugegoK[i++] = new Match("ゲットー", "Gueto", new String[]{"ge", "tto", "o"});
+        gagigugegoK[i++] = new Match("ヨーグルト", "Yogurt", new String[]{"yo", "o", "gu", "ru", "to"});
+        katakana.put("gagigugego", gagigugegoK);
+
+        i = 0;
+        Match[] zajizuzezoK = new Match[8];
+        zajizuzezoK[i++] = new Match("アジア", "Asia", new String[]{"a", "ji", "a"});
+        zajizuzezoK[i++] = new Match("チーズ", "Queso", new String[]{"chi", "i", "zu"});
+        zajizuzezoK[i++] = new Match("エンジニア", "Ingeniero", new String[]{"e", "n", "ji", "ni", "a"});
+        zajizuzezoK[i++] = new Match("リズム", "Ritmo", new String[]{"ri", "zu", "mu"});
+        zajizuzezoK[i++] = new Match("アルゼンチン", "Argentina", new String[]{"a", "ru", "ze", "n", "chi", "n"});
+        zajizuzezoK[i++] = new Match("タンザニア", "Tanzania", new String[]{"ta", "n", "za", "ni", "a"});
+        zajizuzezoK[i++] = new Match("エキゾチック", "Exótico", new String[]{"e", "ki", "zo", "chi", "kku"});
+        zajizuzezoK[i++] = new Match("ソーセージ", "Salchicha", new String[]{"so", "o", "se", "e", "ji"});
+        katakana.put("zajizuzezo", zajizuzezoK);
+
+        i = 0;
+        Match[] dajizudedoK = new Match[8];
+        dajizudedoK[i++] = new Match("サラダ", "Ensalada", new String[]{"sa", "ra", "da"});
+        dajizudedoK[i++] = new Match("アカデミー", "Academia", new String[]{"a", "ka", "de", "mi", "i"});
+        dajizudedoK[i++] = new Match("イングランド", "Inglaterra", new String[]{"i", "n", "gu", "ra", "n", "do"});
+        dajizudedoK[i++] = new Match("デンマーク", "Dinamarca", new String[]{"de", "n", "ma", "a", "ku"});
+        dajizudedoK[i++] = new Match("マクドナルド", "McDonald's", new String[]{"ma", "ku", "do", "na", "ru", "do"});
+        dajizudedoK[i++] = new Match("ガーデン", "Jardín", new String[]{"ga", "a", "de", "n"});
+        dajizudedoK[i++] = new Match("コメディー", "Comedia", new String[]{"ko", "me", "di", "i"});
+        dajizudedoK[i++] = new Match("エメラルド", "Esmeralda", new String[]{"e", "me", "ra", "ru", "do"});
+        katakana.put("dajizudedo", dajizudedoK);
+
+        i = 0;
+        Match[] babibubeboK = new Match[8];
+        babibubeboK[i++] = new Match("ブルー", "Azul", new String[]{"bu", "ru", "u"});
+        babibubeboK[i++] = new Match("ベッド", "Cama", new String[]{"be", "ddo"});
+        babibubeboK[i++] = new Match("コロンビア", "Colombia", new String[]{"ko", "ro", "n", "bi", "a"});
+        babibubeboK[i++] = new Match("バナナ", "Banano", new String[]{"ba", "na", "na"});
+        babibubeboK[i++] = new Match("オーブン", "Horno", new String[]{"o", "o", "bu", "n"});
+        babibubeboK[i++] = new Match("ボクシング", "Boxeo", new String[]{"bo", "ku", "shi", "n", "gu"});
+        babibubeboK[i++] = new Match("リバーシブル", "Reversible", new String[]{"ba", "a", "shi", "bu", "ru"});
+        babibubeboK[i++] = new Match("テレビ", "Televisor", new String[]{"te", "re", "bi"});
+        katakana.put("babibubebo", babibubeboK);
+
+        i = 0;
+        Match[] papipupepoK = new Match[8];
+        papipupepoK[i++] = new Match("スーパー", "Supermercado", new String[]{"su", "u", "pa", "a"});
+        papipupepoK[i++] = new Match("ヨーロッパ", "Europa", new String[]{"yo", "o", "ro", "ppa"});
+        papipupepoK[i++] = new Match("ペンギン", "Pingüino", new String[]{"pe", "n", "gi", "n"});
+        papipupepoK[i++] = new Match("ヘリコプター", "Helicóptero", new String[]{"he", "ri", "ko", "pu", "ta", "a"});
+        papipupepoK[i++] = new Match("スポーツ", "Deporte", new String[]{"su", "po", "o", "tsu"});
+        papipupepoK[i++] = new Match("ピアノ", "Piano", new String[]{"pi", "a", "no"});
+        papipupepoK[i++] = new Match("パーセント", "Porcentaje", new String[]{"pa", "a", "se", "n", "to"});
+        papipupepoK[i++] = new Match("スピード", "Velocidad", new String[]{"su", "pi", "i", "do"});
+        katakana.put("papipupepo", papipupepoK);
+
+        i = 0;
+        Match[] kyakyukyoK = new Match[6];
+        kyakyukyoK[i++] = new Match("キャベツ", "Repollo", new String[]{"kya", "be", "tsu"});
+        kyakyukyoK[i++] = new Match("キャスター", "Castor", new String[]{"kya", "su", "ta", "a"});
+        kyakyukyoK[i++] = new Match("キューバ", "Cuba", new String[]{"kyu", "u", "ba"});
+        kyakyukyoK[i++] = new Match("キャンドル", "Vela", new String[]{"kya", "n", "do", "ru"});
+        kyakyukyoK[i++] = new Match("キャミソール ", "Camisol", new String[]{"kya", "mi", "so", "o", "ru"});
+        kyakyukyoK[i++] = new Match("キョンシー", "(Tipo de zombie)", new String[]{"kyo", "n", "shi", "i"});
+        katakana.put("kyakyukyo", kyakyukyoK);
+
+        i = 0;
+        Match[] gyagyugyoK = new Match[6];
+        gyagyugyoK[i++] = new Match("ギャラ", "Garantía", new String[]{"gya", "ra"});
+        gyagyugyoK[i++] = new Match("ギャップ", "Brecha", new String[]{"gya", "ppu"});
+        gyagyugyoK[i++] = new Match("ギャラリー", "Galería", new String[]{"gya", "ra", "ri", "i"});
+        gyagyugyoK[i++] = new Match("フィギュア", "Figurilla", new String[]{"fi", "gyu", "a"});
+        gyagyugyoK[i++] = new Match("レギュラー", "Regular", new String[]{"re", "gyu", "ra", "a"});
+        gyagyugyoK[i++] = new Match("ギョーザ", "(Tipo de comida)", new String[]{"gyo", "o", "za"});
+        katakana.put("gyagyugyo", gyagyugyoK);
+
+        i = 0;
+        Match[] shashushoK = new Match[8];
+        shashushoK[i++] = new Match("ギリシャ", "Grecia", new String[]{"gi", "ri", "sha"});
+        shashushoK[i++] = new Match("オークション", "Subasta", new String[]{"o", "o", "ku", "sho", "n"});
+        shashushoK[i++] = new Match("ティーシャツ", "Camiseta", new String[]{"ti", "i", "sha", "tsu"});
+        shashushoK[i++] = new Match("エンゼルフィシュ", "Pez ángel", new String[]{"e", "n", "ze", "ru", "fi", "shu"});
+        shashushoK[i++] = new Match("オーディション", "Audición", new String[]{"o", "o", "di", "sho", "n"});
+        shashushoK[i++] = new Match("アクション", "Acción", new String[]{"a", "ku", "sho", "n"});
+        shashushoK[i++] = new Match("インスピレーション", "Inspiración", new String[]{"i", "n", "su", "pi", "re", "e", "sho", "n"});
+        shashushoK[i++] = new Match("ミッション", "Misión", new String[]{"mi", "ssho", "n"});
+        katakana.put("shashusho", shashushoK);
+
+        i = 0;
+        Match[] jajujoK = new Match[6];
+        jajujoK[i++] = new Match("ジュース", "Jugo", new String[]{"ju", "u", "so"});
+        jajujoK[i++] = new Match("ジャマイカ", "Jamaica", new String[]{"ja", "ma", "i", "ka"});
+        jajujoK[i++] = new Match("ジョーカー", "Joker", new String[]{"jo", "o", "ka", "a"});
+        jajujoK[i++] = new Match("ジョーク", "Broma", new String[]{"jo", "o", "ku"});
+        jajujoK[i++] = new Match("ジャズ", "Jazz", new String[]{"ja", "zu"});
+        jajujoK[i++] = new Match("カジュアル", "Casual", new String[]{"ka", "ju", "a", "ru"});
+        katakana.put("jajujo", jajujoK);
+
+        i = 0;
+        Match[] chachuchoK = new Match[8];
+        chachuchoK[i++] = new Match("ケチャップ", "Salsa de tomate", new String[]{"ke", "cha", "ppu"});
+        chachuchoK[i++] = new Match("チャンピオン", "Campeón", new String[]{"cha", "n", "pi", "o", "n"});
+        chachuchoK[i++] = new Match("チョーク", "Tiza", new String[]{"cho", "o", "ku"});
+        chachuchoK[i++] = new Match("チョコレート", "Chocolate", new String[]{"cho", "ko", "re", "e", "to"});
+        chachuchoK[i++] = new Match("チュニジア", "Tunisia", new String[]{"chu", "ni", "ji", "a"});
+        chachuchoK[i++] = new Match("アマチュア", "Amateus", new String[]{"a", "ma", "chu", "a"});
+        chachuchoK[i++] = new Match("アンチョビー", "Anchoa", new String[]{"a", "n", "cho", "bi", "i"});
+        chachuchoK[i++] = new Match("アドベンチャー", "Aventura", new String[]{"a", "do", "be", "n", "cha", "a"});
+        katakana.put("chachucho", chachuchoK);
+
+        i = 0;
+        Match[] nyanyunyoK = new Match[7];
+        nyanyunyoK[i++] = new Match("コニャック", "Coñac", new String[]{"ko", "nya", "ku"});
+        nyanyunyoK[i++] = new Match("ケニア", "Kenia", new String[]{"ke", "nya"});
+        nyanyunyoK[i++] = new Match("ニューヨーク", "Nueva York", new String[]{"nyu", "u", "yo", "o", "ku"});
+        nyanyunyoK[i++] = new Match("ニュートン", "Newton", new String[]{"nyu", "u", "to", "n"});
+        nyanyunyoK[i++] = new Match("ニュース", "Noticias", new String[]{"nyu", "u", "su"});
+        nyanyunyoK[i++] = new Match("メニュー", "Menú", new String[]{"me", "nyu", "u"});
+        nyanyunyoK[i++] = new Match("ニョッキ", "(Tipo de macarrón", new String[]{"nyo", "kki"});
+                katakana.put("nyanyunyo", nyanyunyoK);
+
+        i = 0;
+        Match[] hyahyuhyoK = new Match[3];
+        hyahyuhyoK[i++] = new Match("ヒューストン", "Houston", new String[]{"hyu", "u", "su", "to", "n"});
+        hyahyuhyoK[i++] = new Match("ヒョウ", "Leopardo", new String[]{"hyo", "u"});
+        hyahyuhyoK[i++] = new Match("リヒャルトワーグナー", "Richard Wagner", new String[]{"ri", "hya", "ru", "to", "wa", "a", "gu", "na", "a"});
+        katakana.put("hyahyuhyo", hyahyuhyoK);
+
+        i = 0;
+        Match[] byabyubyoK = new Match[4];
+        byabyubyoK[i++] = new Match("ビャクダン", "(Tipo de árbol)", new String[]{"bya", "ku", "da", "n"});
+        byabyubyoK[i++] = new Match("プレビュー", "Adelanto", new String[]{"pu", "re", "byu", "u"});
+        byabyubyoK[i++] = new Match("インタビュー", "Entrevista", new String[]{"i", "n", "ta", "byu", "u"});
+        byabyubyoK[i++] = new Match("ビョ", "", new String[]{"byo"});
+        katakana.put("byabyubyo", byabyubyoK);
+
+        i = 0;
+        Match[] pyapyupyoK = new Match[3];
+        pyapyupyoK[i++] = new Match("コンピューター", "Computador", new String[]{"ko", "n", "pyu", "u", "ta", "a"});
+        pyapyupyoK[i++] = new Match("ピョンヤン", "Pyonyan (Capital Corea del Norte)", new String[]{"pyo", "n", "ya", "n"});
+        pyapyupyoK[i++] = new Match("ピャ", "", new String[]{"pya"});
+        katakana.put("pyapyupyo", pyapyupyoK);
+
+        i = 0;
+        Match[] myamyumyoK = new Match[6];
+        myamyumyoK[i++] = new Match("ミュージック", "Música", new String[]{"myu", "u", "ji", "kku"});
+        myamyumyoK[i++] = new Match("ミュンヘン", "Munich", new String[]{"myu", "n", "he", "n"});
+        myamyumyoK[i++] = new Match("ミュージアム", "Museo", new String[]{"myu", "u", "ji", "a", "mu"});
+        myamyumyoK[i++] = new Match("コミュニケーション", "Comunicación", new String[]{"ko", "myu", "ni", "ke", "e", "sho", "n"});
+        myamyumyoK[i++] = new Match("ミャンマー", "Birmania", new String[]{"mya", "n", "ma", "a"});
+        myamyumyoK[i++] = new Match("ミョガ", "(Tipo de jengibre)", new String[]{"myo", "ga"});
+        katakana.put("myamyumyo", myamyumyoK);
+
+        i = 0;
+        Match[] ryaryuryoK = new Match[4];
+        ryaryuryoK[i++] = new Match("マトリョーシカ", "Matrioska (Muñeca rusa)", new String[]{"ma", "to", "tyo", "o", "shi", "ka"});
+        ryaryuryoK[i++] = new Match("パエーリャ", "Paella", new String[]{"pa", "e", "e", "rya"});
+        ryaryuryoK[i++] = new Match("スクリュー", "Tornillo", new String[]{"su", "ku", "ryu", "u"});
+        ryaryuryoK[i++] = new Match("イリュージョン", "Ilusión", new String[]{"i", "ryu", "u", "jo", "n"});
+        katakana.put("ryaryuryo", ryaryuryoK);
+
     }
 
 }
