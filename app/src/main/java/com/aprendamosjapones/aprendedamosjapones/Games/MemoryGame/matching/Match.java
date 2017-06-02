@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 public class Match {
-    private String kana, spanish;
+    private String kana, spanish, full;
     private ArrayList<Pair<String, Integer> > syllables;
     private int[][] backtable;
     private boolean preprocessed;
@@ -19,10 +19,13 @@ public class Match {
         this.spanish = spanish;
         this.syllables = new ArrayList<>(syllables.length);
         int x = 0;
+        StringBuilder sb = new StringBuilder();
         for (String s : syllables) {
             this.syllables.add(new Pair<>(s, x));
             x += s.length();
+            sb.append(s);
         }
+        full = sb.toString();
     }
 
     private void preprocess() {
@@ -47,9 +50,11 @@ public class Match {
     }
 
     public ArrayList<Pair<Integer, Integer>> match(String text) {
+        if (full.equals(text))
+            return null;
         if (!preprocessed)
             preprocess();
-        int i, j;
+        int i, j, x, lastX = -1;
         boolean matched;
         ArrayList<Pair<Integer, Integer> > matchList = new ArrayList<>(syllables.size());
         for (int k = 0; k < syllables.size(); ++k) {
@@ -62,9 +67,11 @@ public class Match {
                 ++i;
                 ++j;
                 if (j == syllables.get(k).first.length()) {
-                    if (i-j >= syllables.get(k).second) {
-                        matchList.add(new Pair<>(i-j, i));
+                    x = i-j;
+                    if (x >= syllables.get(k).second && x > lastX) {
+                        matchList.add(new Pair<>(x, i));
                         matched = true;
+                        lastX = x;
                     }
                     else
                         j = backtable[k][j];
