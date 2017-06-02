@@ -46,7 +46,7 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:weightSum="1"
-        android:layout_weight="0.13">
+        android:layout_weight="0.17">
 
         <TextView
             android:id="@+id/textKanaMatchit"
