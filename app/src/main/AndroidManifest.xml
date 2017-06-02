@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".View.MainMenuActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,28 +18,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.CreateAcountActivity" android:parentActivityName=".LoginActivity"></activity>
-        <activity
-            android:name=".View.MainMenuActivity"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
-        </activity>
         <activity
             android:name=".Games.MemoryGame.memory.MenuMemoryActivity"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:label="Regresar"
+            android:parentActivityName=".Games.MemoryGame.memory.MenuMemoryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainMenuActivity"
+                android:screenOrientation="userPortrait"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+            </meta-data>
         </activity>
         <activity
             android:name=".Games.MemoryGame.memory.MemoryActivity"
             android:screenOrientation="userLandscape"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".HiraganaLevels.HiraganaLevelsActivity"></activity>
-        <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"></activity>
-        <activity android:name=".KanjiLevels.KanjiLevelsActivity"></activity>
+        <activity
+            android:name=".HiraganaLevels.HiraganaLevelsActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HiraganaLevels.HiraganaLevelsActivity">
+            </meta-data>
+
+        </activity>
+
+        <activity android:name=".KatakanaLevels.KatakanaLevelsActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".KatakanaLevels.KatakanaLevelsActivity">
+            </meta-data>
+
+        </activity>
+        <activity android:name=".KanjiLevels.KanjiLevelsActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".KanjiLevels.KanjiLevelsActivity">
+            </meta-data>
+
+        </activity>
+
         <activity android:name=".Games.MemoryGame.IntructionMemoryGame"
+            android:label="Regresar"
             android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".Games.MemoryGame.IntructionMemoryGame" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Games.MemoryGame.IntructionMemoryGame">
+            </meta-data>
+
         </activity>
         <activity
             android:name=".HiraganaLevels.HiraganaDetailActivity"
@@ -51,10 +85,6 @@
             </meta-data>
         </activity>
 
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity">
-        </meta-data>
         <activity
             android:name=".KatakanaLevels.KatakanaDetailActivity"
             android:label="@string/title_activity_detail"
@@ -74,24 +104,62 @@
             </meta-data>
         </activity>
 
-        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"></activity>
-        <activity android:name=".DictionaryHIragana.DetailsDictionaryHiragana"></activity>
-
-        <activity android:name=".DictionaryKatakana.DictionarKatakanaActivity"></activity>
-        <activity android:name=".DictionaryKatakana.DetailsDictionaryKatakana"></activity>
-
-        <activity android:name=".DictionaryKanji.DictionarKanjiActivity"></activity>
-        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"></activity>
-
-        <activity android:name=".Games.AskedGame.ActivityASkedGame"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+        <activity android:name=".DictionaryHIragana.DictionarHIraganaActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryHIragana.DictionarHIraganaActivity">
+            </meta-data>
         </activity>
-        <activity android:name=".Games.AskedGame.InstructionsAskedGame"
-            android:screenOrientation="userPortrait"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        <activity
+            android:name=".DictionaryHIragana.DetailsDictionaryHiragana"
+            android:label="Regresar"
+            android:parentActivityName=".DictionaryHIragana.DictionarHIraganaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryHIragana.DetailsDictionaryHiragana">
+            </meta-data>
         </activity>
-        <activity android:name=".MenuNavigation.NavigationDrawer"></activity>
+
+        <activity
+            android:name=".DictionaryKatakana.DictionarKatakanaActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKatakana.DictionarKatakanaActivity">
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".DictionaryKatakana.DetailsDictionaryKatakana"
+            android:label="Regresar"
+            android:parentActivityName=".DictionaryKatakana.DictionarKatakanaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKatakana.DetailsDictionaryKatakana">
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name=".DictionaryKanji.DictionarKanjiActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKanji.DictionarKanjiActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".DictionaryKanji.DetailsDictionaryKanji"
+            android:label="Regresar"
+            android:parentActivityName=".DictionaryKatakana.DictionarKatakanaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DictionaryKanji.DetailsDictionaryKanji">
+            </meta-data>
+        </activity>
+
         <activity android:name=".Games.MemoryGame.matching.InstructionsMatchit"
             android:screenOrientation="userPortrait"
             android:configChanges="orientation|keyboardHidden|screenSize">
@@ -104,6 +172,15 @@
             android:screenOrientation="userPortrait"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity android:name=".View.CreditsActivity"
+            android:label="Regresar"
+            android:parentActivityName=".View.MainMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.CreditsActivity">
+            </meta-data>
         </activity>
 
     </application>

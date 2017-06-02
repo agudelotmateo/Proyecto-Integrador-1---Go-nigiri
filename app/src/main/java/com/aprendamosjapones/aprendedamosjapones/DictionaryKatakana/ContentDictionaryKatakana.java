@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ContentDictionaryKatakana {
     private static ItemsDictionaryKatakana[] courses = {
-            new ItemsDictionaryKatakana("all",
+            new ItemsDictionaryKatakana("a",
                     R.raw.aud1a, "アイアン", "aian", "Hierro", R.drawable.gifkata1a,
                      R.drawable.katakana1a),
 
@@ -55,7 +55,7 @@ public class ContentDictionaryKatakana {
                     R.drawable.katakana11sa),
 
             new ItemsDictionaryKatakana("shi",
-                    R.raw.aud11sa,"シーソー ", "shiisoo", "Balancín", R.drawable.gifkata12shi,
+                    R.raw.aud12shi,"シーソー ", "shiisoo", "Balancín", R.drawable.gifkata12shi,
                     R.drawable.katakana12shi),
 
             new ItemsDictionaryKatakana("su",

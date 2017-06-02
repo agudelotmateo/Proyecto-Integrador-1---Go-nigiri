@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.TaskStackBuilder;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -126,9 +127,16 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
         // Obtiene el curso ha detallar basado en la posición
-        ItemsDictionaryKatakana detailCourse = ContentDictionaryKatakana.getCourseByPosition(position);
+        final ItemsDictionaryKatakana detailCourse = ContentDictionaryKatakana.getCourseByPosition(position);
 
-        audioListen.setBottom(detailCourse.getExample());
+        audioListen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(v.getContext(), detailCourse.getExample());
+                mediaPlayer.start();
+            }
+        });
+
         example1.setText(detailCourse.getExample1());
         example2.setText(detailCourse.getExample2());
         example3.setText(detailCourse.getExample3());
@@ -188,7 +196,7 @@ public class DetailsDictionaryKatakana extends AppCompatActivity {
         intent.putExtra(EXTRA_POSITION, position);
 
         // Los elementos 4, 5 y 6 usan elementos compartidos,
-        if (position >= 105) {
+        if (position >= 150) {
             ActivityOptions options0 = ActivityOptions
                     .makeSceneTransitionAnimation(context, sharedView, sharedView.getTransitionName());
             context.startActivity(intent, options0.toBundle());

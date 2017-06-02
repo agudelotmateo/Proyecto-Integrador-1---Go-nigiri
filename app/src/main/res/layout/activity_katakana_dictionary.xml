@@ -39,6 +39,4 @@
         android:scrollbars="horizontal"
         android:scrollbarStyle="outsideInset"/>
 
-
 </LinearLayout>
-

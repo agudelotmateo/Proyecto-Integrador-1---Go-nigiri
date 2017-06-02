@@ -67,6 +67,7 @@
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <!--Los siguientes estilos son usados en los diccionarios-->
@@ -132,7 +133,7 @@
     <style name="detailTextContent">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="detailAnimation">
@@ -215,8 +216,8 @@
 
     <!--Los siguientes estilos son para el menú principal-->
     <style name="mainMenuImage">
-        <item name="android:layout_width">130dp</item>
-        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">115dp</item>
         <item name="android:paddingTop">10dp</item>
     </style>
 

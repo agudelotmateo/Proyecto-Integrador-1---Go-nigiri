@@ -122,19 +122,15 @@ public class DetailsDictionaryKanji extends AppCompatActivity {
         TextView meaning = (TextView) findViewById(R.id.meaning);
         TextView onjomi = (TextView) findViewById(R.id.onjomi);
         TextView kunjomi = (TextView) findViewById(R.id.kunjomi);
-        Button audioOnjomi = (Button) findViewById(R.id.audioOnyomi);
-        Button audioKunjomi = (Button) findViewById(R.id.audioKunyomi);
         ImageView practice = (ImageView) findViewById(R.id.practice);
         ImageView image = (ImageView) findViewById(R.id.lastImage);
 
         // Obtiene el curso ha detallar basado en la posición
         ItemsDictionaryKanji detailCourse = ContentDictionaryKanji.getCourseByPosition(position);
 
-        meaning.setText("Significado: " + detailCourse.getMeaning());
-        onjomi.setText("Onyomi: " + detailCourse.getOnjomi());
-        kunjomi.setText("Kunyomi: " + detailCourse.getKunyomi());
-        audioOnjomi.setBottom(detailCourse.getAudioOnyomi());
-        audioKunjomi.setBottom(detailCourse.getAudioKunyomi());
+        meaning.setText(detailCourse.getMeaning());
+        onjomi.setText(detailCourse.getOnjomi());
+        kunjomi.setText(detailCourse.getKunyomi());
         practice.setImageResource(detailCourse.getPractice());
         Glide.with(this).load(detailCourse.getIdImage()).into(image);
     }

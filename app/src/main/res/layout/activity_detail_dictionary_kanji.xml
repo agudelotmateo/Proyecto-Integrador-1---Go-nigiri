@@ -24,15 +24,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="30dp"
+                android:paddingBottom="10dp"
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/meaning"
                     style="@style/detailTextTitleContent"
                     android:text="Signigicados: ">
                 </TextView>
 
+                <TextView
+                    android:id="@+id/meaning"
+                    style="@style/detailTextContent">
+                </TextView>
+
             </LinearLayout>
 
             <LinearLayout
@@ -41,21 +45,17 @@
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/detailTextTitleContent"
+                    android:text="Onyomi: "></TextView>
 
                 <TextView
                     android:id="@+id/onjomi"
-                    style="@style/detailTextTitleContent"
-                    android:text="Onyomi: "
+                    style="@style/detailTextContent"
                     android:paddingRight="10dp">
                 </TextView>
-                <Button
-                    android:id="@+id/audioOnyomi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/button_audio">
-                </Button>
 
             </LinearLayout>
             <LinearLayout
@@ -66,20 +66,14 @@
                 android:paddingTop="10dp">
 
                 <TextView
-                    android:id="@+id/kunjomi"
                     android:text="Kunnyomi: "
-                    style="@style/detailTextTitleContent"
-                    android:paddingRight="10dp">
+                    style="@style/detailTextTitleContent">
                 </TextView>
 
-                <Button
-                    android:id="@+id/audioKunyomi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/button_audio">
-                </Button>
+                <TextView
+                    android:id="@+id/kunjomi"
+                    style="@style/detailTextContent">
+                </TextView>
 
             </LinearLayout>
             <LinearLayout
