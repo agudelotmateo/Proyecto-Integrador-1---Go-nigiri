@@ -48,7 +48,7 @@ public class Words {
 
         i = 0;
         Match[] sashisuseso = new Match[15];
-        sashisuseso[i++] = new Match("おかあさん", "mamá", new String[]{"o", "ka", "sa", "n"});
+        sashisuseso[i++] = new Match("おかあさん", "mamá", new String[]{"o", "ka", "a", "sa", "n"});
         sashisuseso[i++] = new Match("うし", "vaca", new String[]{"u", "shi"});
         sashisuseso[i++] = new Match("しお", "sal", new String[]{"shi", "o"});
         sashisuseso[i++] = new Match("すいか", "sandía", new String[]{"su", "i", "ka"});
@@ -432,13 +432,13 @@ public class Words {
         sashisusesoK[i++] = new Match("サーカス", "Circo", new String[]{"sa", "a", "ka", "su"});
         sashisusesoK[i++] = new Match("ソース", "Salsa", new String[]{"so", "o", "su"});
         sashisusesoK[i++] = new Match("アクセス", "Acceso", new String[]{"a", "ku", "se", "su"});
-        sashisusesoK[i++] = new Match("シーソー", "Balancín", new String[]{"shi", "i", "so"});
+        sashisusesoK[i++] = new Match("シーソー", "Balancín", new String[]{"shi", "i", "so", "o"});
         sashisusesoK[i++] = new Match("ウイスキー", "Wisky", new String[]{"u", "i", "su", "ki", "i"});
         katakana.put("sashisuseso", sashisusesoK);
 
         i = 0;
         Match[] tachitsutetoK = new Match[8];
-        tachitsutetoK[i++] = new Match("タクシー", "Táxi", new String[]{"ta", "ku", "shi", "i"});
+        tachitsutetoK[i++] = new Match("タクシー", "Taxi", new String[]{"ta", "ku", "shi", "i"});
         tachitsutetoK[i++] = new Match("テニス", "Tenis", new String[]{"te", "ni", "su"});
         tachitsutetoK[i++] = new Match("スーツ", "Traje", new String[]{"su", "u", "tsu"});
         tachitsutetoK[i++] = new Match("スケート", "Esquiar", new String[]{"su", "ke", "e", "to"});
@@ -462,7 +462,7 @@ public class Words {
 
         i = 0;
         Match[] hahifuhehoK = new Match[8];
-        hahifuhehoK[i++] = new Match("マスク", "Café", new String[]{"ko", "o", "hi", "i"});
+        hahifuhehoK[i++] = new Match("コーヒー", "Café", new String[]{"ko", "o", "hi", "i"});
         hahifuhehoK[i++] = new Match("ハイチ", "Haiti", new String[]{"ha", "i", "chi"});
         hahifuhehoK[i++] = new Match("ヒント", "Pista", new String[]{"hi", "n", "to"});
         hahifuhehoK[i++] = new Match("ソフト", "Suave", new String[]{"so", "fu", "to"});
@@ -476,7 +476,7 @@ public class Words {
         Match[] mamimumemoK = new Match[8];
         mamimumemoK[i++] = new Match("マスク", "Máscara", new String[]{"ma", "su", "ku"});
         mamimumemoK[i++] = new Match("メキシコ", "México", new String[]{"me", "ki", "shi", "ko"});
-        mamimumemoK[i++] = new Match("モナコ", "Mónaco", new String[]{"mo", "na", "co"});
+        mamimumemoK[i++] = new Match("モナコ", "Mónaco", new String[]{"mo", "na", "ko"});
         mamimumemoK[i++] = new Match("ミニマム", "Mínimo", new String[]{"mi", "ni", "ma", "mu"});
         mamimumemoK[i++] = new Match("イエメン", "Yemen", new String[]{"i", "e", "me", "n"});
         mamimumemoK[i++] = new Match("フォーム", "Espuma", new String[]{"fo", "o", "mu"});
@@ -490,7 +490,7 @@ public class Words {
         yayuyoK[i++] = new Match("ヨーヨー", "Yo-Yo", new String[]{"yo", "o", "yo", "o"});
         yayuyoK[i++] = new Match("ヨット", "Yate", new String[]{"yo", "tto"});
         yayuyoK[i++] = new Match("イヤホン", "Audífono", new String[]{"i", "ya", "ho", "n"});
-        katakana.put("yayuyoK", yayuyoK);
+        katakana.put("yayuyo", yayuyoK);
 
         i = 0;
         Match[] rarirureroK = new Match[8];

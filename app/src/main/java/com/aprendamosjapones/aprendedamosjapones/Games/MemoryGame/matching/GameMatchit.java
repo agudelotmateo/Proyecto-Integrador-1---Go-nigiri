@@ -96,8 +96,7 @@ public class GameMatchit extends AppCompatActivity {
     }
 
     private void repaint(EditText text, TextView feedback) {
-        String original = match.getKana();
-        kana.setText(original.toCharArray(), 0, match.getKana().length());
+        kana.setText(match.getKana().toCharArray(), 0, match.getKana().length());
         spanish.setText(match.getSpanish().toCharArray(), 0, match.getSpanish().length());
         text.setText("");
         feedback.setText("");

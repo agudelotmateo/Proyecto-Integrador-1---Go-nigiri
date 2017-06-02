@@ -99,7 +99,7 @@
 
         <Spinner
             android:id="@+id/spinnerFilaMatchit"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:entries="@array/matchitFilas"
             android:gravity="center"
