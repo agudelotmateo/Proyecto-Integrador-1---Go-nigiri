@@ -274,7 +274,7 @@ public class ContentDictionaryKatakana {
                     R.raw.aud57da,"カナダ", "kanada", "Canadá", R.drawable.blanco,
                     R.drawable.katakana57da),
 
-            new ItemsDictionaryKatakana("di",
+            new ItemsDictionaryKatakana("ji",
                     R.raw.aud58ji,"コメディー", "komedii", "Comedia", R.drawable.blanco,
                     R.drawable.katakana58di),
 

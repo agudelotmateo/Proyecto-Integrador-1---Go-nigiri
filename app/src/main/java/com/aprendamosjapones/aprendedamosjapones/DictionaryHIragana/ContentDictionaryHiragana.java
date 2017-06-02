@@ -275,7 +275,7 @@ public class ContentDictionaryHiragana {
                     R.raw.aud57da,"だいどころ", "daidokoro", "Cocina", R.drawable.blanco,
                     R.drawable.hiragana57da),
 
-            new ItemsDictionaryHiragana("di",
+            new ItemsDictionaryHiragana("ji",
                     R.raw.aud58ji,"ちぢむ", "chidimu", "Reducir", R.drawable.blanco,
                     R.drawable.hiragana58di),
 
