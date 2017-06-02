@@ -1,7 +1,9 @@
 package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.matching;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -28,6 +30,7 @@ public class GameMatchit extends AppCompatActivity {
     private Match[] matches;
     private int i, n;
     private boolean skipMode;
+    private long time, accum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,7 @@ public class GameMatchit extends AppCompatActivity {
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String str = text.getText().toString();
+                String str = text.getText().toString().toLowerCase();
                 ArrayList<Pair<Integer, Integer>> list = match.match(str);
                 if (list == null)
                     next(text, feedback);
@@ -86,6 +89,8 @@ public class GameMatchit extends AppCompatActivity {
             }
         });
 
+        accum = 0L;
+        time = System.currentTimeMillis();
     }
 
     private void repaint(EditText text, TextView feedback) {
@@ -98,12 +103,45 @@ public class GameMatchit extends AppCompatActivity {
     }
 
     private void next(EditText text, TextView feedback) {
-        if (i == n-1)
-            finish();
+        if (i == n-1) {
+            time = System.currentTimeMillis() - time;
+            long second = (time / 1000) % 60;
+            long minute = (time / (1000 * 60)) % 60;
+            long hour = (time / (1000 * 60 * 60)) % 24;
+            String formattedTime;
+            if (minute == 0)
+                formattedTime = String.format("%ds", second);
+            else if (hour == 0)
+                formattedTime = String.format("%02d:%02d", minute, second);
+            else
+                formattedTime = String.format("%02d:%02d:%02d", hour, minute, second);
+            new AlertDialog.Builder(this)
+                    .setTitle("Fin del juego")
+                    .setMessage("Tiempo utilizado: " + formattedTime)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    })
+                    .show();
+        }
         else {
             match = matches[++i];
             repaint(text, feedback);
         }
     }
 
+    @Override
+    public void onPause() {
+        accum += System.currentTimeMillis()-time;
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        time = System.currentTimeMillis()-accum;
+        accum = 0;
+        super.onResume();
+    }
 }
