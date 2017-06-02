@@ -27,6 +27,7 @@ public class GameMatchit extends AppCompatActivity {
     private Match match;
     private Match[] matches;
     private int i, n;
+    private boolean skipMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,20 +46,14 @@ public class GameMatchit extends AppCompatActivity {
 
         repaint(text, feedback);
 
-        Button check = (Button) findViewById(R.id.checkMatchit);
+        final Button check = (Button) findViewById(R.id.checkMatchit);
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String str = text.getText().toString();
                 ArrayList<Pair<Integer, Integer>> list = match.match(str);
-                if (list == null) {
-                    if (i == n-1)
-                        finish();
-                    else {
-                        match = matches[++i];
-                        repaint(text, feedback);
-                    }
-                }
+                if (list == null)
+                    next(text, feedback);
                 else {
                     Spannable spanRange = new SpannableString(str);
                     spanRange.setSpan(new ForegroundColorSpan(Color.RED), 0, str.length(), Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
@@ -69,6 +64,28 @@ public class GameMatchit extends AppCompatActivity {
                 }
             }
         });
+
+        final Button skip = (Button) findViewById(R.id.skipMatchit);
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (skipMode) {
+                    check.setEnabled(false);
+                    StringBuilder sb = new StringBuilder();
+                    for (Pair<String, Integer> s : match.getSyllables())
+                        sb.append(s.first);
+                    feedback.setText(sb.toString());
+                    skip.setText("Continuar");
+                    skipMode = false;
+                }
+                else {
+                    next(text, feedback);
+                    check.setEnabled(true);
+                    skip.setText("Saltar");
+                }
+            }
+        });
+
     }
 
     private void repaint(EditText text, TextView feedback) {
@@ -77,6 +94,16 @@ public class GameMatchit extends AppCompatActivity {
         spanish.setText(match.getSpanish().toCharArray(), 0, match.getSpanish().length());
         text.setText("");
         feedback.setText("");
+        skipMode = true;
+    }
+
+    private void next(EditText text, TextView feedback) {
+        if (i == n-1)
+            finish();
+        else {
+            match = matches[++i];
+            repaint(text, feedback);
+        }
     }
 
 }
