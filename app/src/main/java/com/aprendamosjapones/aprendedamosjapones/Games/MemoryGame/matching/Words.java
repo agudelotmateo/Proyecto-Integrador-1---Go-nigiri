@@ -26,7 +26,7 @@ public class Words {
         aiueon[i++] = new Match("おおい", "mucho", new String[]{"o", "o", "i"});
         aiueon[i++] = new Match("うえ", "arriba", new String[]{"u", "e"});
         aiueon[i++] = new Match("いいえ", "no", new String[]{"i", "i", "e"});
-        aiueon[i++] = new Match("ん", "n", new String[]{"n"});
+        aiueon[i++] = new Match("ん", "", new String[]{"n"});
         hiragana.put("aiueon", aiueon);
 
         i = 0;
@@ -301,7 +301,7 @@ public class Words {
         gyagyugyo[i++] = new Match("こうぎょう", "industria", new String[]{"ko", "u", "gyo", "u"});
         gyagyugyo[i++] = new Match("にんぎょう", "muñeca", new String[]{"ni", "n", "gyo", "u"});
         gyagyugyo[i++] = new Match("ぎゅうにく", "carne de res", new String[]{"gyu", "u", "ni", "ku"});
-        gyagyugyo[i++] = new Match("ぎゃ", null, new String[]{"gya"});
+        gyagyugyo[i++] = new Match("ぎゃ", "", new String[]{"gya"});
         hiragana.put("gyagyugyo", gyagyugyo);
 
         i = 0;
@@ -371,7 +371,7 @@ public class Words {
         byabyubyo[i++] = new Match("さんびゃく", "trescientos", new String[]{"sa", "n", "bya", "ku"});
         byabyubyo[i++] = new Match("いちびょう", "un segundo", new String[]{"i", "chi", "byo", "u"});
         byabyubyo[i++] = new Match("びょうき", "enfermedad", new String[]{"byo", "u", "ki"});
-        byabyubyo[i++] = new Match("びゅ", null, new String[]{"byu"});
+        byabyubyo[i++] = new Match("びゅ", "", new String[]{"byu"});
         hiragana.put("byabyubyo", byabyubyo);
 
         i = 0;
@@ -380,7 +380,7 @@ public class Words {
         pyapyupyo[i++] = new Match("ろっぴゃく", "seiscientos", new String[]{"ro", "ppya", "ku"});
         pyapyupyo[i++] = new Match("はっぴゃくまん", "ocho millones", new String[]{"ha", "ppya", "ku", "ma", "n"});
         pyapyupyo[i++] = new Match("はっぴょう", "anuncio", new String[]{"ha", "ppyo", "u"});
-        pyapyupyo[i++] = new Match("ぴゅ", null, new String[]{"pyu"});
+        pyapyupyo[i++] = new Match("ぴゅ", "", new String[]{"pyu"});
         hiragana.put("pyapyupyo", pyapyupyo);
 
 
@@ -389,7 +389,7 @@ public class Words {
         myamyumyo[i++] = new Match("みゃく", "pulso", new String[]{"mya", "ku"});
         myamyumyo[i++] = new Match("みょうじ", "apellido", new String[]{"myo", "u", "ji"});
         myamyumyo[i++] = new Match("きみょう", "extraño", new String[]{"ki", "myo", "u"});
-        myamyumyo[i++] = new Match("みゅ", null, new String[]{"myu"});
+        myamyumyo[i++] = new Match("みゅ", "", new String[]{"myu"});
         hiragana.put("myamyumyo", myamyumyo);
 
         i = 0;
