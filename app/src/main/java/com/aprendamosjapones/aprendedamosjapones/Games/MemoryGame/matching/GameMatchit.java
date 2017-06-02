@@ -28,7 +28,7 @@ public class GameMatchit extends AppCompatActivity {
     private TextView kana, spanish;
     private Match match;
     private Match[] matches;
-    private int i, n;
+    private int i, n, skipCtr;
     private boolean skipMode;
     private long time, accum;
 
@@ -43,7 +43,7 @@ public class GameMatchit extends AppCompatActivity {
         final TextView feedback = (TextView) findViewById(R.id.textFeedbackMatchit);
 
         matches = katakana ? Words.katakana.get(key) : Words.hiragana.get(key);
-        i = 0;
+        i = skipCtr = 0;
         n = matches.length;
         match = matches[i];
 
@@ -73,6 +73,7 @@ public class GameMatchit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (skipMode) {
+                    ++skipCtr;
                     check.setEnabled(false);
                     StringBuilder sb = new StringBuilder();
                     for (Pair<String, Integer> s : match.getSyllables())
@@ -117,7 +118,7 @@ public class GameMatchit extends AppCompatActivity {
                 formattedTime = String.format("%02d:%02d:%02d", hour, minute, second);
             new AlertDialog.Builder(this)
                     .setTitle("Fin del juego")
-                    .setMessage("Tiempo utilizado: " + formattedTime)
+                    .setMessage("Tiempo utilizado: " + formattedTime + "\nSaltos: " + skipCtr)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
