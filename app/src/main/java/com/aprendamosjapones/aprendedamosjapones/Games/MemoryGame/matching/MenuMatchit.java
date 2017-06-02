@@ -2,10 +2,12 @@ package com.aprendamosjapones.aprendedamosjapones.Games.MemoryGame.matching;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 
 import com.aprendamosjapones.aprendedamosjapones.R;
@@ -122,8 +124,11 @@ public class MenuMatchit extends AppCompatActivity {
 			        key = "ryaryuryo";
 		            break;
                 }
-
                 GameMatchit.key = key;
+
+                RadioButton katakana = (RadioButton) findViewById(R.id.radioButtonKatakanaMatchit);
+                GameMatchit.katakana = katakana.isChecked();
+
                 Intent tmp = new Intent(MenuMatchit.this, GameMatchit.class);
                 startActivity(tmp);
             }

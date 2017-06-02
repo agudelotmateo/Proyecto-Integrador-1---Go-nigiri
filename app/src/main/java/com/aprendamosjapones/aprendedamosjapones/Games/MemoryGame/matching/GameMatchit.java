@@ -22,6 +22,7 @@ import java.util.ArrayList;
 
 public class GameMatchit extends AppCompatActivity {
     static String key;
+    static boolean katakana;
     private TextView kana, spanish;
     private Match match;
     private Match[] matches;
@@ -71,10 +72,20 @@ public class GameMatchit extends AppCompatActivity {
     }
 
     private void repaint(EditText text, TextView feedback) {
-        kana.setText(match.getKana().toCharArray(), 0, match.getKana().length());
+        String original = match.getKana();
+        if (katakana)
+            original = toKatakana(original);
+        kana.setText(original.toCharArray(), 0, match.getKana().length());
         spanish.setText(match.getSpanish().toCharArray(), 0, match.getSpanish().length());
         text.setText("");
         feedback.setText("");
+    }
+
+    private String toKatakana(String s) {
+        StringBuilder sb = new StringBuilder(s.length());
+        for (int i = 0; i < s.length(); ++i)
+            sb.append((char) (s.charAt(i) + 0x60));
+        return sb.toString();
     }
 
 }

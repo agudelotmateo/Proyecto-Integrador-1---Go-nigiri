@@ -244,4 +244,12 @@
         <item name="android:layout_marginRight">5dp</item>
     </style>
 
+    <!--Los siguientes estilos son para el juego match it-->
+    <style name="matchitText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>
