@@ -11,7 +11,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".View.MainMenuActivity"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +22,13 @@
         </activity>
         <activity
             android:name=".Games.MemoryGame.memory.MenuMemoryActivity"
+            android:screenOrientation="userPortrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Regresar"
             android:parentActivityName=".Games.MemoryGame.memory.MenuMemoryActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".View.MainMenuActivity"
-                android:screenOrientation="userPortrait"
-                android:configChanges="orientation|keyboardHidden|screenSize">
+                android:value=".View.MainMenuActivity">
             </meta-data>
         </activity>
         <activity
