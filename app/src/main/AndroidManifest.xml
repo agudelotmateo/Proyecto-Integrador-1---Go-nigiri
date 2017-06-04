@@ -185,12 +185,18 @@
         <activity android:name=".Games.MemoryGame.matching.GameMatchit"
             android:screenOrientation="userPortrait"
             android:windowSoftInputMode="stateAlwaysHidden"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Regresar"
+            android:parentActivityName=".Games.MemoryGame.matching.MenuMatchit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Games.MemoryGame.matching.GameMatchit">
+            </meta-data>
         </activity>
 
         <activity android:name=".View.CreditsActivity"
             android:label="Regresar"
-            android:parentActivityName=".View.MainMenuActivity">
+            android:parentActivityName=".Games.MemoryGame.matching.MenuMatchit">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.CreditsActivity">

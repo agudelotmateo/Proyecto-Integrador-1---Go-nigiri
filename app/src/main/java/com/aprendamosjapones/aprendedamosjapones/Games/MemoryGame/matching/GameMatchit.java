@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -36,6 +37,8 @@ public class GameMatchit extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matchit);
+
+        setToolbar(); // Reemplazar toolbar
 
         kana = (TextView) findViewById(R.id.textKanaMatchit);
         spanish = (TextView) findViewById(R.id.textSpanishMatchit);
@@ -146,4 +149,12 @@ public class GameMatchit extends AppCompatActivity {
         accum = 0;
         super.onResume();
     }
+
+    private void setToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null)// Habilitar Up Button
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
 }
