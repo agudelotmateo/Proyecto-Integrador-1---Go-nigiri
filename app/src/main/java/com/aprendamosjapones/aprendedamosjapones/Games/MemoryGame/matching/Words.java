@@ -68,7 +68,7 @@ public class Words {
         i = 0;
         Match[] tachitsuteto = new Match[18];
         tachitsuteto[i++] = new Match("おとうさん", "papá", new String[]{"o", "to", "u", "sa", "n"});
-        tachitsuteto[i++] = new Match("おとうと", "hermano menor", new String[]{"o", "tu", "u", "tu"});
+        tachitsuteto[i++] = new Match("おとうと", "hermano menor", new String[]{"o", "to", "u", "to"});
         tachitsuteto[i++] = new Match("けんちくか", "arquitecto", new String[]{"ke", "n", "chi", "ku", "ka"});
         tachitsuteto[i++] = new Match("くち", "boca", new String[]{"ku", "chi"});
         tachitsuteto[i++] = new Match("つくえ", "escritorio", new String[]{"tsu", "ku", "e"});
@@ -92,7 +92,7 @@ public class Words {
         naninuneno[i++] = new Match("おねえさん", "hermana mayor", new String[]{"o", "ne", "e", "sa", "n"});
         naninuneno[i++] = new Match("にいさん", "hermano mayor", new String[]{"ni", "i", "sa", "n"});
         naninuneno[i++] = new Match("きのう", "ayer", new String[]{"ki", "no", "u"});
-        naninuneno[i++] = new Match("いぬ", "perro", new String[]{"i", "un"});
+        naninuneno[i++] = new Match("いぬ", "perro", new String[]{"i", "nu"});
         naninuneno[i++] = new Match("ねこ", "gato", new String[]{"ne", "ko"});
         naninuneno[i++] = new Match("さかな", "pez", new String[]{"sa", "ka", "na"});
         naninuneno[i++] = new Match("にく", "carne", new String[]{"ni", "ku"});
@@ -106,14 +106,13 @@ public class Words {
         hiragana.put("naninuneno", naninuneno);
 
         i = 0;
-        Match[] hahifuheho = new Match[14];
+        Match[] hahifuheho = new Match[13];
         hahifuheho[i++] = new Match("ひこうき", "avión", new String[]{"hi", "ko", "u", "ki"});
         hahifuheho[i++] = new Match("はな", "flor/nariz", new String[]{"ha", "na"});
         hahifuheho[i++] = new Match("にほん", "Japón", new String[]{"ni", "ho", "n"});
         hahifuheho[i++] = new Match("ふね", "barco", new String[]{"fu", "ne"});
         hahifuheho[i++] = new Match("はと", "paloma", new String[]{"ha", "to"});
         hahifuheho[i++] = new Match("ほん", "libro", new String[]{"ho", "n"});
-        hahifuheho[i++] = new Match("はしる", "correr", new String[]{"ha", "shi", "ru"});
         hahifuheho[i++] = new Match("ふとい", "gordo", new String[]{"fu", "to", "i"});
         hahifuheho[i++] = new Match("ひくい", "bajo", new String[]{"hi", "ku", "i"});
         hahifuheho[i++] = new Match("へい", "muro", new String[]{"he", "i"});
@@ -149,7 +148,7 @@ public class Words {
 
         i = 0;
         Match[] yayuyo = new Match[11];
-        yayuyo[i++] = new Match("よっつ", "cuatro", new String[]{"to", "ttsu"});
+        yayuyo[i++] = new Match("よっつ", "cuatro", new String[]{"yo", "ttsu"});
         yayuyo[i++] = new Match("やま", "montaña", new String[]{"ya", "ma"});
         yayuyo[i++] = new Match("やさい", "vegetal", new String[]{"ya", "sa", "i"});
         yayuyo[i++] = new Match("ゆき", "nieve", new String[]{"yu", "ki"});
@@ -159,11 +158,11 @@ public class Words {
         yayuyo[i++] = new Match("つよい", "suerte", new String[]{"tsu", "yo", "i"});
         yayuyo[i++] = new Match("やく", "aproximadamente", new String[]{"ya", "ku"});
         yayuyo[i++] = new Match("やっと", "finalmente", new String[]{"ya", "tto"});
-        yayuyo[i++] = new Match("よこ", "horizontal", new String[]{"ya", "ko"});
+        yayuyo[i++] = new Match("よこ", "horizontal", new String[]{"yo", "ko"});
         hiragana.put("yayuyo", yayuyo);
 
         i = 0;
-        Match[] rarirurero = new Match[15];
+        Match[] rarirurero = new Match[16];
         rarirurero[i++] = new Match("きいろ", "amarillo", new String[]{"ki", "i", "ro"});
         rarirurero[i++] = new Match("しろい", "blanco", new String[]{"shi", "ro", "i"});
         rarirurero[i++] = new Match("よる", "noche", new String[]{"yo", "ru"});
@@ -179,11 +178,12 @@ public class Words {
         rarirurero[i++] = new Match("くろい", "negro", new String[]{"ku", "ro", "i"});
         rarirurero[i++] = new Match("からて", "karate", new String[]{"ka", "ra", "te"});
         rarirurero[i++] = new Match("しろ", "castillo", new String[]{"shi", "ro"});
+        rarirurero[i++] = new Match("はしる", "correr", new String[]{"ha", "shi", "ru"});
         hiragana.put("rarirurero", rarirurero);
 
         i = 0;
         Match[] wawo = new Match[9];
-        wawo[i++] = new Match("かわ", "rio", new String[]{"ka", "ka"});
+        wawo[i++] = new Match("かわ", "rio", new String[]{"ka", "wa"});
         wawo[i++] = new Match("にわとり", "pollo", new String[]{"ni", "wa", "to", "ri"});
         wawo[i++] = new Match("にわ", "jardín", new String[]{"ni", "wa"});
         wawo[i++] = new Match("わし", "águila", new String[]{"wa", "shi"});
@@ -198,7 +198,7 @@ public class Words {
         Match[] gagigugego = new Match[18];
         gagigugego[i++] = new Match("ごご", "tarde (parte del día)", new String[]{"go", "go"});
         gagigugego[i++] = new Match("あさごはん", "desayuno", new String[]{"a", "sa", "go", "ha", "n"});
-        gagigugego[i++] = new Match("ごはん", "comida (en general)", new String[]{"ho", "ha", "n"});
+        gagigugego[i++] = new Match("ごはん", "comida", new String[]{"go", "ha", "n"});
         gagigugego[i++] = new Match("がっこう", "colegio", new String[]{"ga", "kko", "u"});
         gagigugego[i++] = new Match("にぎり", "bola de arroz", new String[]{"ni", "gi", "ri"});
         gagigugego[i++] = new Match("うさぎ", "conejo", new String[]{"u", "sa", "gi"});
@@ -249,12 +249,12 @@ public class Words {
 
         i = 0;
         Match[] babibubebo = new Match[16];
-        babibubebo[i++] = new Match("おばあさん", "abuela", new String[]{"o", "ba", "sa", "n"});
+        babibubebo[i++] = new Match("おばあさん", "abuela", new String[]{"o", "ba", "a", "sa", "n"});
         babibubebo[i++] = new Match("げつようび", "lunes", new String[]{"ge", "tsu", "yo", "u", "bi"});
         babibubebo[i++] = new Match("かようび", "martes", new String[]{"ka", "yo", "u", "bi"});
         babibubebo[i++] = new Match("すいようび", "miércoles", new String[]{"su", "i", "yo", "u", "bi"});
         babibubebo[i++] = new Match("もくようび", "jueves", new String[]{"mo", "ku", "yo", "u", "bi"});
-        babibubebo[i++] = new Match("きんようび", "viernes", new String[]{"ki", "n", "u", "bi"});
+        babibubebo[i++] = new Match("きんようび", "viernes", new String[]{"ki", "n", "yo","u", "bi"});
         babibubebo[i++] = new Match("どようび", "sábado", new String[]{"do", "yo", "u", "bi"});
         babibubebo[i++] = new Match("にちようび", "domingo", new String[]{"ni", "chi", "yo", "u", "bi"});
         babibubebo[i++] = new Match("ばんごはん", "comida (cena)", new String[]{"ba", "n", "go", "ha", "n"});
